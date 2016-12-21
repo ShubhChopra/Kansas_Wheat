@@ -1,0 +1,30 @@
+//
+//  Fusarium root.swift
+//  SeedingApplication
+//
+//  Created by Shubh Chopra on 5/26/16.
+//  Copyright © 2016 Shubh Chopra. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+
+class FusariumRoot: UIViewController {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "FusariumRoot" )
+        {
+            if let destinationVC = segue.destinationViewController as? CollectionViewController {
+                destinationVC.photos = ["64","65","66"];
+                destinationVC.temp = 63;
+            }
+        }
+        
+    }
+}

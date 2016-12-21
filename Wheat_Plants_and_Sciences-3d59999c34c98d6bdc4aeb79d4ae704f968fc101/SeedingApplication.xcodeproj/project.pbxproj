@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA25913B1D15CB950010E037 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25913A1D15CB950010E037 /* Volume.swift */; };
+		CA25913D1D15DA8A0010E037 /* Seeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25913C1D15DA890010E037 /* Seeding.swift */; };
+		CA25913F1D16583B0010E037 /* FinalSeeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25913E1D16583B0010E037 /* FinalSeeding.swift */; };
+		CA2591411D166DCD0010E037 /* UnknownSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2591401D166DCD0010E037 /* UnknownSeed.swift */; };
+		CA2591431D1686640010E037 /* KnownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2591421D1686640010E037 /* KnownView.swift */; };
+		CA44F6371CFFE1A300ED79DB /* Variety-Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA44F6361CFFE1A300ED79DB /* Variety-Filter.swift */; };
+		CA4D70C71CF40C2C00CE8B3F /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = CA4D70C61CF40C2C00CE8B3F /* info.png */; };
+		CA4D70C91CF40DA200CE8B3F /* Nitrogen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70C81CF40DA200CE8B3F /* Nitrogen.swift */; };
+		CA4D70CB1CF51F2E00CE8B3F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70CA1CF51F2E00CE8B3F /* CollectionViewController.swift */; };
+		CA4D70CD1CF51FD700CE8B3F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70CC1CF51FD700CE8B3F /* PhotoCell.swift */; };
+		CA4D70CF1CF5203900CE8B3F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70CE1CF5203900CE8B3F /* UIImage.swift */; };
+		CA4D70D11CF5237800CE8B3F /* ZoomedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70D01CF5237800CE8B3F /* ZoomedPhotoViewController.swift */; };
+		CA4D70D61CF684F900CE8B3F /* Black Chaff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70D51CF684F800CE8B3F /* Black Chaff.swift */; };
+		CA4D70D81CF689AD00CE8B3F /* Common Bunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70D71CF689AD00CE8B3F /* Common Bunt.swift */; };
+		CA4D70E01CF69CF900CE8B3F /* Ergot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70DF1CF69CF900CE8B3F /* Ergot.swift */; };
+		CA4D70E21CF69D5800CE8B3F /* Fusarium head blight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70E11CF69D5800CE8B3F /* Fusarium head blight.swift */; };
+		CA4D70E41CF69DC700CE8B3F /* Loose smut.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70E31CF69DC700CE8B3F /* Loose smut.swift */; };
+		CA4D70E61CF69E1100CE8B3F /* Sooty head molds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70E51CF69E1100CE8B3F /* Sooty head molds.swift */; };
+		CA4D70E81CF69E2F00CE8B3F /* Stagonospora nodorum blotch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70E71CF69E2F00CE8B3F /* Stagonospora nodorum blotch.swift */; };
+		CA4D70EB1CF6D45200CE8B3F /* Bacterial Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70EA1CF6D45200CE8B3F /* Bacterial Streak.swift */; };
+		CA4D70ED1CF6D49800CE8B3F /* Barley Yellow Dwarf .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70EC1CF6D49800CE8B3F /* Barley Yellow Dwarf .swift */; };
+		CA4D70EF1CF6D4BF00CE8B3F /* Leaf Rust.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70EE1CF6D4BF00CE8B3F /* Leaf Rust.swift */; };
+		CA4D70F11CF6D4E500CE8B3F /* Powdery Mildew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70F01CF6D4E500CE8B3F /* Powdery Mildew.swift */; };
+		CA4D70F31CF6D50D00CE8B3F /* Septoria Tritici Blotch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70F21CF6D50D00CE8B3F /* Septoria Tritici Blotch.swift */; };
+		CA4D70F51CF6D54B00CE8B3F /* Stem Rust.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70F41CF6D54B00CE8B3F /* Stem Rust.swift */; };
+		CA4D70F71CF6D57C00CE8B3F /* Stripe Rust.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70F61CF6D57C00CE8B3F /* Stripe Rust.swift */; };
+		CA4D70F91CF6D59800CE8B3F /* Tan spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70F81CF6D59800CE8B3F /* Tan spot.swift */; };
+		CA4D70FB1CF6D5AF00CE8B3F /* Wheat Soilborne Mosaic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70FA1CF6D5AF00CE8B3F /* Wheat Soilborne Mosaic.swift */; };
+		CA4D70FD1CF6D5CF00CE8B3F /* Wheat Spindle Streak Mosaic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70FC1CF6D5CF00CE8B3F /* Wheat Spindle Streak Mosaic.swift */; };
+		CA4D70FF1CF6D5EB00CE8B3F /* Wheat Streak Mosaic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70FE1CF6D5EB00CE8B3F /* Wheat Streak Mosaic.swift */; };
+		CA4D71011CF6D64600CE8B3F /* Stagonospora Nodorum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D71001CF6D64600CE8B3F /* Stagonospora Nodorum.swift */; };
+		CA4D71041CF778C200CE8B3F /* Cephalosporium.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D71031CF778C100CE8B3F /* Cephalosporium.swift */; };
+		CA4D71061CF778E200CE8B3F /* Common Root rot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D71051CF778E200CE8B3F /* Common Root rot.swift */; };
+		CA4D71081CF778FB00CE8B3F /* Eyespot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D71071CF778FB00CE8B3F /* Eyespot.swift */; };
+		CA4D710A1CF77B9400CE8B3F /* Fusarium root.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D71091CF77B9400CE8B3F /* Fusarium root.swift */; };
+		CA4D710C1CF77BBD00CE8B3F /* Rhizoctonia Root rot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D710B1CF77BBD00CE8B3F /* Rhizoctonia Root rot.swift */; };
+		CA4D710E1CF77BD700CE8B3F /* Take-all.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D710D1CF77BD700CE8B3F /* Take-all.swift */; };
+		CA53E2491CEB6C5600EC4438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53E2481CEB6C5600EC4438 /* AppDelegate.swift */; };
+		CA53E24B1CEB6C5600EC4438 /* Nutrient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53E24A1CEB6C5600EC4438 /* Nutrient.swift */; };
+		CA53E24D1CEB6C5600EC4438 /* Diseases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53E24C1CEB6C5600EC4438 /* Diseases.swift */; };
+		CA53E2501CEB6C5600EC4438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA53E24E1CEB6C5600EC4438 /* Main.storyboard */; };
+		CA53E2521CEB6C5600EC4438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA53E2511CEB6C5600EC4438 /* Assets.xcassets */; };
+		CA53E2551CEB6C5700EC4438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA53E2531CEB6C5700EC4438 /* LaunchScreen.storyboard */; };
+		CA53E2601CEB6C5700EC4438 /* SeedingApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53E25F1CEB6C5700EC4438 /* SeedingApplicationTests.swift */; };
+		CA53E26B1CEB6C5700EC4438 /* SeedingApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53E26A1CEB6C5700EC4438 /* SeedingApplicationUITests.swift */; };
+		CA53E2791CEB7AED00EC4438 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA53E2781CEB7AED00EC4438 /* CoreLocation.framework */; };
+		CA53E27B1CEB7C8400EC4438 /* GPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53E27A1CEB7C8400EC4438 /* GPS.swift */; };
+		CA53E27D1CEBBA6C00EC4438 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53E27C1CEBBA6C00EC4438 /* MainScreen.swift */; };
+		CA5D20231D0CD838000F5762 /* Default Images in Resources */ = {isa = PBXBuildFile; fileRef = CA5D20201D0CD837000F5762 /* Default Images */; };
+		CA5D20241D0CD838000F5762 /* Helper Classes in Resources */ = {isa = PBXBuildFile; fileRef = CA5D20211D0CD838000F5762 /* Helper Classes */; };
+		CA5D20251D0CD838000F5762 /* Products Images in Resources */ = {isa = PBXBuildFile; fileRef = CA5D20221D0CD838000F5762 /* Products Images */; };
+		CA5D20271D0CE9B9000F5762 /* FeekesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D20261D0CE9B9000F5762 /* FeekesTableViewController.swift */; };
+		CA5D202A1D0CEF39000F5762 /* Feekes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D20281D0CEF39000F5762 /* Feekes.swift */; };
+		CA5D202B1D0CEF39000F5762 /* FeekesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D20291D0CEF39000F5762 /* FeekesData.swift */; };
+		CA5D202E1D0CF55E000F5762 /* default@1x.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CA5D202C1D0CF55E000F5762 /* default@1x.pdf */; };
+		CA5D202F1D0CF55E000F5762 /* default@2x.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CA5D202D1D0CF55E000F5762 /* default@2x.pdf */; };
+		CA5D20311D0D0342000F5762 /* FeekesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D20301D0D0342000F5762 /* FeekesTableViewCell.swift */; };
+		CA8E73831D8DE07B001925B2 /* startup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73821D8DE07B001925B2 /* startup.swift */; };
+		CA8E73851D8DE8B7001925B2 /* png in Resources */ = {isa = PBXBuildFile; fileRef = CA8E73841D8DE8B7001925B2 /* png */; };
+		CA8E73871D8E1161001925B2 /* background3 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = CA8E73861D8E1161001925B2 /* background3 copy.png */; };
+		CA8E73891D9073CF001925B2 /* tabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73881D9073CE001925B2 /* tabbarViewController.swift */; };
+		CA8E738F1D971541001925B2 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E738B1D971541001925B2 /* Fabric.framework */; };
+		CA8E73901D971542001925B2 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E738C1D971541001925B2 /* TwitterKit.framework */; };
+		CA8E73911D971542001925B2 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA8E738D1D971541001925B2 /* TwitterKitResources.bundle */; };
+		CA8E73921D971542001925B2 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E738E1D971541001925B2 /* TwitterCore.framework */; };
+		CA8E73941D971822001925B2 /* twitter_wheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73931D971822001925B2 /* twitter_wheat.swift */; };
+		CA8E73961D972143001925B2 /* twitter_precision.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73951D972143001925B2 /* twitter_precision.swift */; };
+		CA8E739A1D97335D001925B2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E73971D97335D001925B2 /* FBSDKCoreKit.framework */; };
+		CA8E739B1D97335D001925B2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E73981D97335D001925B2 /* FBSDKLoginKit.framework */; };
+		CA8E739C1D97335D001925B2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E73991D97335D001925B2 /* FBSDKShareKit.framework */; };
+		CA8E739E1D985766001925B2 /* facebook_wheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E739D1D985766001925B2 /* facebook_wheat.swift */; };
+		CA8E73A01D985BBF001925B2 /* facebook_precision.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E739F1D985BBF001925B2 /* facebook_precision.swift */; };
+		CA8E73A21D986CDB001925B2 /* ContactUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73A11D986CDB001925B2 /* ContactUS.swift */; };
+		CA8E73A41D98C6E1001925B2 /* contactus_precisionag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73A31D98C6E1001925B2 /* contactus_precisionag.swift */; };
+		CAD8A5021CED9E13003F73E3 /* VarietyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD8A5011CED9E13003F73E3 /* VarietyTable.swift */; };
+		CADE088B1D3FD22E00764D03 /* VarietyDiscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE088A1D3FD22E00764D03 /* VarietyDiscription.swift */; };
+		CADE088F1D4A4AFC00764D03 /* VarietyAppendix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */; };
+		CADE08911D4A4C0700764D03 /* Appendix.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CADE08901D4A4C0700764D03 /* Appendix.pdf */; };
+		CAF5BED41D510A2800D644DA /* Acknowledgement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5BED31D510A2800D644DA /* Acknowledgement.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA53E25C1CEB6C5700EC4438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA53E23D1CEB6C5600EC4438 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA53E2441CEB6C5600EC4438;
+			remoteInfo = SeedingApplication;
+		};
+		CA53E2671CEB6C5700EC4438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA53E23D1CEB6C5600EC4438 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA53E2441CEB6C5600EC4438;
+			remoteInfo = SeedingApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA25913A1D15CB950010E037 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		CA25913C1D15DA890010E037 /* Seeding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seeding.swift; sourceTree = "<group>"; };
+		CA25913E1D16583B0010E037 /* FinalSeeding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalSeeding.swift; sourceTree = "<group>"; };
+		CA2591401D166DCD0010E037 /* UnknownSeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnknownSeed.swift; sourceTree = "<group>"; };
+		CA2591421D1686640010E037 /* KnownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnownView.swift; sourceTree = "<group>"; };
+		CA44F6361CFFE1A300ED79DB /* Variety-Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Variety-Filter.swift"; sourceTree = "<group>"; };
+		CA4D70C61CF40C2C00CE8B3F /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		CA4D70C81CF40DA200CE8B3F /* Nitrogen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nitrogen.swift; sourceTree = "<group>"; };
+		CA4D70CA1CF51F2E00CE8B3F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		CA4D70CC1CF51FD700CE8B3F /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		CA4D70CE1CF5203900CE8B3F /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		CA4D70D01CF5237800CE8B3F /* ZoomedPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomedPhotoViewController.swift; sourceTree = "<group>"; };
+		CA4D70D51CF684F800CE8B3F /* Black Chaff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Black Chaff.swift"; sourceTree = "<group>"; };
+		CA4D70D71CF689AD00CE8B3F /* Common Bunt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Common Bunt.swift"; sourceTree = "<group>"; };
+		CA4D70DF1CF69CF900CE8B3F /* Ergot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ergot.swift; sourceTree = "<group>"; };
+		CA4D70E11CF69D5800CE8B3F /* Fusarium head blight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fusarium head blight.swift"; sourceTree = "<group>"; };
+		CA4D70E31CF69DC700CE8B3F /* Loose smut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Loose smut.swift"; sourceTree = "<group>"; };
+		CA4D70E51CF69E1100CE8B3F /* Sooty head molds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sooty head molds.swift"; sourceTree = "<group>"; };
+		CA4D70E71CF69E2F00CE8B3F /* Stagonospora nodorum blotch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stagonospora nodorum blotch.swift"; sourceTree = "<group>"; };
+		CA4D70EA1CF6D45200CE8B3F /* Bacterial Streak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bacterial Streak.swift"; sourceTree = "<group>"; };
+		CA4D70EC1CF6D49800CE8B3F /* Barley Yellow Dwarf .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Barley Yellow Dwarf .swift"; sourceTree = "<group>"; };
+		CA4D70EE1CF6D4BF00CE8B3F /* Leaf Rust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Leaf Rust.swift"; sourceTree = "<group>"; };
+		CA4D70F01CF6D4E500CE8B3F /* Powdery Mildew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Powdery Mildew.swift"; sourceTree = "<group>"; };
+		CA4D70F21CF6D50D00CE8B3F /* Septoria Tritici Blotch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Septoria Tritici Blotch.swift"; sourceTree = "<group>"; };
+		CA4D70F41CF6D54B00CE8B3F /* Stem Rust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stem Rust.swift"; sourceTree = "<group>"; };
+		CA4D70F61CF6D57C00CE8B3F /* Stripe Rust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stripe Rust.swift"; sourceTree = "<group>"; };
+		CA4D70F81CF6D59800CE8B3F /* Tan spot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tan spot.swift"; sourceTree = "<group>"; };
+		CA4D70FA1CF6D5AF00CE8B3F /* Wheat Soilborne Mosaic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wheat Soilborne Mosaic.swift"; sourceTree = "<group>"; };
+		CA4D70FC1CF6D5CF00CE8B3F /* Wheat Spindle Streak Mosaic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wheat Spindle Streak Mosaic.swift"; sourceTree = "<group>"; };
+		CA4D70FE1CF6D5EB00CE8B3F /* Wheat Streak Mosaic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wheat Streak Mosaic.swift"; sourceTree = "<group>"; };
+		CA4D71001CF6D64600CE8B3F /* Stagonospora Nodorum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stagonospora Nodorum.swift"; sourceTree = "<group>"; };
+		CA4D71031CF778C100CE8B3F /* Cephalosporium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cephalosporium.swift; sourceTree = "<group>"; };
+		CA4D71051CF778E200CE8B3F /* Common Root rot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Common Root rot.swift"; sourceTree = "<group>"; };
+		CA4D71071CF778FB00CE8B3F /* Eyespot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eyespot.swift; sourceTree = "<group>"; };
+		CA4D71091CF77B9400CE8B3F /* Fusarium root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fusarium root.swift"; sourceTree = "<group>"; };
+		CA4D710B1CF77BBD00CE8B3F /* Rhizoctonia Root rot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rhizoctonia Root rot.swift"; sourceTree = "<group>"; };
+		CA4D710D1CF77BD700CE8B3F /* Take-all.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Take-all.swift"; sourceTree = "<group>"; };
+		CA53E2451CEB6C5600EC4438 /* Kansas Wheat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kansas Wheat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA53E2481CEB6C5600EC4438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA53E24A1CEB6C5600EC4438 /* Nutrient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrient.swift; sourceTree = "<group>"; };
+		CA53E24C1CEB6C5600EC4438 /* Diseases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diseases.swift; sourceTree = "<group>"; };
+		CA53E24F1CEB6C5600EC4438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA53E2511CEB6C5600EC4438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA53E2541CEB6C5700EC4438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA53E2561CEB6C5700EC4438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA53E25B1CEB6C5700EC4438 /* SeedingApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeedingApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA53E25F1CEB6C5700EC4438 /* SeedingApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedingApplicationTests.swift; sourceTree = "<group>"; };
+		CA53E2611CEB6C5700EC4438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA53E2661CEB6C5700EC4438 /* SeedingApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeedingApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA53E26A1CEB6C5700EC4438 /* SeedingApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedingApplicationUITests.swift; sourceTree = "<group>"; };
+		CA53E26C1CEB6C5700EC4438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA53E2781CEB7AED00EC4438 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CA53E27A1CEB7C8400EC4438 /* GPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPS.swift; sourceTree = "<group>"; };
+		CA53E27C1CEBBA6C00EC4438 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		CA5D20201D0CD837000F5762 /* Default Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Default Images"; sourceTree = "<group>"; };
+		CA5D20211D0CD838000F5762 /* Helper Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Helper Classes"; sourceTree = "<group>"; };
+		CA5D20221D0CD838000F5762 /* Products Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Products Images"; sourceTree = "<group>"; };
+		CA5D20261D0CE9B9000F5762 /* FeekesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeekesTableViewController.swift; sourceTree = "<group>"; };
+		CA5D20281D0CEF39000F5762 /* Feekes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feekes.swift; path = "Helper Classes/Feekes.swift"; sourceTree = "<group>"; };
+		CA5D20291D0CEF39000F5762 /* FeekesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeekesData.swift; path = "Helper Classes/FeekesData.swift"; sourceTree = "<group>"; };
+		CA5D202C1D0CF55E000F5762 /* default@1x.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "default@1x.pdf"; path = "Default Images/default@1x.pdf"; sourceTree = "<group>"; };
+		CA5D202D1D0CF55E000F5762 /* default@2x.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "default@2x.pdf"; path = "Default Images/default@2x.pdf"; sourceTree = "<group>"; };
+		CA5D20301D0D0342000F5762 /* FeekesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeekesTableViewCell.swift; sourceTree = "<group>"; };
+		CA8E73821D8DE07B001925B2 /* startup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startup.swift; sourceTree = "<group>"; };
+		CA8E73841D8DE8B7001925B2 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; path = png; sourceTree = "<group>"; };
+		CA8E73861D8E1161001925B2 /* background3 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background3 copy.png"; sourceTree = "<group>"; };
+		CA8E73881D9073CE001925B2 /* tabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabbarViewController.swift; sourceTree = "<group>"; };
+		CA8E738B1D971541001925B2 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		CA8E738C1D971541001925B2 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		CA8E738D1D971541001925B2 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		CA8E738E1D971541001925B2 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		CA8E73931D971822001925B2 /* twitter_wheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twitter_wheat.swift; sourceTree = "<group>"; };
+		CA8E73951D972143001925B2 /* twitter_precision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twitter_precision.swift; sourceTree = "<group>"; };
+		CA8E73971D97335D001925B2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CA8E73981D97335D001925B2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CA8E73991D97335D001925B2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CA8E739D1D985766001925B2 /* facebook_wheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebook_wheat.swift; sourceTree = "<group>"; };
+		CA8E739F1D985BBF001925B2 /* facebook_precision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebook_precision.swift; sourceTree = "<group>"; };
+		CA8E73A11D986CDB001925B2 /* ContactUS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUS.swift; sourceTree = "<group>"; };
+		CA8E73A31D98C6E1001925B2 /* contactus_precisionag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactus_precisionag.swift; sourceTree = "<group>"; };
+		CAD8A5011CED9E13003F73E3 /* VarietyTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyTable.swift; sourceTree = "<group>"; };
+		CADE088A1D3FD22E00764D03 /* VarietyDiscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyDiscription.swift; sourceTree = "<group>"; };
+		CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyAppendix.swift; sourceTree = "<group>"; };
+		CADE08901D4A4C0700764D03 /* Appendix.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Appendix.pdf; sourceTree = "<group>"; };
+		CAF5BED31D510A2800D644DA /* Acknowledgement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Acknowledgement.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA53E2421CEB6C5600EC4438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8E739A1D97335D001925B2 /* FBSDKCoreKit.framework in Frameworks */,
+				CA53E2791CEB7AED00EC4438 /* CoreLocation.framework in Frameworks */,
+				CA8E739B1D97335D001925B2 /* FBSDKLoginKit.framework in Frameworks */,
+				CA8E739C1D97335D001925B2 /* FBSDKShareKit.framework in Frameworks */,
+				CA8E73921D971542001925B2 /* TwitterCore.framework in Frameworks */,
+				CA8E738F1D971541001925B2 /* Fabric.framework in Frameworks */,
+				CA8E73901D971542001925B2 /* TwitterKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA53E2581CEB6C5700EC4438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA53E2631CEB6C5700EC4438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA4D70D41CF684AB00CE8B3F /* Head Diseases */ = {
+			isa = PBXGroup;
+			children = (
+				CA4D70D51CF684F800CE8B3F /* Black Chaff.swift */,
+				CA4D70D71CF689AD00CE8B3F /* Common Bunt.swift */,
+				CA4D70DF1CF69CF900CE8B3F /* Ergot.swift */,
+				CA4D70E11CF69D5800CE8B3F /* Fusarium head blight.swift */,
+				CA4D70E31CF69DC700CE8B3F /* Loose smut.swift */,
+				CA4D70E51CF69E1100CE8B3F /* Sooty head molds.swift */,
+				CA4D70E71CF69E2F00CE8B3F /* Stagonospora nodorum blotch.swift */,
+			);
+			name = "Head Diseases";
+			sourceTree = "<group>";
+		};
+		CA4D70E91CF6D3D400CE8B3F /* Foliar Diswases */ = {
+			isa = PBXGroup;
+			children = (
+				CA4D70EA1CF6D45200CE8B3F /* Bacterial Streak.swift */,
+				CA4D70EC1CF6D49800CE8B3F /* Barley Yellow Dwarf .swift */,
+				CA4D70EE1CF6D4BF00CE8B3F /* Leaf Rust.swift */,
+				CA4D70F01CF6D4E500CE8B3F /* Powdery Mildew.swift */,
+				CA4D70F21CF6D50D00CE8B3F /* Septoria Tritici Blotch.swift */,
+				CA4D70F41CF6D54B00CE8B3F /* Stem Rust.swift */,
+				CA4D70F61CF6D57C00CE8B3F /* Stripe Rust.swift */,
+				CA4D70F81CF6D59800CE8B3F /* Tan spot.swift */,
+				CA4D70FA1CF6D5AF00CE8B3F /* Wheat Soilborne Mosaic.swift */,
+				CA4D70FC1CF6D5CF00CE8B3F /* Wheat Spindle Streak Mosaic.swift */,
+				CA4D70FE1CF6D5EB00CE8B3F /* Wheat Streak Mosaic.swift */,
+				CA4D71001CF6D64600CE8B3F /* Stagonospora Nodorum.swift */,
+			);
+			name = "Foliar Diswases";
+			sourceTree = "<group>";
+		};
+		CA4D71021CF767BB00CE8B3F /* Stem Diseases */ = {
+			isa = PBXGroup;
+			children = (
+				CA4D71031CF778C100CE8B3F /* Cephalosporium.swift */,
+				CA4D71051CF778E200CE8B3F /* Common Root rot.swift */,
+				CA4D71071CF778FB00CE8B3F /* Eyespot.swift */,
+				CA4D71091CF77B9400CE8B3F /* Fusarium root.swift */,
+				CA4D710B1CF77BBD00CE8B3F /* Rhizoctonia Root rot.swift */,
+				CA4D710D1CF77BD700CE8B3F /* Take-all.swift */,
+			);
+			name = "Stem Diseases";
+			sourceTree = "<group>";
+		};
+		CA53E23C1CEB6C5600EC4438 = {
+			isa = PBXGroup;
+			children = (
+				CA8E73971D97335D001925B2 /* FBSDKCoreKit.framework */,
+				CA8E73981D97335D001925B2 /* FBSDKLoginKit.framework */,
+				CA8E73991D97335D001925B2 /* FBSDKShareKit.framework */,
+				CA8E738B1D971541001925B2 /* Fabric.framework */,
+				CA8E738C1D971541001925B2 /* TwitterKit.framework */,
+				CA8E738D1D971541001925B2 /* TwitterKitResources.bundle */,
+				CA8E738E1D971541001925B2 /* TwitterCore.framework */,
+				CA53E2781CEB7AED00EC4438 /* CoreLocation.framework */,
+				CA53E2471CEB6C5600EC4438 /* KansasWheat */,
+				CA53E25E1CEB6C5700EC4438 /* KansasWheatTests */,
+				CA53E2691CEB6C5700EC4438 /* KansasWheatUITests */,
+				CA53E2461CEB6C5600EC4438 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA53E2461CEB6C5600EC4438 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA53E2451CEB6C5600EC4438 /* Kansas Wheat.app */,
+				CA53E25B1CEB6C5700EC4438 /* SeedingApplicationTests.xctest */,
+				CA53E2661CEB6C5700EC4438 /* SeedingApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA53E2471CEB6C5600EC4438 /* KansasWheat */ = {
+			isa = PBXGroup;
+			children = (
+				CA5D20201D0CD837000F5762 /* Default Images */,
+				CA5D20211D0CD838000F5762 /* Helper Classes */,
+				CA5D20221D0CD838000F5762 /* Products Images */,
+				CA53E2481CEB6C5600EC4438 /* AppDelegate.swift */,
+				CA53E24A1CEB6C5600EC4438 /* Nutrient.swift */,
+				CAF5BED31D510A2800D644DA /* Acknowledgement.swift */,
+				CA5D20281D0CEF39000F5762 /* Feekes.swift */,
+				CA8E73821D8DE07B001925B2 /* startup.swift */,
+				CA2591421D1686640010E037 /* KnownView.swift */,
+				CA8E73881D9073CE001925B2 /* tabbarViewController.swift */,
+				CADE088A1D3FD22E00764D03 /* VarietyDiscription.swift */,
+				CA5D20291D0CEF39000F5762 /* FeekesData.swift */,
+				CA25913C1D15DA890010E037 /* Seeding.swift */,
+				CA8E73A11D986CDB001925B2 /* ContactUS.swift */,
+				CA8E73A31D98C6E1001925B2 /* contactus_precisionag.swift */,
+				CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */,
+				CA8E739D1D985766001925B2 /* facebook_wheat.swift */,
+				CADE08901D4A4C0700764D03 /* Appendix.pdf */,
+				CA53E24C1CEB6C5600EC4438 /* Diseases.swift */,
+				CA25913E1D16583B0010E037 /* FinalSeeding.swift */,
+				CA8E739F1D985BBF001925B2 /* facebook_precision.swift */,
+				CA53E24E1CEB6C5600EC4438 /* Main.storyboard */,
+				CA5D20301D0D0342000F5762 /* FeekesTableViewCell.swift */,
+				CA2591401D166DCD0010E037 /* UnknownSeed.swift */,
+				CA5D20261D0CE9B9000F5762 /* FeekesTableViewController.swift */,
+				CA25913A1D15CB950010E037 /* Volume.swift */,
+				CA8E73931D971822001925B2 /* twitter_wheat.swift */,
+				CA8E73951D972143001925B2 /* twitter_precision.swift */,
+				CA4D70D01CF5237800CE8B3F /* ZoomedPhotoViewController.swift */,
+				CA4D70CE1CF5203900CE8B3F /* UIImage.swift */,
+				CA4D71021CF767BB00CE8B3F /* Stem Diseases */,
+				CA4D70E91CF6D3D400CE8B3F /* Foliar Diswases */,
+				CA4D70D41CF684AB00CE8B3F /* Head Diseases */,
+				CA4D70CC1CF51FD700CE8B3F /* PhotoCell.swift */,
+				CA8E73841D8DE8B7001925B2 /* png */,
+				CA4D70CA1CF51F2E00CE8B3F /* CollectionViewController.swift */,
+				CA8E73861D8E1161001925B2 /* background3 copy.png */,
+				CA44F6361CFFE1A300ED79DB /* Variety-Filter.swift */,
+				CA4D70C81CF40DA200CE8B3F /* Nitrogen.swift */,
+				CAD8A5011CED9E13003F73E3 /* VarietyTable.swift */,
+				CA53E27C1CEBBA6C00EC4438 /* MainScreen.swift */,
+				CA53E27A1CEB7C8400EC4438 /* GPS.swift */,
+				CA53E2511CEB6C5600EC4438 /* Assets.xcassets */,
+				CA5D202C1D0CF55E000F5762 /* default@1x.pdf */,
+				CA5D202D1D0CF55E000F5762 /* default@2x.pdf */,
+				CA4D70C61CF40C2C00CE8B3F /* info.png */,
+				CA53E2531CEB6C5700EC4438 /* LaunchScreen.storyboard */,
+				CA53E2561CEB6C5700EC4438 /* Info.plist */,
+			);
+			name = KansasWheat;
+			path = SeedingApplication;
+			sourceTree = "<group>";
+		};
+		CA53E25E1CEB6C5700EC4438 /* KansasWheatTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA53E25F1CEB6C5700EC4438 /* SeedingApplicationTests.swift */,
+				CA53E2611CEB6C5700EC4438 /* Info.plist */,
+			);
+			name = KansasWheatTests;
+			path = SeedingApplicationTests;
+			sourceTree = "<group>";
+		};
+		CA53E2691CEB6C5700EC4438 /* KansasWheatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA53E26A1CEB6C5700EC4438 /* SeedingApplicationUITests.swift */,
+				CA53E26C1CEB6C5700EC4438 /* Info.plist */,
+			);
+			name = KansasWheatUITests;
+			path = SeedingApplicationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA53E2441CEB6C5600EC4438 /* SeedingApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA53E26F1CEB6C5700EC4438 /* Build configuration list for PBXNativeTarget "SeedingApplication" */;
+			buildPhases = (
+				CA53E2411CEB6C5600EC4438 /* Sources */,
+				CA53E2421CEB6C5600EC4438 /* Frameworks */,
+				CA53E2431CEB6C5600EC4438 /* Resources */,
+				CA8E738A1D97142D001925B2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeedingApplication;
+			productName = SeedingApplication;
+			productReference = CA53E2451CEB6C5600EC4438 /* Kansas Wheat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA53E25A1CEB6C5700EC4438 /* SeedingApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA53E2721CEB6C5700EC4438 /* Build configuration list for PBXNativeTarget "SeedingApplicationTests" */;
+			buildPhases = (
+				CA53E2571CEB6C5700EC4438 /* Sources */,
+				CA53E2581CEB6C5700EC4438 /* Frameworks */,
+				CA53E2591CEB6C5700EC4438 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA53E25D1CEB6C5700EC4438 /* PBXTargetDependency */,
+			);
+			name = SeedingApplicationTests;
+			productName = SeedingApplicationTests;
+			productReference = CA53E25B1CEB6C5700EC4438 /* SeedingApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA53E2651CEB6C5700EC4438 /* SeedingApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA53E2751CEB6C5700EC4438 /* Build configuration list for PBXNativeTarget "SeedingApplicationUITests" */;
+			buildPhases = (
+				CA53E2621CEB6C5700EC4438 /* Sources */,
+				CA53E2631CEB6C5700EC4438 /* Frameworks */,
+				CA53E2641CEB6C5700EC4438 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA53E2681CEB6C5700EC4438 /* PBXTargetDependency */,
+			);
+			name = SeedingApplicationUITests;
+			productName = SeedingApplicationUITests;
+			productReference = CA53E2661CEB6C5700EC4438 /* SeedingApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA53E23D1CEB6C5600EC4438 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Shubh Chopra";
+				TargetAttributes = {
+					CA53E2441CEB6C5600EC4438 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5C2CJK47U2;
+						LastSwiftMigration = 0800;
+					};
+					CA53E25A1CEB6C5700EC4438 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+					};
+					CA53E2651CEB6C5700EC4438 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+						TestTargetID = CA53E2441CEB6C5600EC4438;
+					};
+				};
+			};
+			buildConfigurationList = CA53E2401CEB6C5600EC4438 /* Build configuration list for PBXProject "SeedingApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA53E23C1CEB6C5600EC4438;
+			productRefGroup = CA53E2461CEB6C5600EC4438 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA53E2441CEB6C5600EC4438 /* SeedingApplication */,
+				CA53E25A1CEB6C5700EC4438 /* SeedingApplicationTests */,
+				CA53E2651CEB6C5700EC4438 /* SeedingApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA53E2431CEB6C5600EC4438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5D20251D0CD838000F5762 /* Products Images in Resources */,
+				CA53E2551CEB6C5700EC4438 /* LaunchScreen.storyboard in Resources */,
+				CA53E2521CEB6C5600EC4438 /* Assets.xcassets in Resources */,
+				CA5D20231D0CD838000F5762 /* Default Images in Resources */,
+				CA5D202E1D0CF55E000F5762 /* default@1x.pdf in Resources */,
+				CA53E2501CEB6C5600EC4438 /* Main.storyboard in Resources */,
+				CA8E73871D8E1161001925B2 /* background3 copy.png in Resources */,
+				CA8E73911D971542001925B2 /* TwitterKitResources.bundle in Resources */,
+				CA8E73851D8DE8B7001925B2 /* png in Resources */,
+				CA5D20241D0CD838000F5762 /* Helper Classes in Resources */,
+				CA4D70C71CF40C2C00CE8B3F /* info.png in Resources */,
+				CA5D202F1D0CF55E000F5762 /* default@2x.pdf in Resources */,
+				CADE08911D4A4C0700764D03 /* Appendix.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA53E2591CEB6C5700EC4438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA53E2641CEB6C5700EC4438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA8E738A1D97142D001925B2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 515352336a74110d3ae1387daa5050811783c870 6af90011f74101f697f00b102f133e119d3be2cbc588841ecb5fdf8b673d5d58\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA53E2411CEB6C5600EC4438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4D70ED1CF6D49800CE8B3F /* Barley Yellow Dwarf .swift in Sources */,
+				CA4D70F51CF6D54B00CE8B3F /* Stem Rust.swift in Sources */,
+				CA53E24D1CEB6C5600EC4438 /* Diseases.swift in Sources */,
+				CA4D70D61CF684F900CE8B3F /* Black Chaff.swift in Sources */,
+				CA4D70CF1CF5203900CE8B3F /* UIImage.swift in Sources */,
+				CA4D70E01CF69CF900CE8B3F /* Ergot.swift in Sources */,
+				CA4D70F71CF6D57C00CE8B3F /* Stripe Rust.swift in Sources */,
+				CA4D70E21CF69D5800CE8B3F /* Fusarium head blight.swift in Sources */,
+				CA4D71081CF778FB00CE8B3F /* Eyespot.swift in Sources */,
+				CA4D70CD1CF51FD700CE8B3F /* PhotoCell.swift in Sources */,
+				CA5D202A1D0CEF39000F5762 /* Feekes.swift in Sources */,
+				CA8E739E1D985766001925B2 /* facebook_wheat.swift in Sources */,
+				CA4D70E41CF69DC700CE8B3F /* Loose smut.swift in Sources */,
+				CA4D70F91CF6D59800CE8B3F /* Tan spot.swift in Sources */,
+				CA8E73A21D986CDB001925B2 /* ContactUS.swift in Sources */,
+				CA53E2491CEB6C5600EC4438 /* AppDelegate.swift in Sources */,
+				CA53E27D1CEBBA6C00EC4438 /* MainScreen.swift in Sources */,
+				CA5D20311D0D0342000F5762 /* FeekesTableViewCell.swift in Sources */,
+				CA4D70EF1CF6D4BF00CE8B3F /* Leaf Rust.swift in Sources */,
+				CA4D70FD1CF6D5CF00CE8B3F /* Wheat Spindle Streak Mosaic.swift in Sources */,
+				CAD8A5021CED9E13003F73E3 /* VarietyTable.swift in Sources */,
+				CA4D70FB1CF6D5AF00CE8B3F /* Wheat Soilborne Mosaic.swift in Sources */,
+				CA4D710A1CF77B9400CE8B3F /* Fusarium root.swift in Sources */,
+				CA8E73831D8DE07B001925B2 /* startup.swift in Sources */,
+				CA44F6371CFFE1A300ED79DB /* Variety-Filter.swift in Sources */,
+				CA8E73A01D985BBF001925B2 /* facebook_precision.swift in Sources */,
+				CA2591431D1686640010E037 /* KnownView.swift in Sources */,
+				CA8E73A41D98C6E1001925B2 /* contactus_precisionag.swift in Sources */,
+				CA4D70D81CF689AD00CE8B3F /* Common Bunt.swift in Sources */,
+				CA4D71061CF778E200CE8B3F /* Common Root rot.swift in Sources */,
+				CA4D70EB1CF6D45200CE8B3F /* Bacterial Streak.swift in Sources */,
+				CA5D202B1D0CEF39000F5762 /* FeekesData.swift in Sources */,
+				CA4D70CB1CF51F2E00CE8B3F /* CollectionViewController.swift in Sources */,
+				CA4D710C1CF77BBD00CE8B3F /* Rhizoctonia Root rot.swift in Sources */,
+				CA4D70E81CF69E2F00CE8B3F /* Stagonospora nodorum blotch.swift in Sources */,
+				CA53E27B1CEB7C8400EC4438 /* GPS.swift in Sources */,
+				CA53E24B1CEB6C5600EC4438 /* Nutrient.swift in Sources */,
+				CA8E73891D9073CF001925B2 /* tabbarViewController.swift in Sources */,
+				CA5D20271D0CE9B9000F5762 /* FeekesTableViewController.swift in Sources */,
+				CA25913D1D15DA8A0010E037 /* Seeding.swift in Sources */,
+				CA4D70FF1CF6D5EB00CE8B3F /* Wheat Streak Mosaic.swift in Sources */,
+				CA25913B1D15CB950010E037 /* Volume.swift in Sources */,
+				CA4D710E1CF77BD700CE8B3F /* Take-all.swift in Sources */,
+				CA4D70F31CF6D50D00CE8B3F /* Septoria Tritici Blotch.swift in Sources */,
+				CA4D70D11CF5237800CE8B3F /* ZoomedPhotoViewController.swift in Sources */,
+				CA8E73941D971822001925B2 /* twitter_wheat.swift in Sources */,
+				CADE088B1D3FD22E00764D03 /* VarietyDiscription.swift in Sources */,
+				CA4D71011CF6D64600CE8B3F /* Stagonospora Nodorum.swift in Sources */,
+				CA4D70E61CF69E1100CE8B3F /* Sooty head molds.swift in Sources */,
+				CA8E73961D972143001925B2 /* twitter_precision.swift in Sources */,
+				CA4D70C91CF40DA200CE8B3F /* Nitrogen.swift in Sources */,
+				CA4D71041CF778C200CE8B3F /* Cephalosporium.swift in Sources */,
+				CAF5BED41D510A2800D644DA /* Acknowledgement.swift in Sources */,
+				CA25913F1D16583B0010E037 /* FinalSeeding.swift in Sources */,
+				CADE088F1D4A4AFC00764D03 /* VarietyAppendix.swift in Sources */,
+				CA2591411D166DCD0010E037 /* UnknownSeed.swift in Sources */,
+				CA4D70F11CF6D4E500CE8B3F /* Powdery Mildew.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA53E2571CEB6C5700EC4438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA53E2601CEB6C5700EC4438 /* SeedingApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA53E2621CEB6C5700EC4438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA53E26B1CEB6C5700EC4438 /* SeedingApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA53E25D1CEB6C5700EC4438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA53E2441CEB6C5600EC4438 /* SeedingApplication */;
+			targetProxy = CA53E25C1CEB6C5700EC4438 /* PBXContainerItemProxy */;
+		};
+		CA53E2681CEB6C5700EC4438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA53E2441CEB6C5600EC4438 /* SeedingApplication */;
+			targetProxy = CA53E2671CEB6C5700EC4438 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA53E24E1CEB6C5600EC4438 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA53E24F1CEB6C5600EC4438 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA53E2531CEB6C5700EC4438 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA53E2541CEB6C5700EC4438 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA53E26D1CEB6C5700EC4438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA53E26E1CEB6C5700EC4438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA53E2701CEB6C5700EC4438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = SeedingApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kansas-Wheat";
+				PRODUCT_NAME = "Kansas Wheat";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CA53E2711CEB6C5700EC4438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = SeedingApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kansas-Wheat";
+				PRODUCT_NAME = "Kansas Wheat";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CA53E2731CEB6C5700EC4438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SeedingApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "K-statePlantandSciences.SeedingApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		CA53E2741CEB6C5700EC4438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SeedingApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "K-statePlantandSciences.SeedingApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		CA53E2761CEB6C5700EC4438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SeedingApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "K-statePlantandSciences.SeedingApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = SeedingApplication;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CA53E2771CEB6C5700EC4438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SeedingApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "K-statePlantandSciences.SeedingApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = SeedingApplication;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA53E2401CEB6C5600EC4438 /* Build configuration list for PBXProject "SeedingApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA53E26D1CEB6C5700EC4438 /* Debug */,
+				CA53E26E1CEB6C5700EC4438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA53E26F1CEB6C5700EC4438 /* Build configuration list for PBXNativeTarget "SeedingApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA53E2701CEB6C5700EC4438 /* Debug */,
+				CA53E2711CEB6C5700EC4438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA53E2721CEB6C5700EC4438 /* Build configuration list for PBXNativeTarget "SeedingApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA53E2731CEB6C5700EC4438 /* Debug */,
+				CA53E2741CEB6C5700EC4438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA53E2751CEB6C5700EC4438 /* Build configuration list for PBXNativeTarget "SeedingApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA53E2761CEB6C5700EC4438 /* Debug */,
+				CA53E2771CEB6C5700EC4438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA53E23D1CEB6C5600EC4438 /* Project object */;
+}
