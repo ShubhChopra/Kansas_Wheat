@@ -22,14 +22,14 @@ class FeekesTableViewCell: UITableViewCell {
         let tap = UIGestureRecognizer(target: self, action: #selector(FeekesTableViewCell.imagetap(_:)))
         ImageView.addGestureRecognizer(tap)
     }
-    func imagetap(sender: UIGestureRecognizer)
+    func imagetap(_ sender: UIGestureRecognizer)
     {
         print("Hello");
     }
-    func configureCellWith(feekes:Feekes)
+    func configureCellWith(_ feekes:Feekes)
     {
         ImageView.clipsToBounds = true
-        ImageView.contentMode = UIViewContentMode.ScaleAspectFit
+        ImageView.contentMode = UIViewContentMode.scaleAspectFit
         imageView?.image = feekes.image
         Title.text = feekes.title
         Discription.text = feekes.description

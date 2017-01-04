@@ -32,7 +32,7 @@ class MainScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Kansas Wheat"
-        textview.backgroundColor = UIColor.clearColor();
+        textview.backgroundColor = UIColor.clear;
        // textview.textColor = UIColor.whiteColor();
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background2")!)
 
@@ -40,24 +40,24 @@ class MainScreen: UIViewController {
 }
 
     @IBOutlet weak var textview: UITextView!
-    @IBAction func Nutrient(sender: AnyObject) {
+    @IBAction func Nutrient(_ sender: AnyObject) {
         option = "V";
     }
 
-    @IBAction func Variety(sender: AnyObject) {
+    @IBAction func Variety(_ sender: AnyObject) {
         option = "N";
     }
     
-    @IBAction func Diseases(sender: AnyObject) {
+    @IBAction func Diseases(_ sender: AnyObject) {
         option = "D";
     }
     
-    @IBAction func Seeding(sender: AnyObject) {
+    @IBAction func Seeding(_ sender: AnyObject) {
         option = "S";
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-            let tabVC = segue.destinationViewController as! UITabBarController
+            let tabVC = segue.destination as! UITabBarController
             
             if(option == "V")
                 

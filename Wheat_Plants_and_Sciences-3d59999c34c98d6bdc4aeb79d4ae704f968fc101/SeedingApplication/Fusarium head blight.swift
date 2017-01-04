@@ -17,10 +17,10 @@ class FusariumHeadBlight: UIViewController {
         super.viewDidLoad()
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Fusarium" )
         {
-            if let destinationVC = segue.destinationViewController as? CollectionViewController {
+            if let destinationVC = segue.destination as? CollectionViewController {
                 destinationVC.photos = ["9","10","11"];
                 destinationVC.temp = 8;
             }

@@ -14,9 +14,9 @@ class facebook_wheat: UIViewController {
         override func viewDidLoad() {
         super.viewDidLoad()
             
-            let url = NSURL(string:"https://www.facebook.com/kansaswheat/")
+            let url = URL(string:"https://www.facebook.com/kansaswheat/")
             
-            webview.loadRequest(NSURLRequest(URL : url! ))  
+            webview.loadRequest(URLRequest(url : url! ))  
         // Do view setup here.
     }
     

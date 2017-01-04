@@ -17,10 +17,10 @@ class WheatSoilborne: UIViewController {
         super.viewDidLoad()
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Wheat Soilborne" )
         {
-            if let destinationVC = segue.destinationViewController as? CollectionViewController {
+            if let destinationVC = segue.destination as? CollectionViewController {
                 destinationVC.photos = ["49","50","51"];
                 destinationVC.temp = 48;
             }

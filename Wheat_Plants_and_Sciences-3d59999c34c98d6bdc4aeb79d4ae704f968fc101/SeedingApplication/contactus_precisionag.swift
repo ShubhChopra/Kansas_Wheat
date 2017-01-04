@@ -19,17 +19,17 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background2")!)
     }
     
-    @IBAction func callbutton(sender: AnyObject) {
+    @IBAction func callbutton(_ sender: AnyObject) {
         let phone = "7855320397";
-        UIApplication.sharedApplication().openURL(NSURL(string: "tel://7855320397")!)
+        UIApplication.shared.openURL(URL(string: "tel://7855320397")!)
         
         
     }
     
-    @IBAction func facebookbutton(sender: AnyObject) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/kansaswheat/")!)
+    @IBAction func facebookbutton(_ sender: AnyObject) {
+        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/kansaswheat/")!)
     }
-    @IBAction func emailbutton(sender: AnyObject) {
+    @IBAction func emailbutton(_ sender: AnyObject) {
         let toRecipents = ["ara4747@ksu.edu"]
         let mailVC: MFMailComposeViewController = MFMailComposeViewController()
         
@@ -38,11 +38,11 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
         mailVC.setSubject("Subject for email")
         mailVC.setMessageBody("Hello", isHTML: false)
         
-        presentViewController(mailVC, animated: true, completion: nil)
+        present(mailVC, animated: true, completion: nil)
         
     }
-    @IBAction func twitterbutton(sender: AnyObject) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://twitter.com/ksuprecisionag")!)
+    @IBAction func twitterbutton(_ sender: AnyObject) {
+        UIApplication.shared.openURL(URL(string: "https://twitter.com/ksuprecisionag")!)
         
     }
     

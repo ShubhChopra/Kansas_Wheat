@@ -17,16 +17,16 @@ class VarietyAppendix: UIViewController {
         super.viewDidLoad()
         
         self.title = varitytitle
-        let Alert = UIAlertController(title: "Alert!" , message: "Info for this variety is currently not available, you will find information for other vatieties on this page." , preferredStyle: UIAlertControllerStyle.Alert)
+        let Alert = UIAlertController(title: "Alert!" , message: "Info for this variety is currently not available, you will find information for other vatieties on this page." , preferredStyle: UIAlertControllerStyle.alert)
         
-        Alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
+        Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
             print(" Ok ")
                     }))
-            presentViewController(Alert, animated: true, completion: nil)
-        path = NSBundle.mainBundle().pathForResource("Appendix",ofType: "pdf")!
+            present(Alert, animated: true, completion: nil)
+        path = Bundle.main.path(forResource: "Appendix",ofType: "pdf")!
         
-        let url = NSURL.fileURLWithPath(path)
-        self.pdfview.loadRequest(NSURLRequest (URL: url))
+        let url = URL(fileURLWithPath: path)
+        self.pdfview.loadRequest(URLRequest (url: url))
 
         // Do any additional setup after loading the view.
     }

@@ -20,10 +20,10 @@ class tabbarViewController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showmain"{
             print("showLogin seque called")
-            let bottomBar = segue.destinationViewController as! startup
+            let bottomBar = segue.destination as! startup
             bottomBar.hidesBottomBarWhenPushed = true
             bottomBar.navigationItem.hidesBackButton = true
         }

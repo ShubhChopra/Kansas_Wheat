@@ -73,7 +73,7 @@ class VarietyFilter: UIViewController {
         }
         
 }
-    @IBAction func soil(sender: AnyObject) {
+    @IBAction func soil(_ sender: AnyObject) {
         switch ph.selectedSegmentIndex
         {
         case 0 :
@@ -86,7 +86,7 @@ class VarietyFilter: UIViewController {
 
     }
     
-    @IBAction func grazed(sender: AnyObject) {
+    @IBAction func grazed(_ sender: AnyObject) {
         switch grazed.selectedSegmentIndex
         {
         case 0 :
@@ -99,7 +99,7 @@ class VarietyFilter: UIViewController {
 
     }
     
-    @IBAction func Fungicide(sender: AnyObject) {
+    @IBAction func Fungicide(_ sender: AnyObject) {
         switch fungicide.selectedSegmentIndex
         {
         case 0 :
@@ -112,7 +112,7 @@ class VarietyFilter: UIViewController {
 
     }
    
-    @IBAction func lodging(sender: AnyObject) {
+    @IBAction func lodging(_ sender: AnyObject) {
         switch lodging.selectedSegmentIndex
         {
         case 0 :
@@ -125,7 +125,7 @@ class VarietyFilter: UIViewController {
 
     }
        
-    @IBAction func Clearfield(sender: AnyObject) {
+    @IBAction func Clearfield(_ sender: AnyObject) {
         switch clearfield.selectedSegmentIndex
         {
         case 0 :
@@ -137,7 +137,7 @@ class VarietyFilter: UIViewController {
         }
 
     }
-    @IBAction func Save(sender: AnyObject) {
+    @IBAction func Save(_ sender: AnyObject) {
         
         
     }

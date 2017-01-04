@@ -17,15 +17,15 @@ class Acknowledgement: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func Variety(sender: AnyObject) {
-        if let url = NSURL(string: "https://www.bookstore.ksre.ksu.edu/pubs/MF991.pdf") {
-            UIApplication.sharedApplication().openURL(url)
+    @IBAction func Variety(_ sender: AnyObject) {
+        if let url = URL(string: "https://www.bookstore.ksre.ksu.edu/pubs/MF991.pdf") {
+            UIApplication.shared.openURL(url)
         }
     }
     
-    @IBAction func Dis(sender: AnyObject) {
-        if let url = NSURL(string: "http://www.bookstore.ksre.ksu.edu/pubs/mf2994.pdf") {
-            UIApplication.sharedApplication().openURL(url)
+    @IBAction func Dis(_ sender: AnyObject) {
+        if let url = URL(string: "http://www.bookstore.ksre.ksu.edu/pubs/mf2994.pdf") {
+            UIApplication.shared.openURL(url)
         }
 
     }

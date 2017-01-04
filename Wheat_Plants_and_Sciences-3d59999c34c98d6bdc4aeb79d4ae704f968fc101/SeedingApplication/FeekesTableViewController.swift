@@ -29,7 +29,7 @@ class FeekesTableViewController: UITableViewController  {
     }
 
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let feeke = feekes[section]
         return feeke.name
         
@@ -43,31 +43,31 @@ class FeekesTableViewController: UITableViewController  {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return feekes.count
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         let feeke = feekes[section]
         return feeke.feekes.count
       //  return 0
     }
 
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
-        let Zoom = UITableViewRowAction (style: .Normal, title: "Zoom Picture" , handler: {(action:UITableViewRowAction, indexPath:NSIndexPath!) -> Void in
+        let Zoom = UITableViewRowAction (style: .normal, title: "Zoom Picture" , handler: {(action:UITableViewRowAction, indexPath:IndexPath!) -> Void in
         
-            self.performSegueWithIdentifier("zoomfeekes", sender: indexPath)
+            self.performSegue(withIdentifier: "zoomfeekes", sender: indexPath)
         
         })
-        Zoom.backgroundColor = UIColor.greenColor()
+        Zoom.backgroundColor = UIColor.green
         
         return [Zoom]
     }
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Feekes Cell", forIndexPath: indexPath) as! FeekesTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Feekes Cell", for: indexPath) as! FeekesTableViewCell
 
         // Configure the cell...
         let feek = feekes[indexPath.section]
@@ -78,30 +78,30 @@ class FeekesTableViewController: UITableViewController  {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        self.performSegueWithIdentifier("ValueofFeekes", sender: indexPath)
+        self.performSegue(withIdentifier: "ValueofFeekes", sender: indexPath)
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "zoomfeekes" {
             
-           let zoomedPhotoViewController = segue.destinationViewController as? ZoomedPhotoViewController
+           let zoomedPhotoViewController = segue.destination as? ZoomedPhotoViewController
             
             let indexPat = sender!
-            let feek = feekes[indexPat.section]
-            let feeke = feek.feekes[indexPat.row]
+            let feek = feekes[(indexPat as AnyObject).section]
+            let feeke = feek.feekes[(indexPat as AnyObject).row]
             
             
-            zoomedPhotoViewController!.photoName = feeke.imagename.stringByReplacingOccurrencesOfString("x", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+            zoomedPhotoViewController!.photoName = feeke.imagename.replacingOccurrences(of: "x", with: "", options: NSString.CompareOptions.literal, range: nil)
 
             
         }
         if segue.identifier == "ValueofFeekes" {
-        let GrowthStage = segue.destinationViewController as? Nitrogen
+        let GrowthStage = segue.destination as? Nitrogen
             let indexPat = sender!
-            let feek = feekes[indexPat.section]
-            let feeke = feek.feekes[indexPat.row]
+            let feek = feekes[(indexPat as AnyObject).section]
+            let feeke = feek.feekes[(indexPat as AnyObject).row]
             
             
             GrowthStage!.growthvalue = "Feekes 4 (click and hold for more info)"//feeke.val

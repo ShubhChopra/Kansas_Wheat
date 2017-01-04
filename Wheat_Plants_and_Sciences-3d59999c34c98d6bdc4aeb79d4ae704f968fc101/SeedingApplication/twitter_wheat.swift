@@ -14,7 +14,7 @@ class twitter_wheat: TWTRTimelineViewController {
         super.viewDidLoad()
         
         let client = TWTRAPIClient()
-        self.dataSource = TWTRUserTimelineDataSource(screenName: "KSUWheat", APIClient: client)
+        self.dataSource = TWTRUserTimelineDataSource(screenName: "KSUWheat", apiClient: client)
         
         self.title = "@KSUWheat";
     }

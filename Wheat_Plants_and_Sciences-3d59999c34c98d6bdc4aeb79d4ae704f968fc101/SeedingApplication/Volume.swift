@@ -44,7 +44,7 @@ class Volume: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         if (rate.text != "")
         
         {
@@ -52,7 +52,7 @@ class Volume: UIViewController {
         }
     }
     
-    @IBAction func irrigation(sender: AnyObject) {
+    @IBAction func irrigation(_ sender: AnyObject) {
         switch irrigated.selectedSegmentIndex
         {
         case 0 :
@@ -74,7 +74,7 @@ class Volume: UIViewController {
 
     }
 
-    @IBAction func result(sender: AnyObject) {
+    @IBAction func result(_ sender: AnyObject) {
         var dat = "";
         if(size.text != "" && rate.text != "")
         {
@@ -94,16 +94,16 @@ class Volume: UIViewController {
         {
             dat = "October 5th-25th"
         }
-        let alert = UIAlertController(title: "Seed Volume", message:" For the seed size and population specified, please plant" + String(Int(rate.text!)! / Int(size.text!)!) + " lbs/acre \n The optimum planting window for your region is " + dat , preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Seed Volume", message:" For the seed size and population specified, please plant" + String(Int(rate.text!)! / Int(size.text!)!) + " lbs/acre \n The optimum planting window for your region is " + dat , preferredStyle: .alert)
         
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
            
         }))
         
         // 4. Present the alert.
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
 
     }

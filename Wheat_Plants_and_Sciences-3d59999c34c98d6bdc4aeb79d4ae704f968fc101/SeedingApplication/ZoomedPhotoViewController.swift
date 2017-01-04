@@ -24,7 +24,7 @@ class ZoomedPhotoViewController: UIViewController {
         imageView.image = UIImage(named: photoName)
     }
     
-    private func updateMinZoomScaleForSize(size: CGSize) {
+    fileprivate func updateMinZoomScaleForSize(_ size: CGSize) {
         let widthScale = size.width / imageView.bounds.width
         let heightScale = size.height / imageView.bounds.height
         let minScale = min(widthScale, heightScale)
@@ -38,7 +38,7 @@ class ZoomedPhotoViewController: UIViewController {
         
         updateMinZoomScaleForSize(view.bounds.size)
     }
-    private func updateConstraintsForSize(size: CGSize) {
+    fileprivate func updateConstraintsForSize(_ size: CGSize) {
         
         let yOffset = max(0, (size.height - imageView.frame.height) / 2)
         imageViewTopConstraint.constant = yOffset
@@ -54,12 +54,12 @@ class ZoomedPhotoViewController: UIViewController {
 }
 
 extension ZoomedPhotoViewController: UIScrollViewDelegate {
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         // 1
         return imageView
     }
     
-    func scrollViewDidZoom(scrollView: UIScrollView) {
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
         updateConstraintsForSize(view.bounds.size)  // 4
     }
     

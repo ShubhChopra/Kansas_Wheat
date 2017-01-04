@@ -17,10 +17,10 @@ class Tan: UIViewController {
         super.viewDidLoad()
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Tan" )
         {
-            if let destinationVC = segue.destinationViewController as? CollectionViewController {
+            if let destinationVC = segue.destination as? CollectionViewController {
                 destinationVC.photos = ["46","47","48"];
                 destinationVC.temp = 48;
             }

@@ -17,10 +17,10 @@ class StripeRust: UIViewController {
         super.viewDidLoad()
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Stripe Rust" )
         {
-            if let destinationVC = segue.destinationViewController as? CollectionViewController {
+            if let destinationVC = segue.destination as? CollectionViewController {
                 destinationVC.photos = ["43","44","45"];
                 destinationVC.temp = 42;
             }

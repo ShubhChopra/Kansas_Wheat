@@ -14,9 +14,9 @@ class facebook_precision: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL(string:"https://www.facebook.com/precisionaglab/")
+        let url = URL(string:"https://www.facebook.com/precisionaglab/")
         
-        webview.loadRequest(NSURLRequest(URL : url! ))
+        webview.loadRequest(URLRequest(url : url! ))
         // Do view setup here.
     }
 

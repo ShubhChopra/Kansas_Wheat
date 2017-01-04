@@ -53,158 +53,158 @@ class Seeding: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func KnownB(sender: AnyObject) {
+    @IBAction func KnownB(_ sender: AnyObject) {
         if(MyVariables.finalRate != 0)
     {
-        performSegueWithIdentifier("Known", sender: self)
+        performSegue(withIdentifier: "Known", sender: self)
     }
     else{
-        let alert = UIAlertController(title: "Alert!", message: " You need to comple the Final Seeding Rate section", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Alert!", message: " You need to comple the Final Seeding Rate section", preferredStyle: .alert)
         
         
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             
             //  let textField = alert.textFields![0] as UITextField;
             // self.scrotalCircumference.text=textField.text;
         }))
         
         // 4. Present the alert.
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
         
         }
 
     }
-    @IBAction func UnknownB(sender: AnyObject) {
+    @IBAction func UnknownB(_ sender: AnyObject) {
         
         if(MyVariables.finalRate != 0)
         {
-            performSegueWithIdentifier("Unknown", sender: self)
+            performSegue(withIdentifier: "Unknown", sender: self)
         }
         else{
-            let alert = UIAlertController(title: "Alert!", message: " You need to comple the Final Seeding Rate section", preferredStyle: .Alert)
+            let alert = UIAlertController(title: "Alert!", message: " You need to comple the Final Seeding Rate section", preferredStyle: .alert)
             
             
             
             //3. Grab the value from the text field, and print it when the user clicks OK.
-            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
                 
                 //  let textField = alert.textFields![0] as UITextField;
                 // self.scrotalCircumference.text=textField.text;
             }))
             
             // 4. Present the alert.
-            self.presentViewController(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
             
 
         }
     }
-    @IBAction func Volume(sender: AnyObject) {
-        let alert = UIAlertController(title: "Volume to seed per acre", message: " Volume of seeds to be planted in an acre based on seed size and optimum seed rate.", preferredStyle: .Alert)
+    @IBAction func Volume(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Volume to seed per acre", message: " Volume of seeds to be planted in an acre based on seed size and optimum seed rate.", preferredStyle: .alert)
         
         
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             
             //  let textField = alert.textFields![0] as UITextField;
             // self.scrotalCircumference.text=textField.text;
         }))
         
         // 4. Present the alert.
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
 
     }
 
-    @IBAction func Known(sender: AnyObject) {
-        let alert = UIAlertController(title: "Drill Calibration (known Seed Size)", message: " Step-by-step drill calibration if seed size is known.", preferredStyle: .Alert)
+    @IBAction func Known(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Drill Calibration (known Seed Size)", message: " Step-by-step drill calibration if seed size is known.", preferredStyle: .alert)
         
         
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             
             //  let textField = alert.textFields![0] as UITextField;
             // self.scrotalCircumference.text=textField.text;
         }))
         
         // 4. Present the alert.
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
 
     }
-    @IBAction func Unknown(sender: AnyObject) {
-        let alert = UIAlertController(title: "Drill Calibration (Unknown Seed Size)", message: " Step-by-step drill calibration if seed size is not known.", preferredStyle: .Alert)
+    @IBAction func Unknown(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Drill Calibration (Unknown Seed Size)", message: " Step-by-step drill calibration if seed size is not known.", preferredStyle: .alert)
         
         
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             
             //  let textField = alert.textFields![0] as UITextField;
             // self.scrotalCircumference.text=textField.text;
         }))
         
         // 4. Present the alert.
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
 
     }
   
-    @IBAction func FinalSeeding(sender: AnyObject) {
-        let alert = UIAlertController(title: "Drill Calibration (known Seed Size)", message: " Target number of seeds planted per acre corrected by percent seed germination.", preferredStyle: .Alert)
+    @IBAction func FinalSeeding(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Drill Calibration (known Seed Size)", message: " Target number of seeds planted per acre corrected by percent seed germination.", preferredStyle: .alert)
         
         
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             
             //  let textField = alert.textFields![0] as UITextField;
             // self.scrotalCircumference.text=textField.text;
         }))
         
         // 4. Present the alert.
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
 
     }
     
-    @IBAction func date(sender: AnyObject) {
-        let alert = UIAlertController(title: "Optimum Planting Date", message: " The date range during which it is best to plant", preferredStyle: .Alert)
+    @IBAction func date(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Optimum Planting Date", message: " The date range during which it is best to plant", preferredStyle: .alert)
         
         
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             
             //  let textField = alert.textFields![0] as UITextField;
             // self.scrotalCircumference.text=textField.text;
         }))
         
         // 4. Present the alert.
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
         
 
     }
     
-    @IBAction func rate(sender: AnyObject) {
-        let alert = UIAlertController(title: "Optimum Planting Rate", message: " The approximate yield of the plant", preferredStyle: .Alert)
+    @IBAction func rate(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Optimum Planting Rate", message: " The approximate yield of the plant", preferredStyle: .alert)
         
         
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             
             //  let textField = alert.textFields![0] as UITextField;
             // self.scrotalCircumference.text=textField.text;
         }))
         
         // 4. Present the alert.
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
         
 

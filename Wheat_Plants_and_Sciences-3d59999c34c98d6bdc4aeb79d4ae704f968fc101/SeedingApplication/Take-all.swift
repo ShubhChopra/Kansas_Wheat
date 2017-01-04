@@ -17,10 +17,10 @@ class TakeAll: UIViewController {
         super.viewDidLoad()
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "Take-all" )
         {
-            if let destinationVC = segue.destinationViewController as? CollectionViewController {
+            if let destinationVC = segue.destination as? CollectionViewController {
                 destinationVC.photos = ["69","70","71"];
                 destinationVC.temp = 68;
             }

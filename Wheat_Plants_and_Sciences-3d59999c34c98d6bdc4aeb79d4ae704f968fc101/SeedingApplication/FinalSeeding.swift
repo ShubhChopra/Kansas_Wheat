@@ -47,7 +47,7 @@ class FinalSeeding: UIViewController {
     */
     
     
-    @IBAction func calculate(sender: AnyObject) {
+    @IBAction func calculate(_ sender: AnyObject) {
         
         rateSqft.resignFirstResponder()
         RatePer.resignFirstResponder()
@@ -65,7 +65,7 @@ class FinalSeeding: UIViewController {
         }
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         if(rateAcre.text != "")
         {
         
@@ -78,14 +78,14 @@ class FinalSeeding: UIViewController {
         
     }
 
-    @IBAction func sqft(sender: AnyObject) {
+    @IBAction func sqft(_ sender: AnyObject) {
         
         if(rateSqft.text != "")
         {
             rateAcre.text = String(Int(rateSqft.text!)! * 43560)
         }
     }
-    @IBAction func acre(sender: AnyObject) {
+    @IBAction func acre(_ sender: AnyObject) {
         if(rateAcre.text != "")
         {
             rateSqft.text = String(Int(rateAcre.text!)! / 43560)

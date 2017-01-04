@@ -33,7 +33,7 @@ class Feekes
         }
     self.imagename = imageName
     }
-    func configureimage(feekes:Feekes) -> String
+    func configureimage(_ feekes:Feekes) -> String
     {
         
         return feekes.imagename

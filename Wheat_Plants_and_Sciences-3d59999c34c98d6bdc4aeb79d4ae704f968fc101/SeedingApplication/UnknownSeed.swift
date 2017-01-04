@@ -39,13 +39,13 @@ class UnknownSeed: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func dis(sender: AnyObject) {
+    @IBAction func dis(_ sender: AnyObject) {
         wheelDia.text = ""
     }
-    @IBAction func dia(sender: AnyObject) {
+    @IBAction func dia(_ sender: AnyObject) {
         wheelDis.text = ""
     }
-    @IBAction func results(sender: AnyObject) {
+    @IBAction func results(_ sender: AnyObject) {
         
         Row.resignFirstResponder()
         wheelDis.resignFirstResponder()

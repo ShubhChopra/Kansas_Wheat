@@ -37,7 +37,7 @@ class KnownView: UIViewController {
     }
     */
 
-    @IBAction func result(sender: AnyObject) {
+    @IBAction func result(_ sender: AnyObject) {
         rowWidth.resignFirstResponder()
         drillRow.resignFirstResponder()
         seedSize.resignFirstResponder()

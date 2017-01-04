@@ -123,16 +123,16 @@ class GPS: UIViewController ,CLLocationManagerDelegate, UIPickerViewDataSource, 
    
     @IBOutlet var County: UITextField!
     var picker = UIPickerView()
-    internal func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
+    internal func numberOfComponents(in pickerView: UIPickerView) -> Int
     {return 1}
     
-    internal func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+    internal func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
     {return data.count}
-    internal func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    internal func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         County.text=data[row]
         self.view.endEditing(true)
     }
-    internal func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    internal func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return data[row]
     }
 
@@ -151,10 +151,10 @@ class GPS: UIViewController ,CLLocationManagerDelegate, UIPickerViewDataSource, 
     
     var option="";
     
-         func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+         func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error while updating location " + error.localizedDescription)
     }
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)->Void in
             
             if (error != nil) {
@@ -177,75 +177,75 @@ class GPS: UIViewController ,CLLocationManagerDelegate, UIPickerViewDataSource, 
         
     };
     
-    @IBAction func NW(sender: AnyObject) {
+    @IBAction func NW(_ sender: AnyObject) {
         MyVariables.district="NW";
         MyVariables.rate = "western"
             MyVariables.date = "zone1"
        
-        self.performSegueWithIdentifier("mainscreen", sender: nil)
+        self.performSegue(withIdentifier: "mainscreen", sender: nil)
              }
     
-    @IBAction func NC(sender: AnyObject) {
+    @IBAction func NC(_ sender: AnyObject) {
         MyVariables.district="NC";
         MyVariables.rate = "central"
         MyVariables.date = "zone2"
         
-        self.performSegueWithIdentifier("mainscreen", sender: nil)
+        self.performSegue(withIdentifier: "mainscreen", sender: nil)
     }
     
-    @IBAction func NE(sender: AnyObject) {
+    @IBAction func NE(_ sender: AnyObject) {
         MyVariables.district="NE";
         MyVariables.rate = "eastern"
         MyVariables.date = "zone2"
-        self.performSegueWithIdentifier("mainscreen", sender: nil)
+        self.performSegue(withIdentifier: "mainscreen", sender: nil)
     }
     
-    @IBAction func WC(sender: AnyObject) {
+    @IBAction func WC(_ sender: AnyObject) {
         MyVariables.district="WC";
         MyVariables.rate = "western"
         MyVariables.date = "zone1"
-        self.performSegueWithIdentifier("mainscreen", sender: nil)
+        self.performSegue(withIdentifier: "mainscreen", sender: nil)
         
     }
     
-    @IBAction func C(sender: AnyObject) {
+    @IBAction func C(_ sender: AnyObject) {
         MyVariables.district="C";
         MyVariables.rate = "central"
         MyVariables.date = "zone2"
-        self.performSegueWithIdentifier("mainscreen", sender: nil)
+        self.performSegue(withIdentifier: "mainscreen", sender: nil)
     }
     
-    @IBAction func EC(sender: AnyObject) {
+    @IBAction func EC(_ sender: AnyObject) {
         MyVariables.district="EC";
         MyVariables.rate = "eastern"
         MyVariables.date = "zone3"
-        self.performSegueWithIdentifier("mainscreen", sender: nil)
+        self.performSegue(withIdentifier: "mainscreen", sender: nil)
         
     }
-    @IBAction func SW(sender: AnyObject) {
+    @IBAction func SW(_ sender: AnyObject) {
         MyVariables.district="SW";
         MyVariables.rate = "western"
         MyVariables.date = "zone2"
         
-        self.performSegueWithIdentifier("mainscreen", sender: nil)
+        self.performSegue(withIdentifier: "mainscreen", sender: nil)
         
     }
     
-    @IBAction func SC(sender: AnyObject) {
+    @IBAction func SC(_ sender: AnyObject) {
         MyVariables.district="SC";
         MyVariables.rate = "central"
         MyVariables.date = "zone3"
-        self.performSegueWithIdentifier("mainscreen", sender: nil)
+        self.performSegue(withIdentifier: "mainscreen", sender: nil)
     }
     
-    @IBAction func SE(sender: AnyObject) {
+    @IBAction func SE(_ sender: AnyObject) {
         MyVariables.district="SE";
         MyVariables.rate = "eastern"
         MyVariables.date = "zone4"
-        self.performSegueWithIdentifier("mainscreen", sender: nil)
+        self.performSegue(withIdentifier: "mainscreen", sender: nil)
     }
     
-    @IBAction func SAve(sender: AnyObject) {
+    @IBAction func SAve(_ sender: AnyObject) {
         
         if( County.text=="Cheyenne" || County.text=="Rawlins" || County.text=="Decatur" || County.text=="Norton" || County.text=="Sherman" || County.text=="Thomas" || County.text=="Sheridan" || County.text=="Graham" )
         {MyVariables.district="NW";
@@ -305,11 +305,11 @@ class GPS: UIViewController ,CLLocationManagerDelegate, UIPickerViewDataSource, 
         if(County.text != "")
         {
             
-            self.performSegueWithIdentifier("mainscreen", sender: nil)
+            self.performSegue(withIdentifier: "mainscreen", sender: nil)
         }
     }
     
-    func displayLocationInfo(placemark: CLPlacemark?) {
+    func displayLocationInfo(_ placemark: CLPlacemark?) {
         if let containsPlacemark = placemark {
             //stop updating location to save battery life
             locationManager.stopUpdatingLocation()
@@ -321,9 +321,9 @@ class GPS: UIViewController ,CLLocationManagerDelegate, UIPickerViewDataSource, 
             var location = locality! + " , " + postalCode! + " , ";
             location = location +  administrativeArea! + " , " + county!;
             
-            let Alert = UIAlertController(title: "Do you want to continue with this location ?", message: location , preferredStyle: UIAlertControllerStyle.Alert)
+            let Alert = UIAlertController(title: "Do you want to continue with this location ?", message: location , preferredStyle: UIAlertControllerStyle.alert)
             
-            Alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
+            Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                 print(" Ok ")
                 
                 if( county=="Cheyenne" || county=="Rawlins" || county=="Decatur" || county=="Norton" || county=="Sherman" || county=="Thomas" || county=="Sheridan" || county=="Graham" )
@@ -384,19 +384,19 @@ class GPS: UIViewController ,CLLocationManagerDelegate, UIPickerViewDataSource, 
                     
                 {MyVariables.rate = "central"}
                 
-                self.performSegueWithIdentifier("mainscreen", sender: nil)
+                self.performSegue(withIdentifier: "mainscreen", sender: nil)
                 
             }))
             
-            Alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action: UIAlertAction!) in
+            Alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
                 print(" Cancel ")
             }))
             
-            presentViewController(Alert, animated: true, completion: nil)
+            present(Alert, animated: true, completion: nil)
         }
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             }
 
     override func didReceiveMemoryWarning() {
