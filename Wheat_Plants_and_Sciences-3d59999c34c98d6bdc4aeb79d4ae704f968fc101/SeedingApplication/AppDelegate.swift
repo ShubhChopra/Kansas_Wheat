@@ -4,22 +4,29 @@
 //
 //  Created by Shubh Chopra on 5/17/16.
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
-//
 
+
+
+//different imports needed for the applicaiton
 import UIKit
 import Fabric
 import TwitterKit
 
 
 @UIApplicationMain
+
+//AppDelegate handles what the application does when it is changing states on the iphone. i.e. forground, background and whatnot. These methods handle what the applicaiton does. Most times, nothing is needed to be added and the OS handles everything.
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        // Everything below until the end paraenesis is added by Shubh
         // Override point for customization after application launch.
         
+        //Changes apperance of application
         UINavigationBar.appearance().barTintColor = UIColor(hue: 0.1444, saturation: 1, brightness: 0.97, alpha: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         
@@ -30,12 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = UIColor.black
         UITabBar.appearance().tintColor = UIColor(hue: 0.1444, saturation: 1, brightness: 0.97, alpha: 1.0)
 
+        //not entirely sure what this does. I need to review the Fabric class
         Fabric.with([Twitter.self])
-
+        
+        //also not sure why we are returning true.
         return true
     }
     
-        func applicationWillResignActive(_ application: UIApplication) {
+    func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     }

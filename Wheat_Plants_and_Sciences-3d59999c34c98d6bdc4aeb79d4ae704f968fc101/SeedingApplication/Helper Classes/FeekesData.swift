@@ -18,15 +18,23 @@ class FeekesData
 {
     // Variables
     var name: String
+    
+    //I think that this represents the entire list of cells 
+    //Whenever it is .appended below, then it creates another cell.
     var feekes: [Feekes]
+    
+    //not sure I understand this init though.
     init(named: String, includeFeekes: [Feekes])
     {
         name = named
         feekes = includeFeekes
     }
     
+    
+    //this function compiles all the data below into one method call.
     class func feekesdata() -> [FeekesData]
     {
+        //returns an array of the different Feekes stages in their overarching categories
         return [self.LeafTiller(), self.StemElongation(), self.HeadEmergence(), self.GrainFilling(), self.Ripening()]
     }
     

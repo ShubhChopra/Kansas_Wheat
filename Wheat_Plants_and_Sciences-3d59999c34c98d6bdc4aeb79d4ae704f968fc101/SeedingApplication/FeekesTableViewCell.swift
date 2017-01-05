@@ -8,6 +8,8 @@
 
 import UIKit
 
+//this class sets up the view for the FeekesData class which uses the Feekes.swift class.
+
 class FeekesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var ImageView: UIImageView!

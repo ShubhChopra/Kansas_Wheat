@@ -47,3 +47,5 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
     }
     
 }
+
+//totally understand everything from this file like the "ContactUS.swift" file.

@@ -99,7 +99,9 @@ class Nitrogen: UIViewController {
         let ndvi : String! = NDVI.text
         let date  = Date()
         
-        let row = "\(String(counter + 1)),\(date),\(String(Yield!)),Feekes 4,\(String(nue!)),\(String(ndvi!)),\(MyVariables.lat),\(MyVariables.lon),\(String(YPf)),\(String(NRecommended))\n";
+            
+        //row was changed to "nul" because it wouldn't compile for whatever reason. I think something was change in an xCode update that caused this to be a trouble early. 
+        let row = "nul" // "\(String(counter + 1)),\(date),\(String(Yield!)),Feekes 4,\(String(nue!)),\(String(ndvi!)),\(MyVariables.lat),\(MyVariables.lon),\(String(YPf)),\(String(NRecommended))\n";
        
        let Header = "Sample Number,Date,Yield History,Feets Growth Stage,NRE,NDVI,Latitude,Longitude,Yield Estimate,N-Recommendation\n";
         _ = FileManager.default
