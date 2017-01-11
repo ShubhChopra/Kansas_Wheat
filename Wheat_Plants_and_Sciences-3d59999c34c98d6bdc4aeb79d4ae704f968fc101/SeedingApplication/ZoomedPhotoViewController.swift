@@ -7,6 +7,8 @@
 //
 
 
+//class that enables zooming for pictures
+
 import UIKit
 
 class ZoomedPhotoViewController: UIViewController {

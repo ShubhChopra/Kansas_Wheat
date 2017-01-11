@@ -15,6 +15,8 @@ class Volume: UIViewController {
         
         super.viewDidLoad()
         
+        
+        //view adaptations based on known variables
         if (MyVariables.seedingRate != 0)
         {
             rate.text = String(MyVariables.seedingRate)
@@ -35,16 +37,20 @@ class Volume: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    //outlet setups
     @IBOutlet weak var irrigated: UISegmentedControl!
     @IBOutlet weak var size: UITextField!
-    
     @IBOutlet weak var rate: UITextField!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        
+        //when leaving screen, save seedingRate
         if (rate.text != "")
         
         {
@@ -52,6 +58,8 @@ class Volume: UIViewController {
         }
     }
     
+    
+    //if it is being irrigated, then these seeding rates
     @IBAction func irrigation(_ sender: AnyObject) {
         switch irrigated.selectedSegmentIndex
         {
@@ -74,6 +82,7 @@ class Volume: UIViewController {
 
     }
 
+    //function to find optimal planting date
     @IBAction func result(_ sender: AnyObject) {
         var dat = "";
         if(size.text != "" && rate.text != "")

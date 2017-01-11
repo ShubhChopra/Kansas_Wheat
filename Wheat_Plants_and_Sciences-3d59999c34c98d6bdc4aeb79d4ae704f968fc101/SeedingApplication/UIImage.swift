@@ -20,6 +20,8 @@
 * THE SOFTWARE.
 */
 
+//class that displayes pictures
+
 import UIKit
 
 extension UIImage {
