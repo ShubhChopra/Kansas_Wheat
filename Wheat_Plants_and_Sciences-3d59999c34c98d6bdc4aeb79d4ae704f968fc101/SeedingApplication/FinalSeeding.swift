@@ -13,6 +13,7 @@ class FinalSeeding: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //sets variables once view loads if they aren't zero
         if(MyVariables.seedingRate != 0)
         {
             rateAcre.text = String(MyVariables.seedingRate)
@@ -30,23 +31,15 @@ class FinalSeeding: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //set up for outlets on the Final Seeding Scene
     @IBOutlet weak var rateAcre: UITextField!
     @IBOutlet weak var RatePer: UITextField!
     @IBOutlet weak var FinalSqft: UILabel!
 
     @IBOutlet weak var FinalAcre: UILabel!
     @IBOutlet weak var rateSqft: UITextField!
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
-    
+    //function to calculate final seeding rate
     @IBAction func calculate(_ sender: AnyObject) {
         
         rateSqft.resignFirstResponder()
@@ -65,6 +58,7 @@ class FinalSeeding: UIViewController {
         }
     }
     
+    //when view is leaving, change MyVariables to these values
     override func viewWillDisappear(_ animated: Bool) {
         if(rateAcre.text != "")
         {
@@ -78,6 +72,7 @@ class FinalSeeding: UIViewController {
         
     }
 
+    //if any value is entered, save it
     @IBAction func sqft(_ sender: AnyObject) {
         
         if(rateSqft.text != "")
@@ -85,6 +80,7 @@ class FinalSeeding: UIViewController {
             rateAcre.text = String(Int(rateSqft.text!)! * 43560)
         }
     }
+    //if any value is entered, save it
     @IBAction func acre(_ sender: AnyObject) {
         if(rateAcre.text != "")
         {

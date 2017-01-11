@@ -17,12 +17,15 @@ class Acknowledgement: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    //opens Variety Information link
     @IBAction func Variety(_ sender: AnyObject) {
         if let url = URL(string: "https://www.bookstore.ksre.ksu.edu/pubs/MF991.pdf") {
             UIApplication.shared.openURL(url)
         }
     }
     
+    //opens Wheat Disease Information link
     @IBAction func Dis(_ sender: AnyObject) {
         if let url = URL(string: "http://www.bookstore.ksre.ksu.edu/pubs/mf2994.pdf") {
             UIApplication.shared.openURL(url)
@@ -30,7 +33,7 @@ class Acknowledgement: UIViewController {
 
     }
    
-    override func didReceiveMemoryWarning() {
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
 }

@@ -12,7 +12,7 @@ import UIKit
 import CoreLocation
 
 
-class GPS: UIViewController ,CLLocationManagerDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+class GPS: UIViewController, CLLocationManagerDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     var data = [ "Allen" ,
         "Anderson",
         "Atchison",
@@ -146,14 +146,16 @@ class GPS: UIViewController ,CLLocationManagerDelegate, UIPickerViewDataSource, 
     picker.dataSource=self
     County.inputView=picker
     }
-        let locationManager = CLLocationManager()
+    
+    let locationManager = CLLocationManager()
     
     
     var option="";
     
-         func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error while updating location " + error.localizedDescription)
     }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)->Void in
             

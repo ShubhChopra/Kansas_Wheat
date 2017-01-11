@@ -20,6 +20,8 @@ class tabbarViewController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Not sure how Segue work
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showmain"{
             print("showLogin seque called")

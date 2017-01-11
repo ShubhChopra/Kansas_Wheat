@@ -6,6 +6,8 @@
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
 
+// Class is a pdf view of all the information that isn't in a convient format.
+
 import UIKit
 
 class VarietyAppendix: UIViewController {
@@ -18,8 +20,6 @@ class VarietyAppendix: UIViewController {
         
         self.title = varitytitle
         
-        //what is UIAlertController -> guess, method that has pop up alert with varibles defined below. 
-        //I think this gives an alert that the requested information isn't availible and that it can be accessed at a pdf link that also pops up.
         let Alert = UIAlertController(title: "Alert!" , message: "Info for this variety is currently not available, you will find information for other vatieties on this page." , preferredStyle: UIAlertControllerStyle.alert)
         
         Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in

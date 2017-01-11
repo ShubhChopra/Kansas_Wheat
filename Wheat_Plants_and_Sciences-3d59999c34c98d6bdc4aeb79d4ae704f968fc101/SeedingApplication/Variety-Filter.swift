@@ -21,6 +21,8 @@ class VarietyFilter: UIViewController {
     
     @IBOutlet weak var clearfield: UISegmentedControl!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Variety Selection"

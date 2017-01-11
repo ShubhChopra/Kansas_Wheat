@@ -9,6 +9,8 @@
 import UIKit
 
 class VarietyDiscription: UIViewController {
+    
+    //Outlets for view
     @IBOutlet weak var Image2: UIImageView!
     @IBOutlet weak var Image1: UIImageView!
     @IBOutlet weak var Discription: UITextView!
@@ -21,6 +23,9 @@ class VarietyDiscription: UIViewController {
     
     override func viewDidLoad() {
          super.viewDidLoad()
+        
+        //When view loads, the variable outlets above are changed to the appropriate Variety Description
+        //i.e. relevant information for whatever disease changes based off the disease selected.
         self.title = varitytitle
         Image2.image = img2
         Image1.image = img1

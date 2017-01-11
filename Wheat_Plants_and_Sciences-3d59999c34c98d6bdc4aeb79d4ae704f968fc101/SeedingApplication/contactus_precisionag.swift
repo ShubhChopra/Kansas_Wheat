@@ -19,6 +19,8 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background2")!)
     }
     
+    
+    //call function
     @IBAction func callbutton(_ sender: AnyObject) {
         let phone = "7855320397";
         UIApplication.shared.openURL(URL(string: "tel://7855320397")!)
@@ -26,9 +28,12 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
         
     }
     
+    //buttonthat opens Facebook page
     @IBAction func facebookbutton(_ sender: AnyObject) {
         UIApplication.shared.openURL(URL(string: "https://www.facebook.com/kansaswheat/")!)
     }
+    
+    //function that opens and creates an email
     @IBAction func emailbutton(_ sender: AnyObject) {
         let toRecipents = ["ara4747@ksu.edu"]
         let mailVC: MFMailComposeViewController = MFMailComposeViewController()
@@ -41,6 +46,8 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
         present(mailVC, animated: true, completion: nil)
         
     }
+    
+    //button that opens twitter 
     @IBAction func twitterbutton(_ sender: AnyObject) {
         UIApplication.shared.openURL(URL(string: "https://twitter.com/ksuprecisionag")!)
         

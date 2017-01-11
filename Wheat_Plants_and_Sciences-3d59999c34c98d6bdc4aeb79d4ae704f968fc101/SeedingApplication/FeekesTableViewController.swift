@@ -4,7 +4,8 @@
 //
 //  Created by Shubh Chopra on 6/11/16.
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
-//
+
+//View Controller for Feekes Table
 
 import UIKit
 
@@ -40,8 +41,6 @@ class FeekesTableViewController: UITableViewController  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

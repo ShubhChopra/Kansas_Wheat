@@ -43,7 +43,7 @@ class Feekes
     self.imagename = imageName
     }
     
-    //not sure what is going on here entirely. I'll ask about it in my email to you. 
+    //image function
     func configureimage(_ feekes:Feekes) -> String
     {
         

@@ -21,6 +21,7 @@ class UnknownSeed: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //information outlet set up for viewcontroller
     @IBOutlet weak var Row: UITextField!
     @IBOutlet weak var wheelDis: UITextField!
     @IBOutlet weak var SeedsperLength: UILabel!
@@ -30,21 +31,16 @@ class UnknownSeed: UIViewController {
     @IBOutlet weak var wheelDia: UITextField!
     @IBOutlet weak var weight: UITextField!
     @IBOutlet weak var drillrow: UITextField!
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    //two functions that clear text for textbox
     @IBAction func dis(_ sender: AnyObject) {
         wheelDia.text = ""
     }
     @IBAction func dia(_ sender: AnyObject) {
         wheelDis.text = ""
     }
+    
+    //function that calculates the seeding rate based off entered information
     @IBAction func results(_ sender: AnyObject) {
         
         Row.resignFirstResponder()
@@ -54,7 +50,7 @@ class UnknownSeed: UIViewController {
         weight.resignFirstResponder()
         drillrow.resignFirstResponder()
         
-        
+        //when all feeds are not empty, calculate seeding rate
         if(Row.text != "")
         {
             RowLength.text = "Row length needed for one sq. ft. (inch) = " + String(Float(12/Int(Row.text!)!))

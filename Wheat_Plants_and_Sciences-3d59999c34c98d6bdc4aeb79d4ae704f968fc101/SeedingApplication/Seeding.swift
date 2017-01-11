@@ -15,6 +15,8 @@ class Seeding: UIViewController {
         self.title = "Seeding"
       //  tabBarItem = UITabBarItem(title: "Seeding", image: UIImage(named: "tab-s1"), tag: 3)
       //  self.navigationItem.rightBarButtonItem = UIBarButtonItem();
+        
+        // if statements that set region and zone for seeding rate and seeding data
         if (MyVariables.rate=="western") {
             optimumrate.text = "Optimum Seeding Rate = 750,000 - 900,000 seeds/acre"
             }
@@ -45,20 +47,28 @@ class Seeding: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    //outlet for labels
     @IBOutlet weak var optimumrate: UILabel!
-
     @IBOutlet weak var optimumdate: UILabel!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //function for know seeding rate
     @IBAction func KnownB(_ sender: AnyObject) {
+        
+        //if final seeding rate is not zero
         if(MyVariables.finalRate != 0)
     {
+        //then go to this screen
         performSegue(withIdentifier: "Known", sender: self)
     }
     else{
+        //else perform this alert
         let alert = UIAlertController(title: "Alert!", message: " You need to comple the Final Seeding Rate section", preferredStyle: .alert)
         
         
@@ -77,13 +87,18 @@ class Seeding: UIViewController {
         }
 
     }
+    
+    //function for unknown seeding rate
     @IBAction func UnknownB(_ sender: AnyObject) {
         
+        //if finalRate doesn't equal zero
         if(MyVariables.finalRate != 0)
         {
+            //go to this scene
             performSegue(withIdentifier: "Unknown", sender: self)
         }
         else{
+            //else this alert to user
             let alert = UIAlertController(title: "Alert!", message: " You need to comple the Final Seeding Rate section", preferredStyle: .alert)
             
             
@@ -101,6 +116,8 @@ class Seeding: UIViewController {
 
         }
     }
+    
+    //info button
     @IBAction func Volume(_ sender: AnyObject) {
         let alert = UIAlertController(title: "Volume to seed per acre", message: " Volume of seeds to be planted in an acre based on seed size and optimum seed rate.", preferredStyle: .alert)
         
@@ -119,6 +136,7 @@ class Seeding: UIViewController {
 
     }
 
+    //info button
     @IBAction func Known(_ sender: AnyObject) {
         let alert = UIAlertController(title: "Drill Calibration (known Seed Size)", message: " Step-by-step drill calibration if seed size is known.", preferredStyle: .alert)
         
@@ -136,6 +154,7 @@ class Seeding: UIViewController {
         
 
     }
+    //info button
     @IBAction func Unknown(_ sender: AnyObject) {
         let alert = UIAlertController(title: "Drill Calibration (Unknown Seed Size)", message: " Step-by-step drill calibration if seed size is not known.", preferredStyle: .alert)
         
@@ -153,7 +172,7 @@ class Seeding: UIViewController {
         
 
     }
-  
+    //info button
     @IBAction func FinalSeeding(_ sender: AnyObject) {
         let alert = UIAlertController(title: "Drill Calibration (known Seed Size)", message: " Target number of seeds planted per acre corrected by percent seed germination.", preferredStyle: .alert)
         
@@ -172,6 +191,7 @@ class Seeding: UIViewController {
 
     }
     
+    //info button
     @IBAction func date(_ sender: AnyObject) {
         let alert = UIAlertController(title: "Optimum Planting Date", message: " The date range during which it is best to plant", preferredStyle: .alert)
         
@@ -191,6 +211,7 @@ class Seeding: UIViewController {
 
     }
     
+    //info button
     @IBAction func rate(_ sender: AnyObject) {
         let alert = UIAlertController(title: "Optimum Planting Rate", message: " The approximate yield of the plant", preferredStyle: .alert)
         
@@ -209,15 +230,7 @@ class Seeding: UIViewController {
         
 
     }
+    
+    //info button
     @IBOutlet weak var rate: UIButton!
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -23,7 +23,6 @@ class FeekesData
     //Whenever it is .appended below, then it creates another cell.
     var feekes: [Feekes]
     
-    //not sure I understand this init though.
     init(named: String, includeFeekes: [Feekes])
     {
         name = named
