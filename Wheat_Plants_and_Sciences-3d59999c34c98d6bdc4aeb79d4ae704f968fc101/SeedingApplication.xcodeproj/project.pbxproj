@@ -274,18 +274,11 @@
 		CA53E23C1CEB6C5600EC4438 = {
 			isa = PBXGroup;
 			children = (
-				CA8E73971D97335D001925B2 /* FBSDKCoreKit.framework */,
-				CA8E73981D97335D001925B2 /* FBSDKLoginKit.framework */,
-				CA8E73991D97335D001925B2 /* FBSDKShareKit.framework */,
-				CA8E738B1D971541001925B2 /* Fabric.framework */,
-				CA8E738C1D971541001925B2 /* TwitterKit.framework */,
-				CA8E738D1D971541001925B2 /* TwitterKitResources.bundle */,
-				CA8E738E1D971541001925B2 /* TwitterCore.framework */,
-				CA53E2781CEB7AED00EC4438 /* CoreLocation.framework */,
 				CA53E2471CEB6C5600EC4438 /* KansasWheat */,
+				D93C55741E27E6480093EABB /* Frameworks */,
+				CA53E2461CEB6C5600EC4438 /* Products */,
 				CA53E25E1CEB6C5700EC4438 /* KansasWheatTests */,
 				CA53E2691CEB6C5700EC4438 /* KansasWheatUITests */,
-				CA53E2461CEB6C5600EC4438 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -304,52 +297,20 @@
 			children = (
 				CA5D20201D0CD837000F5762 /* Default Images */,
 				CA5D20211D0CD838000F5762 /* Helper Classes */,
-				CA5D20221D0CD838000F5762 /* Products Images */,
-				CA53E2481CEB6C5600EC4438 /* AppDelegate.swift */,
-				CA53E24A1CEB6C5600EC4438 /* Nutrient.swift */,
-				CAF5BED31D510A2800D644DA /* Acknowledgement.swift */,
-				CA5D20281D0CEF39000F5762 /* Feekes.swift */,
-				CA8E73821D8DE07B001925B2 /* startup.swift */,
-				CA2591421D1686640010E037 /* KnownView.swift */,
-				CA8E73881D9073CE001925B2 /* tabbarViewController.swift */,
-				CADE088A1D3FD22E00764D03 /* VarietyDiscription.swift */,
-				CA5D20291D0CEF39000F5762 /* FeekesData.swift */,
-				CA25913C1D15DA890010E037 /* Seeding.swift */,
-				CA8E73A11D986CDB001925B2 /* ContactUS.swift */,
-				CA8E73A31D98C6E1001925B2 /* contactus_precisionag.swift */,
-				CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */,
-				CA8E739D1D985766001925B2 /* facebook_wheat.swift */,
-				CADE08901D4A4C0700764D03 /* Appendix.pdf */,
-				CA53E24C1CEB6C5600EC4438 /* Diseases.swift */,
-				CA25913E1D16583B0010E037 /* FinalSeeding.swift */,
-				CA8E739F1D985BBF001925B2 /* facebook_precision.swift */,
-				CA53E24E1CEB6C5600EC4438 /* Main.storyboard */,
-				CA5D20301D0D0342000F5762 /* FeekesTableViewCell.swift */,
-				CA2591401D166DCD0010E037 /* UnknownSeed.swift */,
-				CA5D20261D0CE9B9000F5762 /* FeekesTableViewController.swift */,
-				CA25913A1D15CB950010E037 /* Volume.swift */,
-				CA8E73931D971822001925B2 /* twitter_wheat.swift */,
-				CA8E73951D972143001925B2 /* twitter_precision.swift */,
-				CA4D70D01CF5237800CE8B3F /* ZoomedPhotoViewController.swift */,
-				CA4D70CE1CF5203900CE8B3F /* UIImage.swift */,
-				CA4D71021CF767BB00CE8B3F /* Stem Diseases */,
-				CA4D70E91CF6D3D400CE8B3F /* Foliar Diswases */,
-				CA4D70D41CF684AB00CE8B3F /* Head Diseases */,
-				CA4D70CC1CF51FD700CE8B3F /* PhotoCell.swift */,
 				CA8E73841D8DE8B7001925B2 /* png */,
-				CA4D70CA1CF51F2E00CE8B3F /* CollectionViewController.swift */,
-				CA8E73861D8E1161001925B2 /* background3 copy.png */,
-				CA44F6361CFFE1A300ED79DB /* Variety-Filter.swift */,
-				CA4D70C81CF40DA200CE8B3F /* Nitrogen.swift */,
-				CAD8A5011CED9E13003F73E3 /* VarietyTable.swift */,
-				CA53E27C1CEBBA6C00EC4438 /* MainScreen.swift */,
-				CA53E27A1CEB7C8400EC4438 /* GPS.swift */,
+				CA5D20221D0CD838000F5762 /* Products Images */,
 				CA53E2511CEB6C5600EC4438 /* Assets.xcassets */,
-				CA5D202C1D0CF55E000F5762 /* default@1x.pdf */,
-				CA5D202D1D0CF55E000F5762 /* default@2x.pdf */,
-				CA4D70C61CF40C2C00CE8B3F /* info.png */,
 				CA53E2531CEB6C5700EC4438 /* LaunchScreen.storyboard */,
-				CA53E2561CEB6C5700EC4438 /* Info.plist */,
+				CA53E24E1CEB6C5600EC4438 /* Main.storyboard */,
+				D93C556E1E27E0E30093EABB /* Core Application */,
+				D93C556B1E27DFB60093EABB /* Diseases */,
+				D93C556F1E27E13B0093EABB /* Feekes Classes */,
+				D93C55711E27E1FE0093EABB /* Miscellaneous */,
+				D93C55731E27E5C80093EABB /* Non .Swift Files */,
+				D93C55701E27E1DA0093EABB /* Seeding Rates */,
+				D93C556C1E27DFDE0093EABB /* Social Media */,
+				D93C55721E27E2720093EABB /* Variety Classes */,
+				D93C556D1E27E08A0093EABB /* View Controllers */,
 			);
 			name = KansasWheat;
 			path = SeedingApplication;
@@ -363,7 +324,7 @@
 			);
 			name = KansasWheatTests;
 			path = SeedingApplicationTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		CA53E2691CEB6C5700EC4438 /* KansasWheatUITests */ = {
 			isa = PBXGroup;
@@ -373,6 +334,125 @@
 			);
 			name = KansasWheatUITests;
 			path = SeedingApplicationUITests;
+			sourceTree = "<group>";
+		};
+		D93C556B1E27DFB60093EABB /* Diseases */ = {
+			isa = PBXGroup;
+			children = (
+				CA53E24C1CEB6C5600EC4438 /* Diseases.swift */,
+				CA4D71021CF767BB00CE8B3F /* Stem Diseases */,
+				CA4D70E91CF6D3D400CE8B3F /* Foliar Diswases */,
+				CA4D70D41CF684AB00CE8B3F /* Head Diseases */,
+			);
+			name = Diseases;
+			sourceTree = "<group>";
+		};
+		D93C556C1E27DFDE0093EABB /* Social Media */ = {
+			isa = PBXGroup;
+			children = (
+				CAF5BED31D510A2800D644DA /* Acknowledgement.swift */,
+				CA8E73A11D986CDB001925B2 /* ContactUS.swift */,
+				CA8E73A31D98C6E1001925B2 /* contactus_precisionag.swift */,
+				CA8E739D1D985766001925B2 /* facebook_wheat.swift */,
+				CA8E739F1D985BBF001925B2 /* facebook_precision.swift */,
+				CA8E73931D971822001925B2 /* twitter_wheat.swift */,
+				CA8E73951D972143001925B2 /* twitter_precision.swift */,
+			);
+			name = "Social Media";
+			sourceTree = "<group>";
+		};
+		D93C556D1E27E08A0093EABB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA4D70CA1CF51F2E00CE8B3F /* CollectionViewController.swift */,
+				CA4D70CC1CF51FD700CE8B3F /* PhotoCell.swift */,
+				CA8E73881D9073CE001925B2 /* tabbarViewController.swift */,
+				CA4D70D01CF5237800CE8B3F /* ZoomedPhotoViewController.swift */,
+				CA4D70CE1CF5203900CE8B3F /* UIImage.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D93C556E1E27E0E30093EABB /* Core Application */ = {
+			isa = PBXGroup;
+			children = (
+				CA53E2481CEB6C5600EC4438 /* AppDelegate.swift */,
+				CA53E27A1CEB7C8400EC4438 /* GPS.swift */,
+				CA53E27C1CEBBA6C00EC4438 /* MainScreen.swift */,
+				CA8E73821D8DE07B001925B2 /* startup.swift */,
+			);
+			name = "Core Application";
+			sourceTree = "<group>";
+		};
+		D93C556F1E27E13B0093EABB /* Feekes Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CA5D20281D0CEF39000F5762 /* Feekes.swift */,
+				CA5D20291D0CEF39000F5762 /* FeekesData.swift */,
+				CA5D20301D0D0342000F5762 /* FeekesTableViewCell.swift */,
+				CA5D20261D0CE9B9000F5762 /* FeekesTableViewController.swift */,
+			);
+			name = "Feekes Classes";
+			sourceTree = "<group>";
+		};
+		D93C55701E27E1DA0093EABB /* Seeding Rates */ = {
+			isa = PBXGroup;
+			children = (
+				CA4D70C81CF40DA200CE8B3F /* Nitrogen.swift */,
+				CA53E24A1CEB6C5600EC4438 /* Nutrient.swift */,
+				CA25913A1D15CB950010E037 /* Volume.swift */,
+				CA25913E1D16583B0010E037 /* FinalSeeding.swift */,
+				CA2591421D1686640010E037 /* KnownView.swift */,
+				CA25913C1D15DA890010E037 /* Seeding.swift */,
+				CA2591401D166DCD0010E037 /* UnknownSeed.swift */,
+			);
+			name = "Seeding Rates";
+			sourceTree = "<group>";
+		};
+		D93C55711E27E1FE0093EABB /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		D93C55721E27E2720093EABB /* Variety Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CAD8A5011CED9E13003F73E3 /* VarietyTable.swift */,
+				CA44F6361CFFE1A300ED79DB /* Variety-Filter.swift */,
+				CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */,
+				CADE088A1D3FD22E00764D03 /* VarietyDiscription.swift */,
+			);
+			name = "Variety Classes";
+			sourceTree = "<group>";
+		};
+		D93C55731E27E5C80093EABB /* Non .Swift Files */ = {
+			isa = PBXGroup;
+			children = (
+				CADE08901D4A4C0700764D03 /* Appendix.pdf */,
+				CA5D202C1D0CF55E000F5762 /* default@1x.pdf */,
+				CA5D202D1D0CF55E000F5762 /* default@2x.pdf */,
+				CA53E2561CEB6C5700EC4438 /* Info.plist */,
+				CA8E73861D8E1161001925B2 /* background3 copy.png */,
+				CA4D70C61CF40C2C00CE8B3F /* info.png */,
+			);
+			name = "Non .Swift Files";
+			sourceTree = "<group>";
+		};
+		D93C55741E27E6480093EABB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA8E73971D97335D001925B2 /* FBSDKCoreKit.framework */,
+				CA8E73981D97335D001925B2 /* FBSDKLoginKit.framework */,
+				CA8E73991D97335D001925B2 /* FBSDKShareKit.framework */,
+				CA8E738B1D971541001925B2 /* Fabric.framework */,
+				CA8E738C1D971541001925B2 /* TwitterKit.framework */,
+				CA8E738D1D971541001925B2 /* TwitterKitResources.bundle */,
+				CA8E738E1D971541001925B2 /* TwitterCore.framework */,
+				CA53E2781CEB7AED00EC4438 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -3628,7 +3628,7 @@ Management: Genetic resistance, foliar fungicides, crop rotation, fungicide seed
         <scene sceneID="DHh-d4-JOe">
             <objects>
                 <collectionViewController id="FQW-1c-iBQ" customClass="CollectionViewController" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="H9D-LL-UAT">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="H9D-LL-UAT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
