@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KBW-qv-YK3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PrecisionAg-->
+        <scene sceneID="Xq2-Nb-Lu6">
+            <objects>
+                <viewController id="gHD-lx-TOV" userLabel="PrecisionAg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bvM-kD-8Dn"/>
+                        <viewControllerLayoutGuide type="bottom" id="erU-dJ-zdL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nb5-U4-CBb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-Ug-Vhe">
+                                <rect key="frame" x="69" y="225" width="94" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="gXZ-Lj-dTz"/>
+                                    <constraint firstAttribute="width" constant="94" id="xqi-rj-W9c"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
+                                <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Call Us" image="phone">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-wK-G2T">
+                                <rect key="frame" x="214" y="225" width="94" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="cfj-9z-ogp"/>
+                                    <constraint firstAttribute="width" constant="94" id="ptA-NZ-Ibv"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
+                                <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="e-Mail Us" image="email">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="top" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-xi-b56">
+                                <rect key="frame" x="79" y="81" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="TIK-ys-Z9i"/>
+                                    <constraint firstAttribute="width" constant="75" id="bcH-Mm-Jat"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-51" minY="-9" maxX="0.0" maxY="-67"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="-14" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Facebook" image="facebook">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="top" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zms-GW-YIl">
+                                <rect key="frame" x="224" y="81" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="A18-TJ-Xgb"/>
+                                    <constraint firstAttribute="width" constant="75" id="zAs-VM-uyM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-45" minY="-7" maxX="0.0" maxY="-67"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="-5" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Twitter" image="twitter">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="t3a-0e-ipH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fms-Rz-xw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="443"/>
+        </scene>
+        <!--KSU Wheat-->
+        <scene sceneID="RTQ-ZR-ubW">
+            <objects>
+                <viewController id="mie-SG-tJC" userLabel="KSU Wheat" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uaq-Ms-kcG"/>
+                        <viewControllerLayoutGuide type="bottom" id="aGk-DQ-7RF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C1P-Yw-TPX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-fX-YSE">
+                                <rect key="frame" x="54" y="235" width="94" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="5kL-TC-LQq"/>
+                                    <constraint firstAttribute="width" constant="94" id="9ZG-DN-ahJ"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
+                                <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Call Us" image="phone">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-tz-EmX">
+                                <rect key="frame" x="220" y="235" width="94" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="6q1-jd-ZYh"/>
+                                    <constraint firstAttribute="height" constant="95" id="API-un-2Zq"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
+                                <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="e-Mail Us" image="email">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="top" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-GJ-99Z">
+                                <rect key="frame" x="64" y="76" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="YdO-6q-JGV"/>
+                                    <constraint firstAttribute="width" constant="75" id="rGM-gT-v1f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-51" minY="-9" maxX="0.0" maxY="-67"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="-14" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Facebook" image="facebook">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="top" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClA-5M-zD4">
+                                <rect key="frame" x="230" y="76" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="5yc-Qb-hKq"/>
+                                    <constraint firstAttribute="height" constant="75" id="MSm-yZ-TJ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-45" minY="-7" maxX="0.0" maxY="-67"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="-5" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Twitter" image="twitter">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="B9h-wb-Crv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1x-G0-hE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-212"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dtW-vS-Acm">
+            <objects>
+                <tabBarController id="KBW-qv-YK3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KHO-IM-KpS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mie-SG-tJC" kind="relationship" relationship="viewControllers" id="DMn-FY-UFI"/>
+                        <segue destination="gHD-lx-TOV" kind="relationship" relationship="viewControllers" id="IhY-P3-MTb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eG8-iU-liq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="email" width="64" height="64"/>
+        <image name="facebook" width="50" height="50"/>
+        <image name="phone" width="64" height="64"/>
+        <image name="twitter" width="54" height="54"/>
+    </resources>
+</document>

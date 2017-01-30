@@ -86,6 +86,8 @@
 		CADE088F1D4A4AFC00764D03 /* VarietyAppendix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */; };
 		CADE08911D4A4C0700764D03 /* Appendix.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CADE08901D4A4C0700764D03 /* Appendix.pdf */; };
 		CAF5BED41D510A2800D644DA /* Acknowledgement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5BED31D510A2800D644DA /* Acknowledgement.swift */; };
+		D93C55771E27EE990093EABB /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93C55761E27EE990093EABB /* AboutUs.storyboard */; };
+		D98AFB631E29570B004DB1B0 /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +193,8 @@
 		CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyAppendix.swift; sourceTree = "<group>"; };
 		CADE08901D4A4C0700764D03 /* Appendix.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Appendix.pdf; sourceTree = "<group>"; };
 		CAF5BED31D510A2800D644DA /* Acknowledgement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Acknowledgement.swift; sourceTree = "<group>"; };
+		D93C55761E27EE990093EABB /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
+		D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactUs.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,8 +304,7 @@
 				CA8E73841D8DE8B7001925B2 /* png */,
 				CA5D20221D0CD838000F5762 /* Products Images */,
 				CA53E2511CEB6C5600EC4438 /* Assets.xcassets */,
-				CA53E2531CEB6C5700EC4438 /* LaunchScreen.storyboard */,
-				CA53E24E1CEB6C5600EC4438 /* Main.storyboard */,
+				D93C55751E27EE660093EABB /* Storyboards */,
 				D93C556E1E27E0E30093EABB /* Core Application */,
 				D93C556B1E27DFB60093EABB /* Diseases */,
 				D93C556F1E27E13B0093EABB /* Feekes Classes */,
@@ -455,6 +458,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D93C55751E27EE660093EABB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA53E2531CEB6C5700EC4438 /* LaunchScreen.storyboard */,
+				CA53E24E1CEB6C5600EC4438 /* Main.storyboard */,
+				D93C55761E27EE990093EABB /* AboutUs.storyboard */,
+				D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -519,7 +533,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Shubh Chopra";
 				TargetAttributes = {
 					CA53E2441CEB6C5600EC4438 = {
@@ -563,6 +577,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93C55771E27EE990093EABB /* AboutUs.storyboard in Resources */,
 				CA5D20251D0CD838000F5762 /* Products Images in Resources */,
 				CA53E2551CEB6C5700EC4438 /* LaunchScreen.storyboard in Resources */,
 				CA53E2521CEB6C5600EC4438 /* Assets.xcassets in Resources */,
@@ -572,6 +587,7 @@
 				CA8E73871D8E1161001925B2 /* background3 copy.png in Resources */,
 				CA8E73911D971542001925B2 /* TwitterKitResources.bundle in Resources */,
 				CA8E73851D8DE8B7001925B2 /* png in Resources */,
+				D98AFB631E29570B004DB1B0 /* ContactUs.storyboard in Resources */,
 				CA5D20241D0CD838000F5762 /* Helper Classes in Resources */,
 				CA4D70C71CF40C2C00CE8B3F /* info.png in Resources */,
 				CA5D202F1D0CF55E000F5762 /* default@2x.pdf in Resources */,
@@ -740,8 +756,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -785,8 +803,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -805,6 +825,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
