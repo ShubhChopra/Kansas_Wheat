@@ -24,28 +24,35 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="aboutme2" translatesAutoresizingMaskIntoConstraints="NO" id="Srh-74-Z2k">
                                 <rect key="frame" x="-20" y="20" width="402" height="159"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="KCQ-Cz-BPH"/>
+                                    <constraint firstAttribute="height" constant="159" id="W1Z-R0-k0s"/>
+                                    <constraint firstAttribute="width" constant="402" id="vHz-Fx-2NV"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kansas Precision Ag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNJ-LV-dBG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kansas Precision Ag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNJ-LV-dBG">
                                 <rect key="frame" x="20" y="207" width="335" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1Ev-fF-tLx"/>
+                                    <constraint firstAttribute="width" constant="335" id="ruu-w8-gW6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Hak-de-P2I">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Hak-de-P2I">
                                 <rect key="frame" x="16" y="236" width="343" height="244"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">The Precision Agriculture Laboratory is a part of the Department of Agronomy at Kansas State University.  The Precision Agriculture Laboratory focuses on developing agronomic algorithms to advance the artificial intelligence of ground and aerial robotic platforms for providing farmers site-specific recommendations for maximizing profit per acre and reducing environmental impact.  The Precision Agriculture Laboratory is comprised of a multidisciplinary team with specializations in agronomy, remote sensing, aerial/ground robotics, mobile development, artificial intelligence, and data analytics.</mutableString>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="5s2-FH-bCm"/>
+                                    <constraint firstAttribute="height" constant="244" id="AwL-ML-xrG"/>
+                                </constraints>
+                                <string key="text">The Precision Agriculture Laboratory is a part of the Department of Agronomy at Kansas State University.  The Precision Agriculture Laboratory focuses on developing agronomic algorithms to advance the artificial intelligence of ground and aerial robotic platforms for providing farmers site-specific recommendations for maximizing profit per acre and reducing environmental impact.  The Precision Agriculture Laboratory is comprised of a multidisciplinary team with specializations in agronomy, remote sensing, aerial/ground robotics, mobile development, artificial intelligence, and data analytics.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="pCF-lQ-zc7" userLabel="Precision Ag"/>
+                    <tabBarItem key="tabBarItem" title="Precision Ag" id="pCF-lQ-zc7" userLabel="Precision Ag"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qb-ZB-UGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,36 +70,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kansas Wheat and Forages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-Rc-wrc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kansas Wheat and Forages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-Rc-wrc">
                                 <rect key="frame" x="47" y="206" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1jT-D2-Plq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="fgS-3Z-cGn"/>
+                                    <constraint firstAttribute="width" constant="280" id="x0g-Ed-eBP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutme1" translatesAutoresizingMaskIntoConstraints="NO" id="0H2-8b-7U7">
-                                <rect key="frame" x="0.0" y="28" width="375" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fFE-sP-U2U">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fFE-sP-U2U">
                                 <rect key="frame" x="16" y="235" width="343" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
-                                <mutableString key="text">The Kansas Wheat and Forages team at Kansas State University is led by Dr. Romulo Lollato and his graduate research assistants, visiting scholars, and undergraduate hourly employees. Dr. Lollato’s research and extension efforts are focused on management practices to improve wheat and forages enterprise productivity and profitability, minimizing the gap between current and potential yields. He conducts research on the effects of diverse inputs on wheat yields under standard and intensive management as well as projects quantifying the genotype x management x environment interaction in wheat yields. </mutableString>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="KAt-lx-p5A"/>
+                                    <constraint firstAttribute="height" constant="234" id="gHr-em-RMi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="234" id="vqU-Ve-gUq"/>
+                                </constraints>
+                                <string key="text">The Kansas Wheat and Forages team at Kansas State University is led by Dr. Romulo Lollato and his graduate research assistants, visiting scholars, and undergraduate hourly employees. Dr. Lollato’s research and extension efforts are focused on management practices to improve wheat and forages enterprise productivity and profitability, minimizing the gap between current and potential yields. He conducts research on the effects of diverse inputs on wheat yields under standard and intensive management as well as projects quantifying the genotype x management x environment interaction in wheat yields. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="aboutme1" translatesAutoresizingMaskIntoConstraints="NO" id="0H2-8b-7U7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="TBC-4s-hNp"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="lA5-4o-hQk"/>
+                                    <constraint firstAttribute="width" constant="375" id="sdk-dH-EPz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Par-Pl-eFQ" userLabel="KSU Wheat"/>
+                    <tabBarItem key="tabBarItem" title="KSU Wheat" id="Par-Pl-eFQ" userLabel="KSU Wheat"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujV-FS-i4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="-304"/>
+            <point key="canvasLocation" x="101.59999999999999" y="-304.4977511244378"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6fT-xi-e6u">
