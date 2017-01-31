@@ -87,7 +87,10 @@
 		CADE08911D4A4C0700764D03 /* Appendix.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CADE08901D4A4C0700764D03 /* Appendix.pdf */; };
 		CAF5BED41D510A2800D644DA /* Acknowledgement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5BED31D510A2800D644DA /* Acknowledgement.swift */; };
 		D93C55771E27EE990093EABB /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93C55761E27EE990093EABB /* AboutUs.storyboard */; };
+		D93FFBD81E403B480021608A /* FacebookSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */; };
+		D93FFBDA1E403DBE0021608A /* TwitterSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */; };
 		D98AFB631E29570B004DB1B0 /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */; };
+		D9F32AC31E40F7B600BF23B3 /* FoliarDiseases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F32AC21E40F7B600BF23B3 /* FoliarDiseases.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,7 +197,10 @@
 		CADE08901D4A4C0700764D03 /* Appendix.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Appendix.pdf; sourceTree = "<group>"; };
 		CAF5BED31D510A2800D644DA /* Acknowledgement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Acknowledgement.swift; sourceTree = "<group>"; };
 		D93C55761E27EE990093EABB /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
+		D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FacebookSocialMedia.storyboard; sourceTree = "<group>"; };
+		D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwitterSocialMedia.storyboard; sourceTree = "<group>"; };
 		D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactUs.storyboard; sourceTree = "<group>"; };
+		D9F32AC21E40F7B600BF23B3 /* FoliarDiseases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FoliarDiseases.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +238,7 @@
 		CA4D70D41CF684AB00CE8B3F /* Head Diseases */ = {
 			isa = PBXGroup;
 			children = (
+				CA4D71001CF6D64600CE8B3F /* Stagonospora Nodorum.swift */,
 				CA4D70D51CF684F800CE8B3F /* Black Chaff.swift */,
 				CA4D70D71CF689AD00CE8B3F /* Common Bunt.swift */,
 				CA4D70DF1CF69CF900CE8B3F /* Ergot.swift */,
@@ -257,7 +264,6 @@
 				CA4D70FA1CF6D5AF00CE8B3F /* Wheat Soilborne Mosaic.swift */,
 				CA4D70FC1CF6D5CF00CE8B3F /* Wheat Spindle Streak Mosaic.swift */,
 				CA4D70FE1CF6D5EB00CE8B3F /* Wheat Streak Mosaic.swift */,
-				CA4D71001CF6D64600CE8B3F /* Stagonospora Nodorum.swift */,
 			);
 			name = "Foliar Diswases";
 			sourceTree = "<group>";
@@ -464,7 +470,10 @@
 				CA53E2531CEB6C5700EC4438 /* LaunchScreen.storyboard */,
 				CA53E24E1CEB6C5600EC4438 /* Main.storyboard */,
 				D93C55761E27EE990093EABB /* AboutUs.storyboard */,
+				D9F32AC21E40F7B600BF23B3 /* FoliarDiseases.storyboard */,
 				D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */,
+				D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */,
+				D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -583,8 +592,11 @@
 				CA53E2521CEB6C5600EC4438 /* Assets.xcassets in Resources */,
 				CA5D20231D0CD838000F5762 /* Default Images in Resources */,
 				CA5D202E1D0CF55E000F5762 /* default@1x.pdf in Resources */,
+				D9F32AC31E40F7B600BF23B3 /* FoliarDiseases.storyboard in Resources */,
 				CA53E2501CEB6C5600EC4438 /* Main.storyboard in Resources */,
+				D93FFBDA1E403DBE0021608A /* TwitterSocialMedia.storyboard in Resources */,
 				CA8E73871D8E1161001925B2 /* background3 copy.png in Resources */,
+				D93FFBD81E403B480021608A /* FacebookSocialMedia.storyboard in Resources */,
 				CA8E73911D971542001925B2 /* TwitterKitResources.bundle in Resources */,
 				CA8E73851D8DE8B7001925B2 /* png in Resources */,
 				D98AFB631E29570B004DB1B0 /* ContactUs.storyboard in Resources */,

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cz1-By-zRZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--@KSUWheat-->
+        <scene sceneID="SGj-Ng-RbW">
+            <objects>
+                <tableViewController id="0te-UT-TMi" customClass="twitter_wheat" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PI2-X8-Oy9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ELb-WY-yae">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ELb-WY-yae" id="vwk-hO-bxn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0te-UT-TMi" id="KDa-vr-5yi"/>
+                            <outlet property="delegate" destination="0te-UT-TMi" id="ghU-Pi-Nsl"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="@KSUWheat" image="manage" id="xYs-wo-cWK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgL-0w-SYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4290" y="-2418"/>
+        </scene>
+        <!--PrecisionAg-->
+        <scene sceneID="Fgi-bh-Ou8">
+            <objects>
+                <tableViewController id="4DG-f2-m70" customClass="twitter_precision" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6tj-KE-bIC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kqc-Xs-isb">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kqc-Xs-isb" id="W5w-R1-QAz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4DG-f2-m70" id="eS2-M8-1xi"/>
+                            <outlet property="delegate" destination="4DG-f2-m70" id="M7r-Mg-i0R"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="PrecisionAg" image="tab-v1" id="ey7-Gt-dV2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdT-c8-h4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5058" y="-1884"/>
+        </scene>
+        <!--Twitter - Tab Bar Controller-->
+        <scene sceneID="tAc-5v-vgd">
+            <objects>
+                <tabBarController id="cz1-By-zRZ" userLabel="Twitter - Tab Bar Controller" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="GZt-EG-VqX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4DG-f2-m70" kind="relationship" relationship="viewControllers" id="TlV-4M-KOI"/>
+                        <segue destination="0te-UT-TMi" kind="relationship" relationship="viewControllers" id="GiT-dq-E8Q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gug-km-XWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5242" y="-2606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="manage" width="25" height="25"/>
+        <image name="tab-v1" width="25" height="25"/>
+    </resources>
+</document>

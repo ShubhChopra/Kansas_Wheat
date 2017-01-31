@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-Ug-Vhe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-Ug-Vhe">
                                 <rect key="frame" x="69" y="225" width="94" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="95" id="gXZ-Lj-dTz"/>
@@ -34,7 +35,7 @@
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-wK-G2T">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-wK-G2T">
                                 <rect key="frame" x="214" y="225" width="94" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="95" id="cfj-9z-ogp"/>
@@ -47,7 +48,7 @@
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="top" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-xi-b56">
+                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-xi-b56">
                                 <rect key="frame" x="79" y="81" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="TIK-ys-Z9i"/>
@@ -61,7 +62,7 @@
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="top" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zms-GW-YIl">
+                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zms-GW-YIl">
                                 <rect key="frame" x="224" y="81" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="A18-TJ-Xgb"/>
@@ -77,6 +78,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="top" secondItem="rEN-xi-b56" secondAttribute="bottom" constant="69" id="3ni-He-oeB"/>
+                            <constraint firstItem="zms-GW-YIl" firstAttribute="centerX" secondItem="kUl-wK-G2T" secondAttribute="centerX" id="bFA-Sd-pD6"/>
+                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="leading" secondItem="Nb5-U4-CBb" secondAttribute="leadingMargin" constant="53" id="c85-SP-x5k"/>
+                            <constraint firstItem="rEN-xi-b56" firstAttribute="top" secondItem="zms-GW-YIl" secondAttribute="top" id="geK-Wx-CyG"/>
+                            <constraint firstItem="rEN-xi-b56" firstAttribute="centerX" secondItem="cfQ-Ug-Vhe" secondAttribute="centerX" id="kSp-79-VdG"/>
+                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="baseline" secondItem="kUl-wK-G2T" secondAttribute="baseline" id="slO-Rf-Jju"/>
+                            <constraint firstItem="kUl-wK-G2T" firstAttribute="leading" secondItem="cfQ-Ug-Vhe" secondAttribute="trailing" constant="51" id="vqB-Ol-yDz"/>
+                            <constraint firstItem="rEN-xi-b56" firstAttribute="top" secondItem="bvM-kD-8Dn" secondAttribute="bottom" constant="61" id="xFA-tb-bTV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="t3a-0e-ipH"/>
                 </viewController>
@@ -96,7 +107,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-fX-YSE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-fX-YSE">
                                 <rect key="frame" x="54" y="235" width="94" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="95" id="5kL-TC-LQq"/>
@@ -109,7 +120,7 @@
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-tz-EmX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-tz-EmX">
                                 <rect key="frame" x="220" y="235" width="94" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="94" id="6q1-jd-ZYh"/>
@@ -122,7 +133,7 @@
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="top" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-GJ-99Z">
+                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-GJ-99Z">
                                 <rect key="frame" x="64" y="76" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="YdO-6q-JGV"/>
@@ -136,7 +147,7 @@
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="top" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClA-5M-zD4">
+                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClA-5M-zD4">
                                 <rect key="frame" x="230" y="76" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="5yc-Qb-hKq"/>
@@ -152,6 +163,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u2B-fX-YSE" firstAttribute="top" secondItem="a1M-GJ-99Z" secondAttribute="bottom" constant="84" id="A7d-UO-adn"/>
+                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="top" secondItem="ClA-5M-zD4" secondAttribute="top" id="EPY-6i-ieZ"/>
+                            <constraint firstItem="u2B-fX-YSE" firstAttribute="baseline" secondItem="tZo-tz-EmX" secondAttribute="baseline" id="IBg-35-HKv"/>
+                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="centerX" secondItem="u2B-fX-YSE" secondAttribute="centerX" id="PMq-qj-ryl"/>
+                            <constraint firstItem="ClA-5M-zD4" firstAttribute="centerX" secondItem="tZo-tz-EmX" secondAttribute="centerX" id="c1e-74-SKD"/>
+                            <constraint firstItem="u2B-fX-YSE" firstAttribute="leading" secondItem="C1P-Yw-TPX" secondAttribute="leadingMargin" constant="38" id="mdQ-uh-3lm"/>
+                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="top" secondItem="Uaq-Ms-kcG" secondAttribute="bottom" constant="56" id="muQ-sP-fkm"/>
+                            <constraint firstItem="tZo-tz-EmX" firstAttribute="leading" secondItem="u2B-fX-YSE" secondAttribute="trailing" constant="72" id="vXO-VL-gpU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="B9h-wb-Crv"/>
                 </viewController>
