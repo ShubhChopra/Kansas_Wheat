@@ -15,10 +15,13 @@ class facebook_precision: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string:"https://www.facebook.com/precisionaglab/")
         
-        webview.loadRequest(URLRequest(url : url! ))
-        // Do view setup here.
+        let facebookURL = URL(string: "fb://profile/1821513791430475")
+        if UIApplication.shared.canOpenURL(facebookURL!) {
+            UIApplication.shared.open(facebookURL!, options: [:], completionHandler: nil)
+        }
+        else {
+            webview.loadRequest(URLRequest(url : URL(string: "https://www.facebook.com/precisionaglab/")!))
+        }
     }
-
 }

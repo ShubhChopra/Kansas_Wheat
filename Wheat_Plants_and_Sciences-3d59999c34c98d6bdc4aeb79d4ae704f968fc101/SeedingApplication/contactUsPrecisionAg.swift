@@ -20,22 +20,22 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
     }
     
     
-    //call function
+    
     @IBAction func callbutton(_ sender: AnyObject) {
-        let phone = "7855320397";
-        UIApplication.shared.openURL(URL(string: "tel://7855320397")!)
-        
+        let phone = URL(string: "tel://7855326101")
+        UIApplication.shared.open(phone!, options: [:], completionHandler: nil)
         
     }
     
     //buttonthat opens Facebook page
     @IBAction func facebookbutton(_ sender: AnyObject) {
-        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/kansaswheat/")!)
+        let url = URL(string: "https://www.facebook.com/precisionaglab/")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
     
     //function that opens and creates an email
     @IBAction func emailbutton(_ sender: AnyObject) {
-        let toRecipents = ["ara4747@ksu.edu"]
+        let toRecipents = ["Dr. Antonio Asebedo <ara4747@ksu.edu>"]
         let mailVC: MFMailComposeViewController = MFMailComposeViewController()
         
         mailVC.mailComposeDelegate = self
@@ -49,10 +49,8 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
     
     //button that opens twitter 
     @IBAction func twitterbutton(_ sender: AnyObject) {
-        UIApplication.shared.openURL(URL(string: "https://twitter.com/ksuprecisionag")!)
-        
+        let url = URL(string: "https://twitter.com/ksuprecisionag")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
-    
 }
 
-//totally understand everything from this file like the "ContactUS.swift" file.

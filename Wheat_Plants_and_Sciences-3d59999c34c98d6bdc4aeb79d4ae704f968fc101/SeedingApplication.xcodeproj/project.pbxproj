@@ -77,10 +77,10 @@
 		CA8E739A1D97335D001925B2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E73971D97335D001925B2 /* FBSDKCoreKit.framework */; };
 		CA8E739B1D97335D001925B2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E73981D97335D001925B2 /* FBSDKLoginKit.framework */; };
 		CA8E739C1D97335D001925B2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E73991D97335D001925B2 /* FBSDKShareKit.framework */; };
-		CA8E739E1D985766001925B2 /* facebook_wheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E739D1D985766001925B2 /* facebook_wheat.swift */; };
+		CA8E739E1D985766001925B2 /* facebookKansasWheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E739D1D985766001925B2 /* facebookKansasWheat.swift */; };
 		CA8E73A01D985BBF001925B2 /* facebook_precision.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E739F1D985BBF001925B2 /* facebook_precision.swift */; };
-		CA8E73A21D986CDB001925B2 /* ContactUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73A11D986CDB001925B2 /* ContactUS.swift */; };
-		CA8E73A41D98C6E1001925B2 /* contactus_precisionag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73A31D98C6E1001925B2 /* contactus_precisionag.swift */; };
+		CA8E73A21D986CDB001925B2 /* contactUsKansasWheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73A11D986CDB001925B2 /* contactUsKansasWheat.swift */; };
+		CA8E73A41D98C6E1001925B2 /* contactUsPrecisionAg.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73A31D98C6E1001925B2 /* contactUsPrecisionAg.swift */; };
 		CAD8A5021CED9E13003F73E3 /* VarietyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD8A5011CED9E13003F73E3 /* VarietyTable.swift */; };
 		CADE088B1D3FD22E00764D03 /* VarietyDiscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE088A1D3FD22E00764D03 /* VarietyDiscription.swift */; };
 		CADE088F1D4A4AFC00764D03 /* VarietyAppendix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */; };
@@ -93,6 +93,7 @@
 		D9F32AC31E40F7B600BF23B3 /* FoliarDiseases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F32AC21E40F7B600BF23B3 /* FoliarDiseases.storyboard */; };
 		D9FF643F1E43C6BD009A8F17 /* StemDiseases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FF643E1E43C6BD009A8F17 /* StemDiseases.storyboard */; };
 		D9FF64411E43C7CE009A8F17 /* HeadDiseases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FF64401E43C7CE009A8F17 /* HeadDiseases.storyboard */; };
+		D9FF64431E43D166009A8F17 /* VarietyFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FF64421E43D166009A8F17 /* VarietyFilter.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,10 +190,10 @@
 		CA8E73971D97335D001925B2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CA8E73981D97335D001925B2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CA8E73991D97335D001925B2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		CA8E739D1D985766001925B2 /* facebook_wheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebook_wheat.swift; sourceTree = "<group>"; };
+		CA8E739D1D985766001925B2 /* facebookKansasWheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookKansasWheat.swift; sourceTree = "<group>"; };
 		CA8E739F1D985BBF001925B2 /* facebook_precision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebook_precision.swift; sourceTree = "<group>"; };
-		CA8E73A11D986CDB001925B2 /* ContactUS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUS.swift; sourceTree = "<group>"; };
-		CA8E73A31D98C6E1001925B2 /* contactus_precisionag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactus_precisionag.swift; sourceTree = "<group>"; };
+		CA8E73A11D986CDB001925B2 /* contactUsKansasWheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactUsKansasWheat.swift; sourceTree = "<group>"; };
+		CA8E73A31D98C6E1001925B2 /* contactUsPrecisionAg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactUsPrecisionAg.swift; sourceTree = "<group>"; };
 		CAD8A5011CED9E13003F73E3 /* VarietyTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyTable.swift; sourceTree = "<group>"; };
 		CADE088A1D3FD22E00764D03 /* VarietyDiscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyDiscription.swift; sourceTree = "<group>"; };
 		CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyAppendix.swift; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 		D9F32AC21E40F7B600BF23B3 /* FoliarDiseases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FoliarDiseases.storyboard; sourceTree = "<group>"; };
 		D9FF643E1E43C6BD009A8F17 /* StemDiseases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StemDiseases.storyboard; sourceTree = "<group>"; };
 		D9FF64401E43C7CE009A8F17 /* HeadDiseases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HeadDiseases.storyboard; sourceTree = "<group>"; };
+		D9FF64421E43D166009A8F17 /* VarietyFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VarietyFilter.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,9 +366,9 @@
 			isa = PBXGroup;
 			children = (
 				CAF5BED31D510A2800D644DA /* Acknowledgement.swift */,
-				CA8E73A11D986CDB001925B2 /* ContactUS.swift */,
-				CA8E73A31D98C6E1001925B2 /* contactus_precisionag.swift */,
-				CA8E739D1D985766001925B2 /* facebook_wheat.swift */,
+				CA8E73A11D986CDB001925B2 /* contactUsKansasWheat.swift */,
+				CA8E73A31D98C6E1001925B2 /* contactUsPrecisionAg.swift */,
+				CA8E739D1D985766001925B2 /* facebookKansasWheat.swift */,
 				CA8E739F1D985BBF001925B2 /* facebook_precision.swift */,
 				CA8E73931D971822001925B2 /* twitter_wheat.swift */,
 				CA8E73951D972143001925B2 /* twitter_precision.swift */,
@@ -473,6 +475,7 @@
 			children = (
 				CA53E2531CEB6C5700EC4438 /* LaunchScreen.storyboard */,
 				CA53E24E1CEB6C5600EC4438 /* Main.storyboard */,
+				D9FF64421E43D166009A8F17 /* VarietyFilter.storyboard */,
 				D9FF64401E43C7CE009A8F17 /* HeadDiseases.storyboard */,
 				D9FF643E1E43C6BD009A8F17 /* StemDiseases.storyboard */,
 				D93C55761E27EE990093EABB /* AboutUs.storyboard */,
@@ -595,6 +598,7 @@
 				D93C55771E27EE990093EABB /* AboutUs.storyboard in Resources */,
 				CA5D20251D0CD838000F5762 /* Products Images in Resources */,
 				CA53E2551CEB6C5700EC4438 /* LaunchScreen.storyboard in Resources */,
+				D9FF64431E43D166009A8F17 /* VarietyFilter.storyboard in Resources */,
 				CA53E2521CEB6C5600EC4438 /* Assets.xcassets in Resources */,
 				CA5D20231D0CD838000F5762 /* Default Images in Resources */,
 				CA5D202E1D0CF55E000F5762 /* default@1x.pdf in Resources */,
@@ -663,10 +667,10 @@
 				CA4D71081CF778FB00CE8B3F /* Eyespot.swift in Sources */,
 				CA4D70CD1CF51FD700CE8B3F /* PhotoCell.swift in Sources */,
 				CA5D202A1D0CEF39000F5762 /* Feekes.swift in Sources */,
-				CA8E739E1D985766001925B2 /* facebook_wheat.swift in Sources */,
+				CA8E739E1D985766001925B2 /* facebookKansasWheat.swift in Sources */,
 				CA4D70E41CF69DC700CE8B3F /* Loose smut.swift in Sources */,
 				CA4D70F91CF6D59800CE8B3F /* Tan spot.swift in Sources */,
-				CA8E73A21D986CDB001925B2 /* ContactUS.swift in Sources */,
+				CA8E73A21D986CDB001925B2 /* contactUsKansasWheat.swift in Sources */,
 				CA53E2491CEB6C5600EC4438 /* AppDelegate.swift in Sources */,
 				CA53E27D1CEBBA6C00EC4438 /* MainScreen.swift in Sources */,
 				CA5D20311D0D0342000F5762 /* FeekesTableViewCell.swift in Sources */,
@@ -679,7 +683,7 @@
 				CA44F6371CFFE1A300ED79DB /* Variety-Filter.swift in Sources */,
 				CA8E73A01D985BBF001925B2 /* facebook_precision.swift in Sources */,
 				CA2591431D1686640010E037 /* KnownView.swift in Sources */,
-				CA8E73A41D98C6E1001925B2 /* contactus_precisionag.swift in Sources */,
+				CA8E73A41D98C6E1001925B2 /* contactUsPrecisionAg.swift in Sources */,
 				CA4D70D81CF689AD00CE8B3F /* Common Bunt.swift in Sources */,
 				CA4D71061CF778E200CE8B3F /* Common Root rot.swift in Sources */,
 				CA4D70EB1CF6D45200CE8B3F /* Bacterial Streak.swift in Sources */,

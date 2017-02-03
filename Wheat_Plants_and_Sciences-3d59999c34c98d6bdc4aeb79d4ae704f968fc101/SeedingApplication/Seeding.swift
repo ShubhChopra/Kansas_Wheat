@@ -69,7 +69,7 @@ class Seeding: UIViewController {
     }
     else{
         //else perform this alert
-        let alert = UIAlertController(title: "Alert!", message: " You need to comple the Final Seeding Rate section", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Alert!", message: " You need to complete the Final Seeding Rate section", preferredStyle: .alert)
         
         
         
@@ -99,7 +99,7 @@ class Seeding: UIViewController {
         }
         else{
             //else this alert to user
-            let alert = UIAlertController(title: "Alert!", message: " You need to comple the Final Seeding Rate section", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Alert!", message: " You need to complete the Final Seeding Rate section", preferredStyle: .alert)
             
             
             

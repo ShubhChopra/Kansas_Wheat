@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KBW-qv-YK3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KBW-qv-YK3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--PrecisionAg-->
         <scene sceneID="Xq2-Nb-Lu6">
             <objects>
-                <viewController id="gHD-lx-TOV" userLabel="PrecisionAg" sceneMemberID="viewController">
+                <viewController id="gHD-lx-TOV" userLabel="PrecisionAg" customClass="contactus_precision" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bvM-kD-8Dn"/>
                         <viewControllerLayoutGuide type="bottom" id="erU-dJ-zdL"/>
@@ -34,6 +34,9 @@
                                 <state key="normal" title="Call Us" image="phone">
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="callbutton:" destination="gHD-lx-TOV" eventType="touchUpInside" id="crz-gq-MLc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-wK-G2T">
                                 <rect key="frame" x="214" y="225" width="94" height="95"/>
@@ -47,6 +50,9 @@
                                 <state key="normal" title="e-Mail Us" image="email">
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="emailbutton:" destination="gHD-lx-TOV" eventType="touchUpInside" id="Cvo-8n-L5E"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-xi-b56">
                                 <rect key="frame" x="79" y="81" width="75" height="75"/>
@@ -61,6 +67,9 @@
                                 <state key="normal" title="Facebook" image="facebook">
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="facebookbutton:" destination="gHD-lx-TOV" eventType="touchUpInside" id="hAG-xy-sEW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zms-GW-YIl">
                                 <rect key="frame" x="224" y="81" width="75" height="75"/>
@@ -75,6 +84,9 @@
                                 <state key="normal" title="Twitter" image="twitter">
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="twitterbutton:" destination="gHD-lx-TOV" eventType="touchUpInside" id="4NE-Cl-c5w"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,7 +101,7 @@
                             <constraint firstItem="rEN-xi-b56" firstAttribute="top" secondItem="bvM-kD-8Dn" secondAttribute="bottom" constant="61" id="xFA-tb-bTV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="t3a-0e-ipH"/>
+                    <tabBarItem key="tabBarItem" title="Precision Ag" image="tab-v1" id="VfT-SL-j3E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fms-Rz-xw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,7 +110,7 @@
         <!--KSU Wheat-->
         <scene sceneID="RTQ-ZR-ubW">
             <objects>
-                <viewController id="mie-SG-tJC" userLabel="KSU Wheat" sceneMemberID="viewController">
+                <viewController id="mie-SG-tJC" userLabel="KSU Wheat" customClass="Contactus" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uaq-Ms-kcG"/>
                         <viewControllerLayoutGuide type="bottom" id="aGk-DQ-7RF"/>
@@ -107,52 +119,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-fX-YSE">
-                                <rect key="frame" x="54" y="235" width="94" height="95"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="5kL-TC-LQq"/>
-                                    <constraint firstAttribute="width" constant="94" id="9ZG-DN-ahJ"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-fX-YSE">
+                                <rect key="frame" x="77" y="235" width="94" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
                                 <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="Call Us" image="phone">
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="callbutton:" destination="mie-SG-tJC" eventType="touchUpInside" id="9dY-he-AOV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-tz-EmX">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-tz-EmX">
                                 <rect key="frame" x="220" y="235" width="94" height="95"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="94" id="6q1-jd-ZYh"/>
-                                    <constraint firstAttribute="height" constant="95" id="API-un-2Zq"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
                                 <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="e-Mail Us" image="email">
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="emailbutton:" destination="mie-SG-tJC" eventType="touchUpInside" id="yM8-jN-qc6"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-GJ-99Z">
-                                <rect key="frame" x="64" y="76" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="YdO-6q-JGV"/>
-                                    <constraint firstAttribute="width" constant="75" id="rGM-gT-v1f"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <inset key="titleEdgeInsets" minX="-51" minY="-9" maxX="0.0" maxY="-67"/>
-                                <inset key="imageEdgeInsets" minX="6" minY="-14" maxX="0.0" maxY="0.0"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Facebook" image="facebook">
-                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClA-5M-zD4">
-                                <rect key="frame" x="230" y="76" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="5yc-Qb-hKq"/>
-                                    <constraint firstAttribute="height" constant="75" id="MSm-yZ-TJ4"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="top" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClA-5M-zD4">
+                                <rect key="frame" x="239" y="79" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="titleEdgeInsets" minX="-45" minY="-7" maxX="0.0" maxY="-67"/>
                                 <inset key="imageEdgeInsets" minX="6" minY="-5" maxX="0.0" maxY="0.0"/>
@@ -160,21 +155,34 @@
                                 <state key="normal" title="Twitter" image="twitter">
                                     <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="twitterbutton:" destination="mie-SG-tJC" eventType="touchUpInside" id="sF6-fM-Y8K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="top" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-GJ-99Z">
+                                <rect key="frame" x="87" y="88" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-51" minY="-9" maxX="0.0" maxY="-67"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="-14" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Facebook" image="facebook">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookbutton:" destination="mie-SG-tJC" eventType="touchUpInside" id="1a0-ea-UWy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="u2B-fX-YSE" firstAttribute="top" secondItem="a1M-GJ-99Z" secondAttribute="bottom" constant="84" id="A7d-UO-adn"/>
-                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="top" secondItem="ClA-5M-zD4" secondAttribute="top" id="EPY-6i-ieZ"/>
-                            <constraint firstItem="u2B-fX-YSE" firstAttribute="baseline" secondItem="tZo-tz-EmX" secondAttribute="baseline" id="IBg-35-HKv"/>
-                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="centerX" secondItem="u2B-fX-YSE" secondAttribute="centerX" id="PMq-qj-ryl"/>
-                            <constraint firstItem="ClA-5M-zD4" firstAttribute="centerX" secondItem="tZo-tz-EmX" secondAttribute="centerX" id="c1e-74-SKD"/>
-                            <constraint firstItem="u2B-fX-YSE" firstAttribute="leading" secondItem="C1P-Yw-TPX" secondAttribute="leadingMargin" constant="38" id="mdQ-uh-3lm"/>
-                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="top" secondItem="Uaq-Ms-kcG" secondAttribute="bottom" constant="56" id="muQ-sP-fkm"/>
-                            <constraint firstItem="tZo-tz-EmX" firstAttribute="leading" secondItem="u2B-fX-YSE" secondAttribute="trailing" constant="72" id="vXO-VL-gpU"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="B9h-wb-Crv"/>
+                    <tabBarItem key="tabBarItem" title="Kansas Wheat" image="manage" id="Ktn-vk-Tp9"/>
+                    <connections>
+                        <outlet property="Facebook" destination="a1M-GJ-99Z" id="y1g-qz-y6R"/>
+                        <outlet property="call" destination="u2B-fX-YSE" id="XwS-Rw-iLg"/>
+                        <outlet property="email" destination="tZo-tz-EmX" id="RNV-fj-Zvt"/>
+                        <outlet property="twitter" destination="ClA-5M-zD4" id="lhg-4r-xoi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1x-G0-hE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,7 +210,9 @@
     <resources>
         <image name="email" width="64" height="64"/>
         <image name="facebook" width="50" height="50"/>
+        <image name="manage" width="25" height="25"/>
         <image name="phone" width="64" height="64"/>
+        <image name="tab-v1" width="25" height="25"/>
         <image name="twitter" width="54" height="54"/>
     </resources>
 </document>

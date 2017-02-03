@@ -31,6 +31,9 @@ class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
     
     
     //button setup for the call function
+    
+    
+    
     @IBAction func callbutton(_ sender: AnyObject) {
         
         //phone variable never used
@@ -42,12 +45,18 @@ class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
  
     //button setup for the facebook button
     @IBAction func facebookbutton(_ sender: AnyObject) {
-        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/kansaswheat/")!)
+        let facebookURL = URL(string: "fb://profile/213201098709632")
+        if UIApplication.shared.canOpenURL(facebookURL!) {
+            UIApplication.shared.open(facebookURL!, options: [:], completionHandler: nil)
+        }
+        else {
+            UIApplication.shared.open(facebookURL!, options: [:], completionHandler: nil)
+        }
     }
     
     
     @IBAction func emailbutton(_ sender: AnyObject) {
-        let toRecipents = ["lollato@ksu.edu"]
+        let toRecipents = ["Dr. Romulo Lollato <lollato@ksu.edu>"]
          let mailVC: MFMailComposeViewController = MFMailComposeViewController()
       
             mailVC.mailComposeDelegate = self

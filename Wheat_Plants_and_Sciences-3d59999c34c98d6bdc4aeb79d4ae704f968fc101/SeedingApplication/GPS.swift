@@ -118,8 +118,6 @@ class GPS: UIViewController, CLLocationManagerDelegate, UIPickerViewDataSource, 
         "Wilson",
         "Woodson",
         "Wyandotte"]
-    
-    
    
     @IBOutlet var County: UITextField!
     var picker = UIPickerView()
@@ -315,18 +313,20 @@ class GPS: UIViewController, CLLocationManagerDelegate, UIPickerViewDataSource, 
         if let containsPlacemark = placemark {
             //stop updating location to save battery life
             locationManager.stopUpdatingLocation()
-            let locality = (containsPlacemark.locality != nil) ? containsPlacemark.locality : ""
-            let postalCode = (containsPlacemark.postalCode != nil) ? containsPlacemark.postalCode : ""
-            let administrativeArea = (containsPlacemark.administrativeArea != nil) ? containsPlacemark.administrativeArea : ""
+            //let locality = (containsPlacemark.locality != nil) ? containsPlacemark.locality : ""
+            //let postalCode = (containsPlacemark.postalCode != nil) ? containsPlacemark.postalCode : ""
+            //let administrativeArea = (containsPlacemark.administrativeArea != nil) ? containsPlacemark.administrativeArea : ""
             let county = (containsPlacemark.subAdministrativeArea != nil) ? containsPlacemark.subAdministrativeArea : ""
-           
-            var location = locality! + " , " + postalCode! + " , ";
-            location = location +  administrativeArea! + " , " + county!;
             
-            let Alert = UIAlertController(title: "Do you want to continue with this location ?", message: location , preferredStyle: UIAlertControllerStyle.alert)
+            /* simplify location comfirmation informaiton
+            var location = locality! + ", " + postalCode! + ", ";
+            location = location +  administrativeArea! + ", " + county!;*/
+            
+            
+            let Alert = UIAlertController(title: "Are you currently in " + county! + " county?", message: "We use your current location to adjust our seeding calculations. Select \"OK\" to use " + county! + " county or select \"Cancel\" to select manually below.", preferredStyle: UIAlertControllerStyle.alert)
             
             Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-                print(" Ok ")
+                print("Ok")
                 
                 if( county=="Cheyenne" || county=="Rawlins" || county=="Decatur" || county=="Norton" || county=="Sherman" || county=="Thomas" || county=="Sheridan" || county=="Graham" )
                 {
@@ -398,8 +398,6 @@ class GPS: UIViewController, CLLocationManagerDelegate, UIPickerViewDataSource, 
         }
         
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
