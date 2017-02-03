@@ -35,43 +35,43 @@ class VarietyFilter: UIViewController {
               clearfield.selectedSegmentIndex = -1
        // tabBarItem = UITabBarItem(title: "Variety", image: UIImage(named: "tab-v1"), tag: 2)
 
-    if(MyVariables.ph == 1)
+    if(applicationVars.ph == 1)
     {
         ph.selectedSegmentIndex = 0
         }
-        if(MyVariables.ph == 2)
+        if(applicationVars.ph == 2)
         {
             ph.selectedSegmentIndex = 1
         }
-        if(MyVariables.grazed == 1)
+        if(applicationVars.grazed == 1)
         {
             grazed.selectedSegmentIndex = 0
         }
-        if(MyVariables.grazed == 2)
+        if(applicationVars.grazed == 2)
         {
             grazed.selectedSegmentIndex = 1
         }
-        if(MyVariables.fungicide == 1)
+        if(applicationVars.fungicide == 1)
         {
             fungicide.selectedSegmentIndex = 0
         }
-        if(MyVariables.fungicide == 2)
+        if(applicationVars.fungicide == 2)
         {
             fungicide.selectedSegmentIndex = 1
         }
-        if(MyVariables.lodging == 1)
+        if(applicationVars.lodging == 1)
         {
             lodging.selectedSegmentIndex = 0
         }
-        if(MyVariables.lodging == 2)
+        if(applicationVars.lodging == 2)
         {
             lodging.selectedSegmentIndex = 1
         }
-        if(MyVariables.clearfield == 1)
+        if(applicationVars.clearfield == 1)
         {
             clearfield.selectedSegmentIndex = 0
         }
-        if(MyVariables.clearfield == 2)
+        if(applicationVars.clearfield == 2)
         {
             clearfield.selectedSegmentIndex = 1
         }
@@ -81,9 +81,9 @@ class VarietyFilter: UIViewController {
         switch ph.selectedSegmentIndex
         {
         case 0 :
-            MyVariables.ph = 1
+            applicationVars.ph = 1
         case 1 :
-             MyVariables.ph = 2
+             applicationVars.ph = 2
         default :
             break;
         }
@@ -94,9 +94,9 @@ class VarietyFilter: UIViewController {
         switch grazed.selectedSegmentIndex
         {
         case 0 :
-            MyVariables.grazed = 1
+            applicationVars.grazed = 1
         case 1 :
-            MyVariables.grazed = 2
+            applicationVars.grazed = 2
         default :
             break;
         }
@@ -107,9 +107,9 @@ class VarietyFilter: UIViewController {
         switch fungicide.selectedSegmentIndex
         {
         case 0 :
-            MyVariables.fungicide = 1
+            applicationVars.fungicide = 1
         case 1 :
-            MyVariables.fungicide = 2
+            applicationVars.fungicide = 2
         default :
             break;
         }
@@ -120,9 +120,9 @@ class VarietyFilter: UIViewController {
         switch lodging.selectedSegmentIndex
         {
         case 0 :
-            MyVariables.lodging = 1
+            applicationVars.lodging = 1
         case 1 :
-            MyVariables.lodging = 2
+            applicationVars.lodging = 2
         default :
             break;
         }
@@ -133,9 +133,9 @@ class VarietyFilter: UIViewController {
         switch clearfield.selectedSegmentIndex
         {
         case 0 :
-            MyVariables.clearfield = 1
+            applicationVars.clearfield = 1
         case 1 :
-            MyVariables.clearfield = 2
+            applicationVars.clearfield = 2
         default :
             break;
         }

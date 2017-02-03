@@ -13,7 +13,7 @@ class Diseases: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Diseases"
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "mainScreenBlur")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)
         
        // tabBarItem = UITabBarItem(title: "Diseases", image: UIImage(named: "tab-d1"), tag: 4)
 

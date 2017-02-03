@@ -17,29 +17,29 @@ class Seeding: UIViewController {
       //  self.navigationItem.rightBarButtonItem = UIBarButtonItem();
         
         // if statements that set region and zone for seeding rate and seeding data
-        if (MyVariables.rate=="western") {
+        if (applicationVars.rate=="western") {
             optimumrate.text = "Optimum Seeding Rate = 750,000 - 900,000 seeds/acre"
             }
-        if (MyVariables.rate=="central") {
+        if (applicationVars.rate=="central") {
             optimumrate.text = "Optimum Seeding Rate = 900,000 - 1,125,000 seeds/acre"
         }
-        if (MyVariables.rate=="eastern") {
+        if (applicationVars.rate=="eastern") {
             optimumrate.text = "Optimum Seeding Rate = 1,125,000 - 1,350,000 seeds/acre"
         }
        
-            if(MyVariables.date=="zone1")
+            if(applicationVars.date=="zone1")
             {
                 optimumdate.text = "Optimum Seeding Date = September 10th-30th"
             }
-            if(MyVariables.date=="zone2")
+            if(applicationVars.date=="zone2")
             {
                 optimumdate.text = "Optimum Seeding Date = September 15th - October 20th"
             }
-            if(MyVariables.date=="zone3")
+            if(applicationVars.date=="zone3")
             {
                 optimumdate.text = "Optimum Seeding Date = September 25th - October 20th"
         }
-            if(MyVariables.date=="zone4")
+            if(applicationVars.date=="zone4")
             {
                 optimumdate.text = "October 5th-25th"
             }
@@ -62,7 +62,7 @@ class Seeding: UIViewController {
     @IBAction func KnownB(_ sender: AnyObject) {
         
         //if final seeding rate is not zero
-        if(MyVariables.finalRate != 0)
+        if(applicationVars.finalRate != 0)
     {
         //then go to this screen
         performSegue(withIdentifier: "Known", sender: self)
@@ -92,7 +92,7 @@ class Seeding: UIViewController {
     @IBAction func UnknownB(_ sender: AnyObject) {
         
         //if finalRate doesn't equal zero
-        if(MyVariables.finalRate != 0)
+        if(applicationVars.finalRate != 0)
         {
             //go to this scene
             performSegue(withIdentifier: "Unknown", sender: self)

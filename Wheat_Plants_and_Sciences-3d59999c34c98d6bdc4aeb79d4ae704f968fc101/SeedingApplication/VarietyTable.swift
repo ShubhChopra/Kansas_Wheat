@@ -457,7 +457,7 @@ class VarietyTable: UITableViewController {
         {
             //Armour
             if indexPath.row == 0 {
-                if( (MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "EC" && MyVariables.district != "NE") || MyVariables.fungicide == 2 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC" && applicationVars.district != "NE") || applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -465,35 +465,35 @@ class VarietyTable: UITableViewController {
 
             //Armour (irrigated)
             if indexPath.row == 1 {
-                if(MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" || MyVariables.fungicide == 2 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if(applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" || applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             //Aspen
             if indexPath.row == 2 {
-                if((MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "SC") ||  MyVariables.fungicide == 2 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if((applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "SC") ||  applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
         //Everest
         if indexPath.row == 3  {
-            if( (MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "EC" && MyVariables.district != "NE" ) || MyVariables.grazed == 1  || MyVariables.fungicide == 2 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+            if( (applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC" && applicationVars.district != "NE" ) || applicationVars.grazed == 1  || applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
             {
                 return 0.0
             }
         }
             // T-153
             if indexPath.row == 4  {
-                if((MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "SW" && MyVariables.district != "NE"  ) || MyVariables.ph == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 3 || MyVariables.maturity == 2 || MyVariables.clearfield == 1)
+                if((applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "SW" && applicationVars.district != "NE"  ) || applicationVars.ph == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 3 || applicationVars.maturity == 2 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             // t-154
             if indexPath.row == 5  {
-                if((MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "SW" && MyVariables.district != "NE"  ) || MyVariables.fungicide == 2 || MyVariables.lodging == 1 || MyVariables.maturity == 3 || MyVariables.maturity == 2 || MyVariables.clearfield == 1)
+                if((applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "SW" && applicationVars.district != "NE"  ) || applicationVars.fungicide == 2 || applicationVars.lodging == 1 || applicationVars.maturity == 3 || applicationVars.maturity == 2 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -501,7 +501,7 @@ class VarietyTable: UITableViewController {
             
             //TAM 112
             if indexPath.row == 6 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC") ||  MyVariables.fungicide == 2 || MyVariables.lodging == 1 || MyVariables.maturity == 3 || MyVariables.maturity == 2  || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC") ||  applicationVars.fungicide == 2 || applicationVars.lodging == 1 || applicationVars.maturity == 3 || applicationVars.maturity == 2  || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -509,14 +509,14 @@ class VarietyTable: UITableViewController {
             }
             // WB Cedar
             if indexPath.row == 7  {
-                if( (MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "EC" && MyVariables.district != "NE" ) || MyVariables.grazed == 1 || MyVariables.maturity == 3 || MyVariables.maturity == 2 || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC" && applicationVars.district != "NE" ) || applicationVars.grazed == 1 || applicationVars.maturity == 3 || applicationVars.maturity == 2 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
             }
             //WB Cedar (Irrigated)
             if indexPath.row == 8 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" ) || MyVariables.grazed == 1 || MyVariables.maturity == 3 || MyVariables.maturity == 2 || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" ) || applicationVars.grazed == 1 || applicationVars.maturity == 3 || applicationVars.maturity == 2 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -524,21 +524,21 @@ class VarietyTable: UITableViewController {
             }
             //WB Redhawk
             if indexPath.row == 9  {
-                if( (MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "EC" && MyVariables.district != "NE" ) || MyVariables.fungicide == 2 ||  MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC" && applicationVars.district != "NE" ) || applicationVars.fungicide == 2 ||  applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             //Bentley
             if indexPath.row == 10  {
-                if( (MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SW") || MyVariables.lodging == 1 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SW") || applicationVars.lodging == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
             }
             //Billings
             if indexPath.row == 11  {
-                if( (MyVariables.district != "SW" && MyVariables.district != "SC" && MyVariables.district != "SE") || MyVariables.lodging == 1 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 || MyVariables.fungicide == 2)
+                if( (applicationVars.district != "SW" && applicationVars.district != "SC" && applicationVars.district != "SE") || applicationVars.lodging == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 || applicationVars.fungicide == 2)
                 {
                     return 0.0
                 }
@@ -547,7 +547,7 @@ class VarietyTable: UITableViewController {
             
             //Brawl CL
             if indexPath.row == 12 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district == "NC" && MyVariables.district == "SC") || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.fungicide   == 2 || MyVariables.maturity == 2 || MyVariables.maturity == 3  )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district == "NC" && applicationVars.district == "SC") || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide   == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3  )
                 {
                     return 0.0
                 }
@@ -556,14 +556,14 @@ class VarietyTable: UITableViewController {
             
             //LCS Pistol
             if indexPath.row == 13  {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC"  && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "NC") || MyVariables.fungicide == 2 || MyVariables.lodging == 1 ||  MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC"  && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "NC") || applicationVars.fungicide == 2 || applicationVars.lodging == 1 ||  applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
             }
             //Ruby Lee
             if indexPath.row == 14  {
-                if((  MyVariables.district != "SC" && MyVariables.district != "SE" ) || MyVariables.fungicide == 2 || MyVariables.lodging == 1 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if((  applicationVars.district != "SC" && applicationVars.district != "SE" ) || applicationVars.fungicide == 2 || applicationVars.lodging == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -571,7 +571,7 @@ class VarietyTable: UITableViewController {
             
             //SY Flint
             if indexPath.row == 15  {
-                if( (MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "EC") || MyVariables.fungicide == 2 || MyVariables.lodging == 1 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC") || applicationVars.fungicide == 2 || applicationVars.lodging == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -579,7 +579,7 @@ class VarietyTable: UITableViewController {
             
             //T158
             if indexPath.row == 16  {
-                if( (MyVariables.district != "SW" && MyVariables.district != "NW" && MyVariables.district != "WC"  && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "NC" ) || MyVariables.ph == 1 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "SW" && applicationVars.district != "NW" && applicationVars.district != "WC"  && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "NC" ) || applicationVars.ph == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -589,14 +589,14 @@ class VarietyTable: UITableViewController {
 
         // WB 4458
         if indexPath.row == 17  {
-            if((MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "SW" && MyVariables.district != "EC" && MyVariables.district != "NE" ) || MyVariables.grazed == 1 || MyVariables.maturity == 3 || MyVariables.maturity == 2 || MyVariables.clearfield == 1)
+            if((applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "SW" && applicationVars.district != "EC" && applicationVars.district != "NE" ) || applicationVars.grazed == 1 || applicationVars.maturity == 3 || applicationVars.maturity == 2 || applicationVars.clearfield == 1)
             {
                 return 0.0
             }
         }
             //SY Llano
             if indexPath.row == 18 {
-                if ((MyVariables.district != "SC" && MyVariables.district != "SE"  ) || MyVariables.fungicide == 2 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 )
+                if ((applicationVars.district != "SC" && applicationVars.district != "SE"  ) || applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -604,7 +604,7 @@ class VarietyTable: UITableViewController {
             }
             // Hot Rod
             if indexPath.row == 19 {
-                if ((MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "EC" && MyVariables.district != "NE") || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 2 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 )
+                if ((applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC" && applicationVars.district != "NE") || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -614,7 +614,7 @@ class VarietyTable: UITableViewController {
         
         //PostRock
         if indexPath.row == 20 {
-            if(MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" )
+            if(applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" )
             {
                 return 0.0
             }
@@ -622,7 +622,7 @@ class VarietyTable: UITableViewController {
         }
         //Roubidoux
         if indexPath.row == 21 {
-            if(MyVariables.district != "NW" && MyVariables.district != "NC" )
+            if(applicationVars.district != "NW" && applicationVars.district != "NC" )
             {
                 return 0.0
             }
@@ -635,7 +635,7 @@ class VarietyTable: UITableViewController {
         {
             //1863
             if indexPath.row == 0 {
-                if( (MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" ) || MyVariables.lodging == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" ) || applicationVars.lodging == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -643,7 +643,7 @@ class VarietyTable: UITableViewController {
             }
             //Antero
             if indexPath.row == 1 {
-                if( ( MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC") || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 )
+                if( ( applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC") || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -651,14 +651,14 @@ class VarietyTable: UITableViewController {
             }
             //AP503 CL2
             if indexPath.row == 2  {
-                if( (MyVariables.district != "NW" &&  MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SW" && MyVariables.district != "SC" ) || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 1 || MyVariables.maturity == 3 )
+                if( (applicationVars.district != "NW" &&  applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SW" && applicationVars.district != "SC" ) || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 1 || applicationVars.maturity == 3 )
                 {
                     return 0.0
                 }
             }
             //Byrd
             if indexPath.row == 3 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district == "NC" && MyVariables.district == "SC") || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district == "NC" && applicationVars.district == "SC") || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -666,7 +666,7 @@ class VarietyTable: UITableViewController {
             }
             //Duster
             if indexPath.row == 4  {
-                if( (MyVariables.district != "SW" && MyVariables.district != "SC" && MyVariables.district != "SE" ) || MyVariables.fungicide == 2 || MyVariables.lodging == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "SW" && applicationVars.district != "SC" && applicationVars.district != "SE" ) || applicationVars.fungicide == 2 || applicationVars.lodging == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -674,21 +674,21 @@ class VarietyTable: UITableViewController {
             //Gallagher
             if indexPath.row == 5  {
                 if((
-                    MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" ) || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                    applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" ) || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             //Iba
             if indexPath.row == 6  {
-                if((MyVariables.district != "SW" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "EC" ) || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.lodging == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if((applicationVars.district != "SW" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC" ) || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.lodging == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             //KanMark
             if indexPath.row == 7  {
-                if( (MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE") || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 3 || MyVariables.maturity == 1  || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE") || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 3 || applicationVars.maturity == 1  || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -696,7 +696,7 @@ class VarietyTable: UITableViewController {
 
             //KanMark(Irrigated)
             if indexPath.row == 8 {
-                if((MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" ) || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 3 || MyVariables.maturity == 1  || MyVariables.clearfield == 1)
+                if((applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" ) || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 3 || applicationVars.maturity == 1  || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -704,28 +704,28 @@ class VarietyTable: UITableViewController {
             }
             //LCS Mint
             if indexPath.row == 9  {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC") || MyVariables.lodging == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC") || applicationVars.lodging == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             // LCS Wizard
             if indexPath.row == 10  {
-                if( ( MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "EC" ) || MyVariables.fungicide == 2 || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1 )
+                if( ( applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "EC" ) || applicationVars.fungicide == 2 || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
             }
             //Larry
             if indexPath.row == 11  {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC") || MyVariables.grazed == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC") || applicationVars.grazed == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             //Zenda
             if indexPath.row == 12 {
-                if( (MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SE" && MyVariables.district != "EC" && MyVariables.district != "NE" ) || MyVariables.grazed == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 3 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC" && applicationVars.district != "NE" ) || applicationVars.grazed == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -733,7 +733,7 @@ class VarietyTable: UITableViewController {
             }
             //TAM 114
             if indexPath.row == 13 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC") || MyVariables.lodging == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 3  || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC") || applicationVars.lodging == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 3  || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -741,7 +741,7 @@ class VarietyTable: UITableViewController {
             }
             //Avery
             if indexPath.row == 14 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "SC") ||  MyVariables.ph == 1 || MyVariables.grazed == 1  || MyVariables.fungicide==2 || MyVariables.maturity == 1 || MyVariables.maturity == 3  || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "SC") ||  applicationVars.ph == 1 || applicationVars.grazed == 1  || applicationVars.fungicide==2 || applicationVars.maturity == 1 || applicationVars.maturity == 3  || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -754,14 +754,14 @@ class VarietyTable: UITableViewController {
             // WB Grainfield
             
             if indexPath.row == 0  {
-                if((MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C" ) || MyVariables.grazed == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 2 || MyVariables.clearfield == 1)
+                if((applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C" ) || applicationVars.grazed == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 2 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             //Clara CL
             if indexPath.row == 1 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC") || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.lodging == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 2  )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC") || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.lodging == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 2  )
                 {
                     return 0.0
                 }
@@ -769,7 +769,7 @@ class VarietyTable: UITableViewController {
             }
             //Danby
             if indexPath.row == 2 {
-                if((MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC"  && MyVariables.district != "SC") || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.lodging == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 2  || MyVariables.clearfield == 1)
+                if((applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC"  && applicationVars.district != "SC") || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.lodging == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 2  || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -778,7 +778,7 @@ class VarietyTable: UITableViewController {
             
             //Denali
             if indexPath.row == 3 {
-                if((MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC"  && MyVariables.district != "SC") || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 1 || MyVariables.maturity == 2  || MyVariables.clearfield == 1)
+                if((applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC"  && applicationVars.district != "SC") || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 1 || applicationVars.maturity == 2  || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -786,21 +786,21 @@ class VarietyTable: UITableViewController {
             }
             //DoubleStop CL Plus
             if indexPath.row == 4  {
-                if( (MyVariables.district != "SE" && MyVariables.district != "SW" && MyVariables.district != "C" && MyVariables.district != "SC" ) || MyVariables.maturity == 2 || MyVariables.maturity == 1 )
+                if( (applicationVars.district != "SE" && applicationVars.district != "SW" && applicationVars.district != "C" && applicationVars.district != "SC" ) || applicationVars.maturity == 2 || applicationVars.maturity == 1 )
                 {
                     return 0.0
                 }
             }
             //Endurence
             if indexPath.row == 5  {
-                if( (MyVariables.district != "SE" && MyVariables.district != "SW" && MyVariables.district != "SC"  ) || MyVariables.fungicide == 2 || MyVariables.maturity == 1 || MyVariables.maturity == 2  &&  MyVariables.clearfield == 1)
+                if( (applicationVars.district != "SE" && applicationVars.district != "SW" && applicationVars.district != "SC"  ) || applicationVars.fungicide == 2 || applicationVars.maturity == 1 || applicationVars.maturity == 2  &&  applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             //Oakley CL
             if indexPath.row == 6 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC"  ) || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.lodging == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 2 )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC"  ) || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.lodging == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 2 )
                 {
                     return 0.0
                 }
@@ -808,7 +808,7 @@ class VarietyTable: UITableViewController {
             }
             //SY Monumnet
             if indexPath.row == 7  {
-                if( (MyVariables.district != "NW" &&  MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" && MyVariables.district != "SW" ) || MyVariables.grazed == 1 || MyVariables.lodging == 1 || MyVariables.maturity == 2 || MyVariables.maturity == 1 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "NW" &&  applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SW" ) || applicationVars.grazed == 1 || applicationVars.lodging == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 1 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -816,14 +816,14 @@ class VarietyTable: UITableViewController {
             
             // SY Sunrise
             if indexPath.row == 8  {
-                if( ( MyVariables.district != "NW" &&  MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "SW" ) || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.maturity == 2 || MyVariables.maturity == 1 || MyVariables.clearfield == 1)
+                if( ( applicationVars.district != "NW" &&  applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "SW" ) || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 1 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
             }
             //TAM 111
             if indexPath.row == 9{
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC") || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.lodging == 1 || MyVariables.maturity == 1 || MyVariables.maturity == 2  || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC") || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.lodging == 1 || applicationVars.maturity == 1 || applicationVars.maturity == 2  || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
@@ -831,7 +831,7 @@ class VarietyTable: UITableViewController {
             }
             //Joe
             if indexPath.row == 10 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC") || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 2 || MyVariables.maturity == 1 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC") || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 1 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -839,14 +839,14 @@ class VarietyTable: UITableViewController {
             }
             // LCS Chrome
             if indexPath.row == 11  {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C" ) ||  MyVariables.maturity == 2 || MyVariables.maturity == 1 || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C" ) ||  applicationVars.maturity == 2 || applicationVars.maturity == 1 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
             }
             // WinterHawk
             if indexPath.row == 12  {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C" && MyVariables.district != "SC" ) || MyVariables.ph == 1 || MyVariables.fungicide == 2 || MyVariables.maturity == 1 || MyVariables.maturity == 2 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" ) || applicationVars.ph == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 1 || applicationVars.maturity == 2 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }
@@ -855,14 +855,14 @@ class VarietyTable: UITableViewController {
             
             //SY Wolf
             if indexPath.row == 13  {
-                if( (MyVariables.district != "NW" &&  MyVariables.district != "WC" && MyVariables.district != "NC" && MyVariables.district != "C") || MyVariables.grazed == 1 || MyVariables.maturity == 2 || MyVariables.maturity == 1 || MyVariables.clearfield == 1 )
+                if( (applicationVars.district != "NW" &&  applicationVars.district != "WC" && applicationVars.district != "NC" && applicationVars.district != "C") || applicationVars.grazed == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 1 || applicationVars.clearfield == 1 )
                 {
                     return 0.0
                 }
             }
             //Tatanka
             if indexPath.row == 14 {
-                if( (MyVariables.district != "NW" && MyVariables.district != "SW" && MyVariables.district != "WC") || MyVariables.ph == 1 || MyVariables.grazed == 1 || MyVariables.lodging == 1 || MyVariables.maturity == 2 || MyVariables.maturity == 1 || MyVariables.clearfield == 1)
+                if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC") || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.lodging == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 1 || applicationVars.clearfield == 1)
                 {
                     return 0.0
                 }

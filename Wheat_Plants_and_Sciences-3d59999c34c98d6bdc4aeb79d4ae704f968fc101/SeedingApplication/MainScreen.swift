@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct MyVariables {
+struct applicationVars {
     static var applicationBackground = "mainScreenBackground"
     
     static var district = ""
@@ -36,7 +36,7 @@ class MainScreen: UIViewController {
         self.title = "Management"
         textview.backgroundColor = UIColor.clear;
        // textview.textColor = UIColor.whiteColor();
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "mainScreenBlur")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)
 
         
 }

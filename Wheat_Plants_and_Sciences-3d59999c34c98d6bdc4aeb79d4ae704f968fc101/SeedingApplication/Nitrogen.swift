@@ -71,7 +71,6 @@ class Nitrogen: UIViewController {
     @IBAction func DeleteData(_ sender: AnyObject) {
         _ = FileManager.default
     
-        do{
             let temp = "";
             do{
                 try temp.write(toFile: Path, atomically: true, encoding: String.Encoding.utf8)
@@ -80,10 +79,7 @@ class Nitrogen: UIViewController {
                 print("Error")
             }
             
-        }
-        catch{
-            print("Error");
-        }
+        
         counter = 0
         current.text = "Current Data = " + String(counter)
         
@@ -93,7 +89,7 @@ class Nitrogen: UIViewController {
     @IBAction func Add(_ sender: AnyObject) {
        if(NRecommended != 0.0 && YieldHistory.text != "" && NUE.text != "" && NDVI.text != "")
         {
-        var FeetsG  : String! = FeetsGrowth.text
+        //var FeetsG  : String! = FeetsGrowth.text
         let Yield : String! = YieldHistory.text
         let nue : String! = NUE.text
         let ndvi : String! = NDVI.text
@@ -102,7 +98,7 @@ class Nitrogen: UIViewController {
             
         //row was changed to "nul" because it wouldn't compile for whatever reason. I think something was change in an xCode update that caused this to be a trouble early. 
         var row =  "\(String(counter + 1))"
-            row = row + ",\(date),\(Yield!),Feekes 4,\(nue!),\(ndvi!),\(MyVariables.lat),\(MyVariables.lon),\(String(YPf)),\(String(NRecommended))\n";
+            row = row + ",\(date),\(Yield!),Feekes 4,\(nue!),\(ndvi!),\(applicationVars.lat),\(applicationVars.lon),\(String(YPf)),\(String(NRecommended))\n";
        
        let Header = "Sample Number,Date,Yield History,Feets Growth Stage,NRE,NDVI,Latitude,Longitude,Yield Estimate,N-Recommendation\n";
         _ = FileManager.default
@@ -149,9 +145,9 @@ class Nitrogen: UIViewController {
             var BRI = 0.0
             if(Double(NDVI.text!)! > 0.82)
             {
-                let BRI4 = pow(Double(NDVI.text!)!,4)
-                let BRI3 = pow(Double(NDVI.text!)!,3)
-                let BRI2 = pow(Double(NDVI.text!)!,2)
+                //let BRI4 = pow(Double(NDVI.text!)!,4)
+                //let BRI3 = pow(Double(NDVI.text!)!,3)
+                //let BRI2 = pow(Double(NDVI.text!)!,2)
                 BRI = 1.02
             }
             else
@@ -236,7 +232,7 @@ class Nitrogen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let theFileManger = FileManager.default
+        //let theFileManger = FileManager.default
         
         do{
            let data = try String(contentsOfFile:Path, encoding:String.Encoding.utf8)

@@ -17,18 +17,18 @@ class Volume: UIViewController {
         
         
         //view adaptations based on known variables
-        if (MyVariables.seedingRate != 0)
+        if (applicationVars.seedingRate != 0)
         {
-            rate.text = String(MyVariables.seedingRate)
+            rate.text = String(applicationVars.seedingRate)
             
         }
-        if (MyVariables.rate=="western") {
+        if (applicationVars.rate=="western") {
             rate.placeholder = "750,000 - 900,000 seeds/acre"
         }
-        if (MyVariables.rate=="central") {
+        if (applicationVars.rate=="central") {
             rate.placeholder = "900,000 - 1,125,000 seeds/acre"
         }
-        if (MyVariables.rate=="eastern") {
+        if (applicationVars.rate=="eastern") {
             rate.placeholder = "1,125,000 - 1,350,000 seeds/acre"
         }
 
@@ -54,7 +54,7 @@ class Volume: UIViewController {
         if (rate.text != "")
         
         {
-            MyVariables.seedingRate = Int(rate.text!)!
+            applicationVars.seedingRate = Int(rate.text!)!
         }
     }
     
@@ -66,13 +66,13 @@ class Volume: UIViewController {
         case 0 :
             rate.placeholder = "1,125,000 - 1,350,000 seeds/acre"
         case 1 :
-            if (MyVariables.rate=="western") {
+            if (applicationVars.rate=="western") {
                 rate.placeholder = "750,000 - 900,000 seeds/acre"
             }
-            if (MyVariables.rate=="central") {
+            if (applicationVars.rate=="central") {
                 rate.placeholder = "900,000 - 1,125,000 seeds/acre"
             }
-            if (MyVariables.rate=="eastern") {
+            if (applicationVars.rate=="eastern") {
                 rate.placeholder = "1,125,000 - 1,350,000 seeds/acre"
             }
 
@@ -87,19 +87,19 @@ class Volume: UIViewController {
         var dat = "";
         if(size.text != "" && rate.text != "")
         {
-        if(MyVariables.date=="zone1")
+        if(applicationVars.date=="zone1")
         {
             dat = "September 10th-30th"
         }
-        if(MyVariables.date=="zone2")
+        if(applicationVars.date=="zone2")
         {
             dat = "September 15th- October 20th"
         }
-        if(MyVariables.date=="zone3")
+        if(applicationVars.date=="zone3")
         {
             dat = "September 25th- October 20th"
         }
-        if(MyVariables.date=="zone4")
+        if(applicationVars.date=="zone4")
         {
             dat = "October 5th-25th"
         }

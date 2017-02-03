@@ -48,9 +48,9 @@ class KnownView: UIViewController {
         //once all fields have been entered result is calculated
         if(rowWidth.text != "" && drillRow.text != "" && seedSize.text != "")
         {
-            Ounces.text = "Ounces of seed per one drill sprout unit = " + String(( (Double(MyVariables.finalRate) * Double(drillRow.text!)! * Double(rowWidth.text!)! * 16 ) / 12 ) / Double(seedSize.text!)!)
+            Ounces.text = "Ounces of seed per one drill sprout unit = " + String(( (Double(applicationVars.finalRate) * Double(drillRow.text!)! * Double(rowWidth.text!)! * 16 ) / 12 ) / Double(seedSize.text!)!)
             
-            grams.text = "Grams of seed per one drill sprout unit = " + String((( (Double(MyVariables.finalRate) * Double(drillRow.text!)! * Double(rowWidth.text!)! * 16 ) / 12 ) / Double(seedSize.text!)! ) * 435)
+            grams.text = "Grams of seed per one drill sprout unit = " + String((( (Double(applicationVars.finalRate) * Double(drillRow.text!)! * Double(rowWidth.text!)! * 16 ) / 12 ) / Double(seedSize.text!)! ) * 435)
         
         }
         

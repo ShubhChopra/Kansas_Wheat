@@ -57,7 +57,7 @@ class UnknownSeed: UIViewController {
         }
         if(Row.text != "" && drillrow.text != "")
         {
-            SeedsperLength.text = "Seeds per length drill-row needed = " + String ( ((MyVariables.finalRate) * Int(drillrow.text!)! ) / Int(Row.text!)!/12)
+            SeedsperLength.text = "Seeds per length drill-row needed = " + String ( ((applicationVars.finalRate) * Int(drillrow.text!)! ) / Int(Row.text!)!/12)
         }
         if(drillrow.text != "" && wheelDia.text != "")
         {

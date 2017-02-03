@@ -14,13 +14,13 @@ class FinalSeeding: UIViewController {
         super.viewDidLoad()
         
         //sets variables once view loads if they aren't zero
-        if(MyVariables.seedingRate != 0)
+        if(applicationVars.seedingRate != 0)
         {
-            rateAcre.text = String(MyVariables.seedingRate)
+            rateAcre.text = String(applicationVars.seedingRate)
         }
-        if(MyVariables.germinationRate != 0)
+        if(applicationVars.germinationRate != 0)
         {
-            RatePer.text = String(MyVariables.germinationRate)
+            RatePer.text = String(applicationVars.germinationRate)
         }
 
         // Do any additional setup after loading the view.
@@ -53,21 +53,21 @@ class FinalSeeding: UIViewController {
         if(rateSqft.text != "" && RatePer.text != "")
         {
             FinalSqft.text = "Final Seeding Rate(seeds/Sq. ft.) = " + String((Int(rateSqft.text!)! * 100) / Int(RatePer.text!)! );
-            MyVariables.finalRate = (Int(rateSqft.text!)! * 100) / Int(RatePer.text!)!
+            applicationVars.finalRate = (Int(rateSqft.text!)! * 100) / Int(RatePer.text!)!
             
         }
     }
     
-    //when view is leaving, change MyVariables to these values
+    //when view is leaving, change applicationVars to these values
     override func viewWillDisappear(_ animated: Bool) {
         if(rateAcre.text != "")
         {
         
-        MyVariables.seedingRate = Int (rateAcre.text!)!
+        applicationVars.seedingRate = Int (rateAcre.text!)!
         }
         if(RatePer.text != "")
         {
-            MyVariables.germinationRate = Int (RatePer.text!)!
+            applicationVars.germinationRate = Int (RatePer.text!)!
         }
         
     }
