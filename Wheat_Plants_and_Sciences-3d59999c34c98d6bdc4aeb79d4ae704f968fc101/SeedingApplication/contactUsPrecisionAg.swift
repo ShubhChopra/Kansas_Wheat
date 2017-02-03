@@ -35,6 +35,12 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
     
     //function that opens and creates an email
     @IBAction func emailbutton(_ sender: AnyObject) {
+        
+        if !MFMailComposeViewController.canSendMail() {
+            print("Mail services are not available")
+            return
+        }
+        
         let toRecipents = ["Dr. Antonio Asebedo <ara4747@ksu.edu>"]
         let mailVC: MFMailComposeViewController = MFMailComposeViewController()
         
@@ -44,6 +50,12 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
         mailVC.setMessageBody("Hello", isHTML: false)
         
         present(mailVC, animated: true, completion: nil)
+        
+        func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+            
+            // Dismiss the mail compose view controller.
+            controller.dismiss(animated: true, completion: nil)
+        }
         
     }
     

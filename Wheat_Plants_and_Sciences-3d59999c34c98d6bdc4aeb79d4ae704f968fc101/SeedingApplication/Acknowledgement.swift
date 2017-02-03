@@ -14,6 +14,8 @@ class Acknowledgement: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "mainScreenBackground"))
+        
         // Do any additional setup after loading the view.
     }
     

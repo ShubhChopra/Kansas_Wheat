@@ -22,13 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is soil pH &lt; 5.2?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO5-4q-46q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is soil pH &lt; 5.2?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO5-4q-46q">
                                 <rect key="frame" x="-4" y="72" width="320" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="lnh-64-cZ0">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="lnh-64-cZ0">
                                 <rect key="frame" x="105" y="101" width="110" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="CVk-pr-BSk"/>
@@ -40,16 +40,15 @@
                                 <color key="tintColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="soil:" destination="g3d-PQ-aBx" eventType="valueChanged" id="Ou1-YQ-G6j"/>
-                                    <action selector="test2:" destination="g3d-PQ-aBx" eventType="valueChanged" id="iLB-GV-JN7"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is the wheat grazed?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91R-xu-VfZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is the wheat grazed?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91R-xu-VfZ">
                                 <rect key="frame" x="-4" y="137" width="320" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Om7-xc-F4g">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Om7-xc-F4g">
                                 <rect key="frame" x="105" y="166" width="110" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="JSF-SI-CiC"/>
@@ -63,13 +62,13 @@
                                     <action selector="grazed:" destination="g3d-PQ-aBx" eventType="valueChanged" id="IVj-sQ-nEt"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Spray a fungicide if needed?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHB-IB-VwV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spray a fungicide if needed?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHB-IB-VwV">
                                 <rect key="frame" x="-4" y="202" width="320" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ET3-pk-8fx">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ET3-pk-8fx">
                                 <rect key="frame" x="105" y="231" width="110" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="Qqb-9X-9wq"/>
@@ -83,13 +82,13 @@
                                     <action selector="Fungicide:" destination="g3d-PQ-aBx" eventType="valueChanged" id="ciu-yT-RQv"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is lodging a common issue?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-eG-ROA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is lodging a common issue?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-eG-ROA">
                                 <rect key="frame" x="-4" y="267" width="320" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Lz-1D-sXm">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Lz-1D-sXm">
                                 <rect key="frame" x="105" y="296" width="110" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="dpe-5y-guB"/>
@@ -103,7 +102,7 @@
                                     <action selector="lodging:" destination="g3d-PQ-aBx" eventType="valueChanged" id="6i5-Vz-ALf"/>
                                 </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CUg-JU-Il5">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CUg-JU-Il5">
                                 <rect key="frame" x="105" y="361" width="110" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="Sz5-KI-BWz"/>
@@ -117,19 +116,17 @@
                                     <action selector="Clearfield:" destination="g3d-PQ-aBx" eventType="valueChanged" id="jI6-FH-ETv"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZG-bb-Rfa">
-                                <rect key="frame" x="138" y="423" width="44" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZG-bb-Rfa">
+                                <rect key="frame" x="134" y="423" width="52" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="Save:" destination="g3d-PQ-aBx" eventType="touchUpInside" id="cRa-VJ-6Dg"/>
-                                    <segue destination="Stz-wz-BzR" kind="show" id="FUo-lJ-UU6">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="Stz-wz-BzR" kind="show" id="6uS-aP-rfy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Need for Clearfield Wheat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8N-zv-9rh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need for Clearfield Wheat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8N-zv-9rh">
                                 <rect key="frame" x="-4" y="332" width="320" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -138,38 +135,39 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pHB-IB-VwV" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="1qO-Dc-BIN"/>
+                            <constraint firstItem="pHB-IB-VwV" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="1qO-Dc-BIN"/>
                             <constraint firstItem="91R-xu-VfZ" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="6Sf-pg-6UG"/>
-                            <constraint firstItem="0AS-eG-ROA" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="85E-a3-pdw"/>
-                            <constraint firstItem="CUg-JU-Il5" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="8p4-Tv-PXG"/>
+                            <constraint firstItem="0AS-eG-ROA" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="85E-a3-pdw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HZG-bb-Rfa" secondAttribute="trailing" constant="173" id="8DT-Ul-WUm"/>
+                            <constraint firstItem="CUg-JU-Il5" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="8p4-Tv-PXG"/>
                             <constraint firstItem="ET3-pk-8fx" firstAttribute="top" secondItem="pHB-IB-VwV" secondAttribute="bottom" constant="8" id="9tD-1V-cRf"/>
-                            <constraint firstItem="HZG-bb-Rfa" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="BhL-Is-DqJ"/>
-                            <constraint firstItem="lnh-64-cZ0" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="CR2-lk-aDD"/>
-                            <constraint firstItem="QO5-4q-46q" firstAttribute="top" secondItem="fvM-Ay-nvT" secondAttribute="bottom" constant="8" id="DDX-OP-90c"/>
+                            <constraint firstItem="HZG-bb-Rfa" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="BhL-Is-DqJ"/>
+                            <constraint firstItem="lnh-64-cZ0" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="CR2-lk-aDD"/>
+                            <constraint firstItem="QO5-4q-46q" firstAttribute="top" secondItem="fvM-Ay-nvT" secondAttribute="bottom" constant="52" id="DDX-OP-90c"/>
                             <constraint firstItem="CUg-JU-Il5" firstAttribute="top" secondItem="Y8N-zv-9rh" secondAttribute="bottom" constant="8" id="FPC-2U-sNe"/>
-                            <constraint firstItem="QO5-4q-46q" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="L75-SV-XN5"/>
+                            <constraint firstItem="QO5-4q-46q" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="L75-SV-XN5"/>
                             <constraint firstItem="pHB-IB-VwV" firstAttribute="top" secondItem="Om7-xc-F4g" secondAttribute="bottom" constant="8" id="OFU-2Z-Gh8"/>
                             <constraint firstItem="Y8N-zv-9rh" firstAttribute="top" secondItem="0AS-eG-ROA" secondAttribute="bottom" constant="44" id="Rdk-96-gun"/>
                             <constraint firstItem="QO5-4q-46q" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="SHR-rp-Bql"/>
-                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="Tn0-Zy-COV"/>
-                            <constraint firstItem="QO5-4q-46q" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" id="Ve2-mb-xzU"/>
+                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="Tn0-Zy-COV"/>
+                            <constraint firstItem="QO5-4q-46q" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="Ve2-mb-xzU"/>
                             <constraint firstItem="0AS-eG-ROA" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="WM0-O5-wqn"/>
-                            <constraint firstItem="pHB-IB-VwV" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" id="X8R-9c-mPd"/>
-                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" id="aJJ-3H-hvf"/>
+                            <constraint firstItem="pHB-IB-VwV" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="X8R-9c-mPd"/>
+                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="aJJ-3H-hvf"/>
                             <constraint firstItem="Y8N-zv-9rh" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="aUw-X6-VLg"/>
                             <constraint firstItem="Om7-xc-F4g" firstAttribute="top" secondItem="91R-xu-VfZ" secondAttribute="bottom" constant="8" id="ao3-2G-D0K"/>
                             <constraint firstItem="7Lz-1D-sXm" firstAttribute="top" secondItem="0AS-eG-ROA" secondAttribute="bottom" constant="8" id="deR-Uq-FOX"/>
                             <constraint firstItem="91R-xu-VfZ" firstAttribute="top" secondItem="QO5-4q-46q" secondAttribute="bottom" constant="44" id="gdu-i5-NEm"/>
-                            <constraint firstItem="Om7-xc-F4g" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="hYe-K5-CC8"/>
-                            <constraint firstItem="ET3-pk-8fx" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="hgR-C0-HmU"/>
+                            <constraint firstItem="Om7-xc-F4g" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="hYe-K5-CC8"/>
+                            <constraint firstItem="ET3-pk-8fx" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="hgR-C0-HmU"/>
                             <constraint firstItem="0AS-eG-ROA" firstAttribute="top" secondItem="pHB-IB-VwV" secondAttribute="bottom" constant="44" id="j2Q-m0-mhF"/>
                             <constraint firstItem="pHB-IB-VwV" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="lEb-7q-zdP"/>
-                            <constraint firstItem="0AS-eG-ROA" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" id="mYN-c2-AnN"/>
+                            <constraint firstItem="0AS-eG-ROA" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="mYN-c2-AnN"/>
                             <constraint firstItem="HZG-bb-Rfa" firstAttribute="top" secondItem="CUg-JU-Il5" secondAttribute="bottom" constant="34" id="oyt-TB-JKe"/>
-                            <constraint firstItem="91R-xu-VfZ" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" id="q4r-cJ-dDi"/>
+                            <constraint firstItem="91R-xu-VfZ" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="q4r-cJ-dDi"/>
                             <constraint firstItem="lnh-64-cZ0" firstAttribute="top" secondItem="QO5-4q-46q" secondAttribute="bottom" constant="8" id="t53-gK-wNR"/>
-                            <constraint firstItem="91R-xu-VfZ" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="tgb-xg-jQt"/>
-                            <constraint firstItem="7Lz-1D-sXm" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="uAh-0H-OVU"/>
+                            <constraint firstItem="91R-xu-VfZ" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="tgb-xg-jQt"/>
+                            <constraint firstItem="7Lz-1D-sXm" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="uAh-0H-OVU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Variety" image="tab-v1" id="DTn-DX-iSU"/>
@@ -178,8 +176,7 @@
                         <outlet property="fungicide" destination="ET3-pk-8fx" id="Qhm-GA-b6I"/>
                         <outlet property="grazed" destination="Om7-xc-F4g" id="SDs-1i-rh2"/>
                         <outlet property="lodging" destination="7Lz-1D-sXm" id="CFt-7E-fmf"/>
-                        <outlet property="ph" destination="lnh-64-cZ0" id="8Xz-ci-45G"/>
-                        <outlet property="test" destination="lnh-64-cZ0" id="bE6-Ob-Crg"/>
+                        <outlet property="ph" destination="lnh-64-cZ0" id="0W1-5m-urO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qr3-dc-F3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1690,8 +1687,8 @@ Comments: A successful variety in western Kansas because of its drought toleranc
                         <rect key="frame" x="0.0" y="0.0" width="600" height="2500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Oy-Ns-wzp">
-                                <rect key="frame" x="16" y="72" width="288" height="447"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Oy-Ns-wzp">
+                                <rect key="frame" x="20" y="28" width="560" height="2423"/>
                                 <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -1710,7 +1707,7 @@ Comments: A successful variety in western Kansas because of its drought toleranc
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxQ-Qm-rqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-432" y="9209"/>
+            <point key="canvasLocation" x="-432" y="9208.6956521739139"/>
         </scene>
     </scenes>
     <resources>

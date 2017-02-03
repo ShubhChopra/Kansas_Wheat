@@ -90,6 +90,7 @@
 		D93FFBD81E403B480021608A /* FacebookSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */; };
 		D93FFBDA1E403DBE0021608A /* TwitterSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */; };
 		D98AFB631E29570B004DB1B0 /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */; };
+		D9E007331E45119800405442 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = D9E007321E45119800405442 /* CHANGELOG.txt */; };
 		D9F32AC31E40F7B600BF23B3 /* FoliarDiseases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F32AC21E40F7B600BF23B3 /* FoliarDiseases.storyboard */; };
 		D9FF643F1E43C6BD009A8F17 /* StemDiseases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FF643E1E43C6BD009A8F17 /* StemDiseases.storyboard */; };
 		D9FF64411E43C7CE009A8F17 /* HeadDiseases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FF64401E43C7CE009A8F17 /* HeadDiseases.storyboard */; };
@@ -203,6 +204,7 @@
 		D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FacebookSocialMedia.storyboard; sourceTree = "<group>"; };
 		D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwitterSocialMedia.storyboard; sourceTree = "<group>"; };
 		D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactUs.storyboard; sourceTree = "<group>"; };
+		D9E007321E45119800405442 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
 		D9F32AC21E40F7B600BF23B3 /* FoliarDiseases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FoliarDiseases.storyboard; sourceTree = "<group>"; };
 		D9FF643E1E43C6BD009A8F17 /* StemDiseases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StemDiseases.storyboard; sourceTree = "<group>"; };
 		D9FF64401E43C7CE009A8F17 /* HeadDiseases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HeadDiseases.storyboard; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 		CA53E23C1CEB6C5600EC4438 = {
 			isa = PBXGroup;
 			children = (
+				D9E007321E45119800405442 /* CHANGELOG.txt */,
 				CA53E2471CEB6C5600EC4438 /* KansasWheat */,
 				D93C55741E27E6480093EABB /* Frameworks */,
 				CA53E2461CEB6C5600EC4438 /* Products */,
@@ -610,6 +613,7 @@
 				D93FFBD81E403B480021608A /* FacebookSocialMedia.storyboard in Resources */,
 				CA8E73911D971542001925B2 /* TwitterKitResources.bundle in Resources */,
 				CA8E73851D8DE8B7001925B2 /* png in Resources */,
+				D9E007331E45119800405442 /* CHANGELOG.txt in Resources */,
 				D9FF643F1E43C6BD009A8F17 /* StemDiseases.storyboard in Resources */,
 				D98AFB631E29570B004DB1B0 /* ContactUs.storyboard in Resources */,
 				CA5D20241D0CD838000F5762 /* Helper Classes in Resources */,

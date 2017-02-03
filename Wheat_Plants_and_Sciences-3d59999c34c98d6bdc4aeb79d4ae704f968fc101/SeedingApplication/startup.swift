@@ -15,7 +15,7 @@ class startup: UIViewController {
         
         //set up for first load and enterance of the storyboard
         self.title = "Kansas Wheat";
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background2")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: MyVariables.applicationBackground)!)
         self.navigationItem.hidesBackButton = true;
             }
 

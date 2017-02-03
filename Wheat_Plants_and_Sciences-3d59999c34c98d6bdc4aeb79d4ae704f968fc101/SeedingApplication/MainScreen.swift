@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 struct MyVariables {
+    static var applicationBackground = "mainScreenBackground"
+    
     static var district = ""
     static var ph = 0
     static var grazed = 0
@@ -31,10 +33,10 @@ class MainScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Kansas Wheat"
+        self.title = "Management"
         textview.backgroundColor = UIColor.clear;
        // textview.textColor = UIColor.whiteColor();
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background2")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "mainScreenBlur")!)
 
         
 }
@@ -55,7 +57,8 @@ class MainScreen: UIViewController {
     @IBAction func Seeding(_ sender: AnyObject) {
         option = "S";
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
             let tabVC = segue.destination as! UITabBarController
             
@@ -75,7 +78,7 @@ class MainScreen: UIViewController {
                 
             {tabVC.selectedIndex = 0}
             
-        }
+        }*/
 
     
 }

@@ -16,7 +16,6 @@ class VarietyFilter: UIViewController {
     
     @IBOutlet weak var fungicide: UISegmentedControl!
     
-    
     @IBOutlet weak var lodging: UISegmentedControl!
     
     @IBOutlet weak var clearfield: UISegmentedControl!
@@ -24,6 +23,9 @@ class VarietyFilter: UIViewController {
     
     
     override func viewDidLoad() {
+        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "mainScreenBackground")!)
+        
         super.viewDidLoad()
         self.title = "Variety Selection"
         ph.selectedSegmentIndex = -1
