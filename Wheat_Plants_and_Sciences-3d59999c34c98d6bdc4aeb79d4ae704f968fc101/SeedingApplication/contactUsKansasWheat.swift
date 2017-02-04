@@ -23,14 +23,20 @@ class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background2")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)
      }
     
     @IBAction func callbutton(_ sender: AnyObject) {
-        let phone = URL(string: "tel://7855320397")
-        UIApplication.shared.open(phone!, options: [:], completionHandler: nil)
+        let phone = URL(string: "tel://785-532-0397")
+        let Alert = UIAlertController(title: "Would you like to call the Kansas Wheat office?", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction) in
+            UIApplication.shared.open(phone!, options: [:], completionHandler: nil)
+        }))
+        Alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in return}))
+        present(Alert, animated: true, completion: nil)
     }
- 
+    
+    
     //button setup for the facebook button
     @IBAction func facebookbutton(_ sender: AnyObject) {
         let facebookURL = URL(string: "fb://profile/213201098709632")
@@ -38,7 +44,7 @@ class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
             UIApplication.shared.open(facebookURL!, options: [:], completionHandler: nil)
         }
         else {
-            UIApplication.shared.open(facebookURL!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string:"https://www.facebook.com/kstate.wheat/")!, options: [:], completionHandler: nil)
         }
     }
     

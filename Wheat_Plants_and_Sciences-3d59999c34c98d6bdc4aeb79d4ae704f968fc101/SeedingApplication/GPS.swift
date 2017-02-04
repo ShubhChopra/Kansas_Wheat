@@ -322,11 +322,12 @@ class GPS: UIViewController, CLLocationManagerDelegate, UIPickerViewDataSource, 
             var location = locality! + ", " + postalCode! + ", ";
             location = location +  administrativeArea! + ", " + county!;*/
             
-            
             let Alert = UIAlertController(title: "Are you currently in " + county! + " county?", message: "We use your current location to adjust our seeding calculations. Select \"OK\" to use " + county! + " county or select \"Cancel\" to select manually below.", preferredStyle: UIAlertControllerStyle.alert)
             
             Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
                 print("Ok")
+                
+                applicationVars.county = county!
                 
                 if( county=="Cheyenne" || county=="Rawlins" || county=="Decatur" || county=="Norton" || county=="Sherman" || county=="Thomas" || county=="Sheridan" || county=="Graham" )
                 {

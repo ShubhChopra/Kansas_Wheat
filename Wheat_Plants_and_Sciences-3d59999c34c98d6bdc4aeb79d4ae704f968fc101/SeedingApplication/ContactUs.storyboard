@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,12 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-Ug-Vhe">
-                                <rect key="frame" x="69" y="225" width="94" height="95"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="gXZ-Lj-dTz"/>
-                                    <constraint firstAttribute="width" constant="94" id="xqi-rj-W9c"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-Ug-Vhe">
+                                <rect key="frame" x="68" y="241" width="94" height="95"/>
                                 <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
                                 <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
@@ -38,12 +36,8 @@
                                     <action selector="callbutton:" destination="gHD-lx-TOV" eventType="touchUpInside" id="crz-gq-MLc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-wK-G2T">
-                                <rect key="frame" x="214" y="225" width="94" height="95"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="cfj-9z-ogp"/>
-                                    <constraint firstAttribute="width" constant="94" id="ptA-NZ-Ibv"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-wK-G2T">
+                                <rect key="frame" x="213" y="241" width="94" height="95"/>
                                 <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
                                 <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
@@ -54,11 +48,11 @@
                                     <action selector="emailbutton:" destination="gHD-lx-TOV" eventType="touchUpInside" id="Cvo-8n-L5E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-xi-b56">
-                                <rect key="frame" x="79" y="81" width="75" height="75"/>
+                            <button opaque="NO" contentMode="top" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-xi-b56">
+                                <rect key="frame" x="78" y="97" width="75" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="TIK-ys-Z9i"/>
-                                    <constraint firstAttribute="width" constant="75" id="bcH-Mm-Jat"/>
+                                    <constraint firstAttribute="height" constant="75" id="8jR-g7-pWl"/>
+                                    <constraint firstAttribute="width" constant="75" id="loM-c9-Nac"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="titleEdgeInsets" minX="-51" minY="-9" maxX="0.0" maxY="-67"/>
@@ -71,12 +65,8 @@
                                     <action selector="facebookbutton:" destination="gHD-lx-TOV" eventType="touchUpInside" id="hAG-xy-sEW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zms-GW-YIl">
-                                <rect key="frame" x="224" y="81" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="A18-TJ-Xgb"/>
-                                    <constraint firstAttribute="width" constant="75" id="zAs-VM-uyM"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="top" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zms-GW-YIl">
+                                <rect key="frame" x="223" y="97" width="75" height="75"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="titleEdgeInsets" minX="-45" minY="-7" maxX="0.0" maxY="-67"/>
                                 <inset key="imageEdgeInsets" minX="6" minY="-5" maxX="0.0" maxY="0.0"/>
@@ -91,14 +81,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="top" secondItem="rEN-xi-b56" secondAttribute="bottom" constant="69" id="3ni-He-oeB"/>
-                            <constraint firstItem="zms-GW-YIl" firstAttribute="centerX" secondItem="kUl-wK-G2T" secondAttribute="centerX" id="bFA-Sd-pD6"/>
-                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="leading" secondItem="Nb5-U4-CBb" secondAttribute="leadingMargin" constant="53" id="c85-SP-x5k"/>
-                            <constraint firstItem="rEN-xi-b56" firstAttribute="top" secondItem="zms-GW-YIl" secondAttribute="top" id="geK-Wx-CyG"/>
-                            <constraint firstItem="rEN-xi-b56" firstAttribute="centerX" secondItem="cfQ-Ug-Vhe" secondAttribute="centerX" id="kSp-79-VdG"/>
-                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="baseline" secondItem="kUl-wK-G2T" secondAttribute="baseline" id="slO-Rf-Jju"/>
-                            <constraint firstItem="kUl-wK-G2T" firstAttribute="leading" secondItem="cfQ-Ug-Vhe" secondAttribute="trailing" constant="51" id="vqB-Ol-yDz"/>
-                            <constraint firstItem="rEN-xi-b56" firstAttribute="top" secondItem="bvM-kD-8Dn" secondAttribute="bottom" constant="61" id="xFA-tb-bTV"/>
+                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="top" secondItem="rEN-xi-b56" secondAttribute="bottom" constant="69" id="17Y-Fx-z4q"/>
+                            <constraint firstItem="rEN-xi-b56" firstAttribute="top" secondItem="zms-GW-YIl" secondAttribute="top" id="2b6-Ga-Yf7"/>
+                            <constraint firstItem="zms-GW-YIl" firstAttribute="leading" secondItem="rEN-xi-b56" secondAttribute="trailing" constant="70" id="3xS-TS-Pnh"/>
+                            <constraint firstItem="rEN-xi-b56" firstAttribute="centerX" secondItem="cfQ-Ug-Vhe" secondAttribute="centerX" id="45G-2x-wZy"/>
+                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="leading" secondItem="Nb5-U4-CBb" secondAttribute="leadingMargin" constant="52" id="9PY-gH-b45"/>
+                            <constraint firstItem="kUl-wK-G2T" firstAttribute="leading" secondItem="cfQ-Ug-Vhe" secondAttribute="trailing" constant="51" id="Jgk-kH-ilc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kUl-wK-G2T" secondAttribute="trailing" constant="52" id="Rvo-yE-XvT"/>
+                            <constraint firstItem="erU-dJ-zdL" firstAttribute="top" secondItem="cfQ-Ug-Vhe" secondAttribute="bottom" constant="282" id="T0v-bf-Ygc"/>
+                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="top" secondItem="kUl-wK-G2T" secondAttribute="top" id="T5E-nP-XGP"/>
+                            <constraint firstItem="rEN-xi-b56" firstAttribute="top" secondItem="bvM-kD-8Dn" secondAttribute="bottom" constant="80" id="VfQ-uE-cn7"/>
+                            <constraint firstItem="rEN-xi-b56" firstAttribute="leading" secondItem="Nb5-U4-CBb" secondAttribute="leadingMargin" constant="62" id="ZZv-cF-IJg"/>
+                            <constraint firstItem="rEN-xi-b56" firstAttribute="bottom" secondItem="zms-GW-YIl" secondAttribute="bottom" id="bhu-MK-XtC"/>
+                            <constraint firstItem="zms-GW-YIl" firstAttribute="centerX" secondItem="kUl-wK-G2T" secondAttribute="centerX" id="eci-cD-Ath"/>
+                            <constraint firstItem="cfQ-Ug-Vhe" firstAttribute="baseline" secondItem="kUl-wK-G2T" secondAttribute="firstBaseline" id="jgB-hR-8Gs"/>
+                            <constraint firstItem="kUl-wK-G2T" firstAttribute="baseline" secondItem="cfQ-Ug-Vhe" secondAttribute="firstBaseline" id="x45-Nd-pDR"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Precision Ag" image="tab-v1" id="VfT-SL-j3E"/>
@@ -119,9 +116,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-fX-YSE">
-                                <rect key="frame" x="77" y="235" width="94" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-fX-YSE">
+                                <rect key="frame" x="69" y="247" width="94" height="78"/>
                                 <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
                                 <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
@@ -132,9 +128,8 @@
                                     <action selector="callbutton:" destination="mie-SG-tJC" eventType="touchUpInside" id="9dY-he-AOV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-tz-EmX">
-                                <rect key="frame" x="220" y="235" width="94" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-tz-EmX">
+                                <rect key="frame" x="211" y="247" width="94" height="78"/>
                                 <inset key="titleEdgeInsets" minX="-74" minY="0.0" maxX="-21" maxY="-55"/>
                                 <inset key="imageEdgeInsets" minX="18" minY="-27" maxX="-6" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
@@ -145,9 +140,8 @@
                                     <action selector="emailbutton:" destination="mie-SG-tJC" eventType="touchUpInside" id="yM8-jN-qc6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="top" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClA-5M-zD4">
-                                <rect key="frame" x="239" y="79" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClA-5M-zD4">
+                                <rect key="frame" x="221" y="100" width="75" height="75"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="titleEdgeInsets" minX="-45" minY="-7" maxX="0.0" maxY="-67"/>
                                 <inset key="imageEdgeInsets" minX="6" minY="-5" maxX="0.0" maxY="0.0"/>
@@ -159,9 +153,12 @@
                                     <action selector="twitterbutton:" destination="mie-SG-tJC" eventType="touchUpInside" id="sF6-fM-Y8K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="top" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-GJ-99Z">
-                                <rect key="frame" x="87" y="88" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-GJ-99Z">
+                                <rect key="frame" x="79" y="100" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="djJ-WX-Hbq"/>
+                                    <constraint firstAttribute="height" constant="75" id="pkz-DC-kts"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="titleEdgeInsets" minX="-51" minY="-9" maxX="0.0" maxY="-67"/>
                                 <inset key="imageEdgeInsets" minX="6" minY="-14" maxX="0.0" maxY="0.0"/>
@@ -175,6 +172,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="top" secondItem="ClA-5M-zD4" secondAttribute="top" id="2qx-5c-sOM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tZo-tz-EmX" secondAttribute="trailing" constant="54" id="5Tj-KS-Vcl"/>
+                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="top" secondItem="Uaq-Ms-kcG" secondAttribute="bottom" constant="80" id="HY1-7D-RZz"/>
+                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="leading" secondItem="C1P-Yw-TPX" secondAttribute="leadingMargin" constant="63" id="Ibs-yW-c04"/>
+                            <constraint firstItem="u2B-fX-YSE" firstAttribute="top" secondItem="tZo-tz-EmX" secondAttribute="top" id="Ri3-dX-Xft"/>
+                            <constraint firstItem="tZo-tz-EmX" firstAttribute="baseline" secondItem="u2B-fX-YSE" secondAttribute="firstBaseline" id="Stq-5B-uE3"/>
+                            <constraint firstItem="ClA-5M-zD4" firstAttribute="leading" secondItem="a1M-GJ-99Z" secondAttribute="trailing" constant="67" id="Uuv-B7-qNI"/>
+                            <constraint firstItem="ClA-5M-zD4" firstAttribute="centerX" secondItem="tZo-tz-EmX" secondAttribute="centerX" id="V5q-jl-2Dd"/>
+                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="bottom" secondItem="ClA-5M-zD4" secondAttribute="bottom" id="cKH-32-OGf"/>
+                            <constraint firstItem="u2B-fX-YSE" firstAttribute="top" secondItem="a1M-GJ-99Z" secondAttribute="bottom" constant="72" id="gXk-W2-NvD"/>
+                            <constraint firstItem="a1M-GJ-99Z" firstAttribute="centerX" secondItem="u2B-fX-YSE" secondAttribute="centerX" id="kVh-nn-Rib"/>
+                            <constraint firstItem="aGk-DQ-7RF" firstAttribute="top" secondItem="u2B-fX-YSE" secondAttribute="bottom" constant="293" id="nZJ-zb-c04"/>
+                            <constraint firstItem="u2B-fX-YSE" firstAttribute="leading" secondItem="C1P-Yw-TPX" secondAttribute="leadingMargin" constant="53" id="rIE-WB-ml5"/>
+                            <constraint firstItem="u2B-fX-YSE" firstAttribute="baseline" secondItem="tZo-tz-EmX" secondAttribute="firstBaseline" id="tmN-ZM-ezD"/>
+                            <constraint firstItem="tZo-tz-EmX" firstAttribute="leading" secondItem="u2B-fX-YSE" secondAttribute="trailing" constant="48" id="yUr-gG-wRG"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Kansas Wheat" image="manage" id="Ktn-vk-Tp9"/>
                     <connections>

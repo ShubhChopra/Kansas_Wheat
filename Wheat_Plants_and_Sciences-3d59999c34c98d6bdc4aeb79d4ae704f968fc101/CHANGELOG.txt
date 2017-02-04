@@ -9,64 +9,50 @@ This is a change log for the application. It contains general notes for me to us
 
 
 /////
-DATE: 2/4/2017
-Seeding Application To Do:
+PUSH DATE: 2/4/2017
+Seeding Application Change Log:
 
-Comments to Ray:
-- [ ] I need to know the underlying calculations for the seeding rate section of the application.
-- [ ] Free ability to change as needed for usability.
-Overal Design Philosophy:
-- [ ] Keep the user in the App as much as possible without losing functionality.
-- [ ] Refine the visual aspects of the application without losing functionality.
-
-Actual Improvement Email:
+Improvement Email from Shubh:
 - [x] *** On “contact us”, if I click on an email (either mine or Ray’s) and try to cancel it (for example if I don’t want to send it anymore), the app does not go back – it stays with the email/outlook page open. - http://stackoverflow.com/questions/10878744/how-to-display-pdf-on-ios
 
-- [ ] *** The acknowledgement page looks really raw/crude with the white background and click-on texts. Can we either i) use the same background/icon scheme as in the remaining portions of the app, or maybe ii) add some pictures in the top so it is similar to the “About us” page?
+- [x] *** The acknowledgement page looks really raw/crude with the white background and click-on texts. Can we either i) use the same background/icon scheme as in the remaining portions of the app, or maybe ii) add some pictures in the top so it is similar to the “About us” page?
 
-- [ ] *** These URLs go to internal PDF with option to download it not during initial download of app. — On acknowledgments, when you click in variety info, or wheat disease info, both links take to the original publication. However, the “wheat growth and development” does not take the user to any web page/original publication, it just open the content inside the app.
+- [x] *** These URLs go to internal PDF with option to download it not during initial download of app. — On acknowledgments, when you click in variety info, or wheat disease info, both links take to the original publication. However, the “wheat growth and development” does not take the user to any web page/original publication, it just open the content inside the app.
 
-- [ ] *** When we click in “seeding rate” I am not able to open either of the drill calibration files. Both of them gives me a warning: “Alert! You need to comple the Final Seeding Rate section” – please notice a grammar misspelling on “comple” instead of “complete”. Also, I think there is something wrong with the calculations for the drill calibration. Every time I try to go thought all calculations to get a recommendation, the app closes in my phone and does not give me a recommendation unless I use 10 inch row spacing – case in which it gives me wrong results. I might have to revise these calculations. - > Talk to Ray about understanding calculations.
+- [ ] Can't work on this under I have the algorithms from Ray '*** When we click in “seeding rate” I am not able to open either of the drill calibration files. Both of them gives me a warning: “Alert! You need to comple the Final Seeding Rate section” – please notice a grammar misspelling on “comple” instead of “complete”. Also, I think there is something wrong with the calculations for the drill calibration. Every time I try to go thought all calculations to get a recommendation, the app closes in my phone and does not give me a recommendation unless I use 10 inch row spacing – case in which it gives me wrong results. I might have to revise these calculations. - > Talk to Ray about understanding calculations.
 
 Revisions Based Off Above Changes:
-- [ ] Call button asks user if they want to call before starting call
+- [ ] Downloads pdf files once when they are external
+- [x] Call button asks user if they want to call before starting call
 - [ ] Update icon set to be high def
-- [ ] Make Facebook URL from Contact US goes to Facebook App -> Go back to main screen if coming in from Facebook
-- [ ] Email doesn’t close
-- [ ] County selector
-- [ ] TextBox at bottom of four icon management page
-- [ ] Alert formatting in “Seed Volume” title
-- [ ] Fix Variety Button
+- [x] Make Facebook URL from Contact US goes to Facebook App -> Go back to main screen if coming in from Facebook
+- [x] Email doesn’t close - > it does now
+- [ ] County selector -> add "select" button
+- [x] TextBox at bottom of four icon management page -> looks better now
+- [ ] Alert formatting in “Seed Volume” title -> county
+- [x] Fix Variety Button -> links properly
 
 
 Personal Observations:
-- [ ] Rework Welcome Screen
-- [ ] Fix Contact Us Section
-- [ ] About Us tab icons
+- [ ] Complete rework of Welcome Screen
+- [ ] Complete rework of Contact Us Section
+- [x] About Us tab icons
 - [ ] Plus size Optimizations
 - [ ] SE size Optimizations
-- [ ] Twitter URL Links
-- [ ] Native PDF view for Variety Information and Wheat Disease
-- [ ] Remove Bookmark at top right in Acknowledgements section.
-- [ ] Rename Acknowledgement section to “Additional Information”
-- [ ] Only ask for GPS location once when App launches. Then find it in MyVaribles until app is closed.
-- [ ] Add County in top four main screen section that currently says “Kansas Wheat”
-- [ ] “Variety” icon in main screen section needs to link to the right thing
-- [ ] Rework Diseases section to be more interesting.
-- [ ] Disable text selection in four icon screen
-- [ ] Disable four tab view after selecting any icon in the four icon screen
+- [ ] Twitter URL Links -> on the main screen -> looks goofy
+- [x] Native PDF view for Variety Information and Wheat Disease
+- [x] Remove Bookmark at top right in Acknowledgements section.
+- [-] Only ask for GPS location once when App launches. Then find it in MyVaribles until app is closed. -> Also needed, but need the figure out the specifics.
+- [-] Add County in top four main screen section that currently says “Kansas Wheat” -> this is needed, but needs more thought too
+- [x] “Variety” icon in main screen section needs to link to the right thing
+- [-] Rework Diseases section to be more interesting.
+- [x] Disable text selection in four icon screen
+- [x] Disable four tab view after selecting any icon in the four icon screen
 
 
 /////
-DATE: 2/3/2017
+PUSH DATE: 2/3/2017
 Note: pushed this set of changes and goals. commit code: 819a40e
-
-Comments to Ray:
-- [ ] I need to know the underlying calculations for the seeding rate section of the application.
-- [ ] Free ability to change as needed for usability.
-Overal Design Philosophy:
-- [ ] Keep the user in the App as much as possible without losing functionality.
-- [ ] Refine the visual aspects of the application without losing functionality.
 
 Actual Improvement Email:
 - [x] The Facebook page actually takes the user to the Kansas wheat commission Facebook page, not to my program’s. The correct address is “K-State Wheat” rather than Kansas Wheat.

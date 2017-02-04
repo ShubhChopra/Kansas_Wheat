@@ -90,6 +90,7 @@
 		D93FFBD81E403B480021608A /* FacebookSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */; };
 		D93FFBDA1E403DBE0021608A /* TwitterSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */; };
 		D98AFB631E29570B004DB1B0 /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */; };
+		D9C5C3B21E4580BE00ECA900 /* PdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3B11E4580BE00ECA900 /* PdfViewController.swift */; };
 		D9E007331E45119800405442 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = D9E007321E45119800405442 /* CHANGELOG.txt */; };
 		D9F32AC31E40F7B600BF23B3 /* FoliarDiseases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F32AC21E40F7B600BF23B3 /* FoliarDiseases.storyboard */; };
 		D9FF643F1E43C6BD009A8F17 /* StemDiseases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FF643E1E43C6BD009A8F17 /* StemDiseases.storyboard */; };
@@ -204,6 +205,7 @@
 		D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FacebookSocialMedia.storyboard; sourceTree = "<group>"; };
 		D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwitterSocialMedia.storyboard; sourceTree = "<group>"; };
 		D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactUs.storyboard; sourceTree = "<group>"; };
+		D9C5C3B11E4580BE00ECA900 /* PdfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PdfViewController.swift; path = ../PdfViewController.swift; sourceTree = "<group>"; };
 		D9E007321E45119800405442 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
 		D9F32AC21E40F7B600BF23B3 /* FoliarDiseases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FoliarDiseases.storyboard; sourceTree = "<group>"; };
 		D9FF643E1E43C6BD009A8F17 /* StemDiseases.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StemDiseases.storyboard; sourceTree = "<group>"; };
@@ -314,21 +316,17 @@
 		CA53E2471CEB6C5600EC4438 /* KansasWheat */ = {
 			isa = PBXGroup;
 			children = (
-				CA5D20201D0CD837000F5762 /* Default Images */,
-				CA5D20211D0CD838000F5762 /* Helper Classes */,
-				CA8E73841D8DE8B7001925B2 /* png */,
-				CA5D20221D0CD838000F5762 /* Products Images */,
 				CA53E2511CEB6C5600EC4438 /* Assets.xcassets */,
 				D93C55751E27EE660093EABB /* Storyboards */,
 				D93C556E1E27E0E30093EABB /* Core Application */,
 				D93C556B1E27DFB60093EABB /* Diseases */,
 				D93C556F1E27E13B0093EABB /* Feekes Classes */,
-				D93C55711E27E1FE0093EABB /* Miscellaneous */,
 				D93C55731E27E5C80093EABB /* Non .Swift Files */,
 				D93C55701E27E1DA0093EABB /* Seeding Rates */,
 				D93C556C1E27DFDE0093EABB /* Social Media */,
 				D93C55721E27E2720093EABB /* Variety Classes */,
 				D93C556D1E27E08A0093EABB /* View Controllers */,
+				D9C5C3B01E45805700ECA900 /* Folders of Things */,
 			);
 			name = KansasWheat;
 			path = SeedingApplication;
@@ -382,6 +380,7 @@
 		D93C556D1E27E08A0093EABB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D9C5C3B11E4580BE00ECA900 /* PdfViewController.swift */,
 				CA4D70CA1CF51F2E00CE8B3F /* CollectionViewController.swift */,
 				CA4D70CC1CF51FD700CE8B3F /* PhotoCell.swift */,
 				CA8E73881D9073CE001925B2 /* tabbarViewController.swift */,
@@ -425,13 +424,6 @@
 				CA2591401D166DCD0010E037 /* UnknownSeed.swift */,
 			);
 			name = "Seeding Rates";
-			sourceTree = "<group>";
-		};
-		D93C55711E27E1FE0093EABB /* Miscellaneous */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Miscellaneous;
 			sourceTree = "<group>";
 		};
 		D93C55721E27E2720093EABB /* Variety Classes */ = {
@@ -488,6 +480,17 @@
 				D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D9C5C3B01E45805700ECA900 /* Folders of Things */ = {
+			isa = PBXGroup;
+			children = (
+				CA5D20201D0CD837000F5762 /* Default Images */,
+				CA5D20211D0CD838000F5762 /* Helper Classes */,
+				CA8E73841D8DE8B7001925B2 /* png */,
+				CA5D20221D0CD838000F5762 /* Products Images */,
+			);
+			name = "Folders of Things";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,6 +684,7 @@
 				CA4D70EF1CF6D4BF00CE8B3F /* Leaf Rust.swift in Sources */,
 				CA4D70FD1CF6D5CF00CE8B3F /* Wheat Spindle Streak Mosaic.swift in Sources */,
 				CAD8A5021CED9E13003F73E3 /* VarietyTable.swift in Sources */,
+				D9C5C3B21E4580BE00ECA900 /* PdfViewController.swift in Sources */,
 				CA4D70FB1CF6D5AF00CE8B3F /* Wheat Soilborne Mosaic.swift in Sources */,
 				CA4D710A1CF77B9400CE8B3F /* Fusarium root.swift in Sources */,
 				CA8E73831D8DE07B001925B2 /* startup.swift in Sources */,

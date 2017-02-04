@@ -11,7 +11,6 @@ import UIKit
 
 struct applicationVars {
     static var applicationBackground = "mainScreenBackground"
-    
     static var district = ""
     static var ph = 0
     static var grazed = 0
@@ -26,14 +25,21 @@ struct applicationVars {
     static var germinationRate = 0
     static var lat = ""
     static var lon = ""
+    static var county = ""
 }
+
 class MainScreen: UIViewController {
 
     var option = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Management"
+        if(applicationVars.county != "") {
+            self.title = applicationVars.county + " County"
+        }
+        else {
+            self.title = "Management"
+        }
         textview.backgroundColor = UIColor.clear;
        // textview.textColor = UIColor.whiteColor();
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)

@@ -15,13 +15,21 @@ class Acknowledgement: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "mainScreenBackground"))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let multiPartIdentifer = segue.identifier!.components(separatedBy: " ; ")
+        print(multiPartIdentifer)
+        let PdfVC = segue.destination as! PdfViewController
+        PdfVC.url = URL(string: multiPartIdentifer[0])
+        PdfVC.viewTitle = multiPartIdentifer[1]
         
-        // Do any additional setup after loading the view.
+        
     }
     
     
     //opens Variety Information link
-    @IBAction func Variety(_ sender: AnyObject) {
+    /*@IBAction func Variety(_ sender: AnyObject) {
         let url = URL(string: "https://www.bookstore.ksre.ksu.edu/pubs/MF991.pdf")
         let req = NSURLRequest(url: url!)
         let webView = UIWebView(frame: CGRect(x:0,y:0,width:self.view.frame.size.width,height: self.view.frame.size.height-40)) //Adjust view area here
@@ -41,6 +49,6 @@ class Acknowledgement: UIViewController {
         override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-}
+}*/
 
 }
