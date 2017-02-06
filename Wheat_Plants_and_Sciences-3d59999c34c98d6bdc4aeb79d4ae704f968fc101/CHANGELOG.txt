@@ -7,9 +7,32 @@
 
 This is a change log for the application. It contains general notes for me to used.
 
+/////
+PUSH DATE:
+COMMIT CODE:
+Seeding Application Change Log:
+
+Worklist:
+- [ ] Correct calculations for seeding rate
+- [ ] Downloads pdf files once when they are external
+- [ ] Update icon set to be high def
+- [ ] Go back to main screen if coming in from Facebook. <- Make Facebook URL from Contact US goes to Facebook App
+- [ ] County selector -> add "select" button
+- [ ] Alert formatting in “Seed Volume” title -> county.
+- [ ] Twitter URL Links -> on the main screen -> looks goofy
+- [-] Only ask for GPS location once when App launches. Then find it in MyVaribles until app is closed. -> Also needed, but need the figure out the specifics.
+- [-] Add County in top four main screen section that currently says “Kansas Wheat” -> Need have correct title when coming in from the selector.
+- [-] Rework Diseases section to be more interesting.
+
+Larger Goals:
+- [ ] Complete rework of Welcome Screen
+- [ ] Complete rework of Contact Us Section
+- [ ] Plus size Optimizations
+- [ ] SE size Optimizations
 
 /////
 PUSH DATE: 2/4/2017
+COMMIT CODE: 442af1c
 Seeding Application Change Log:
 
 Improvement Email from Shubh:
