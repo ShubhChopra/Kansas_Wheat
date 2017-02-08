@@ -7,14 +7,10 @@
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
 
-//class that prepares example images for the appropriate disease
-
 import UIKit
 import Foundation
 
-
 class CommonBunt: UIViewController {
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

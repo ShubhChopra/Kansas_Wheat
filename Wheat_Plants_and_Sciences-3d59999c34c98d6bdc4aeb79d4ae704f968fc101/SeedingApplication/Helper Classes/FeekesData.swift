@@ -17,11 +17,7 @@ import Foundation
 
 class FeekesData
 {
-    // Variables
     var name: String
-    
-    //I think that this represents the entire list of cells 
-    //Whenever it is .appended below, then it creates another cell.
     var feekes: [Feekes]
     
     init(named: String, includeFeekes: [Feekes])
@@ -30,15 +26,10 @@ class FeekesData
         feekes = includeFeekes
     }
     
-    
-    //this function compiles all the data below into one method call.
     class func feekesdata() -> [FeekesData]
     {
-        //returns an array of the different Feekes stages in their overarching categories
         return [self.LeafTiller(), self.StemElongation(), self.HeadEmergence(), self.GrainFilling(), self.Ripening()]
     }
-    
-    // Private methods
     
     fileprivate class func LeafTiller() -> FeekesData {
                 var feekes = [Feekes]()

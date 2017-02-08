@@ -7,14 +7,10 @@
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
 
-//class that prepares example images for the appropriate disease
-
 import Foundation
 import UIKit
 
-
 class FusariumHeadBlight: UIViewController {
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

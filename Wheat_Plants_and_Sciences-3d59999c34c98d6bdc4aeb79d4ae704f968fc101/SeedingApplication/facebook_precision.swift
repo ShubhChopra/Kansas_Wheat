@@ -7,11 +7,10 @@
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
 
-//Facebook view for Precision
-
 import UIKit
 
 class facebook_precision: UIViewController {
+    
     @IBOutlet weak var webview: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()

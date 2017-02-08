@@ -7,14 +7,10 @@
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
 
-//class that prepares example images for the appropriate disease
-
 import Foundation
 import UIKit
 
-
 class Eyespot: UIViewController {
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +24,5 @@ class Eyespot: UIViewController {
                 destinationVC.temp = 61;
             }
         }
-        
     }
 }

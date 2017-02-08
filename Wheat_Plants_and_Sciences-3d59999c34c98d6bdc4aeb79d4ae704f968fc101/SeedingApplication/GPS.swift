@@ -312,11 +312,14 @@ class GPS: UIViewController, CLLocationManagerDelegate, UIPickerViewDataSource, 
     
     func displayLocationInfo(_ placemark: CLPlacemark?) {
         if let containsPlacemark = placemark {
+            
             //stop updating location to save battery life
             locationManager.stopUpdatingLocation()
+            
             //let locality = (containsPlacemark.locality != nil) ? containsPlacemark.locality : ""
             //let postalCode = (containsPlacemark.postalCode != nil) ? containsPlacemark.postalCode : ""
             //let administrativeArea = (containsPlacemark.administrativeArea != nil) ? containsPlacemark.administrativeArea : ""
+            
             let county = (containsPlacemark.subAdministrativeArea != nil) ? containsPlacemark.subAdministrativeArea : ""
             
             /* simplify location comfirmation informaiton

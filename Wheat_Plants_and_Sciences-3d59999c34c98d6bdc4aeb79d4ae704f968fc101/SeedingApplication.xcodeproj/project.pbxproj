@@ -321,7 +321,6 @@
 				D93C556E1E27E0E30093EABB /* Core Application */,
 				D93C556B1E27DFB60093EABB /* Diseases */,
 				D93C556F1E27E13B0093EABB /* Feekes Classes */,
-				D93C55731E27E5C80093EABB /* Non .Swift Files */,
 				D93C55701E27E1DA0093EABB /* Seeding Rates */,
 				D93C556C1E27DFDE0093EABB /* Social Media */,
 				D93C55721E27E2720093EABB /* Variety Classes */,
@@ -485,6 +484,7 @@
 		D9C5C3B01E45805700ECA900 /* Folders of Things */ = {
 			isa = PBXGroup;
 			children = (
+				D93C55731E27E5C80093EABB /* Non .Swift Files */,
 				CA5D20201D0CD837000F5762 /* Default Images */,
 				CA5D20211D0CD838000F5762 /* Helper Classes */,
 				CA8E73841D8DE8B7001925B2 /* png */,

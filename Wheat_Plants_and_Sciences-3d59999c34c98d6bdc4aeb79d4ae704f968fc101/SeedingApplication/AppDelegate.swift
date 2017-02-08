@@ -6,9 +6,6 @@
 //  Modified by Austin Fuller
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 
-
-
-//different imports needed for the applicaiton
 import UIKit
 import Fabric
 import TwitterKit
@@ -16,7 +13,6 @@ import TwitterKit
 
 @UIApplicationMain
 
-//AppDelegate handles what the application does when it is changing states on the iphone. i.e. forground, background and whatnot. These methods handle what the applicaiton does. Most times, nothing is needed to be added and the OS handles everything.
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -30,18 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Changes apperance of application
         UINavigationBar.appearance().barTintColor = UIColor(hue: 0.1444, saturation: 1, brightness: 0.97, alpha: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
-        
         UIBarButtonItem.appearance().tintColor = UIColor.black
-        
         UINavigationBar.appearance().tintColor = UIColor.black
-        
         UITabBar.appearance().barTintColor = UIColor.black
         UITabBar.appearance().tintColor = UIColor(hue: 0.1444, saturation: 1, brightness: 0.97, alpha: 1.0)
 
-        //not entirely sure what this does. I need to review the Fabric class
         Fabric.with([Twitter.self])
-        
-        //also not sure why we are returning true.
         return true
     }
     

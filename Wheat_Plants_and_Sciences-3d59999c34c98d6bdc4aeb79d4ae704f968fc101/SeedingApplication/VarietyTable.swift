@@ -14,16 +14,13 @@ import UIKit
 
 class VarietyTable: UITableViewController {
 
-
     @IBOutlet var Tamil: UITableViewCell!
     
     @IBOutlet var Everest: UITableViewCell!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if (segue.identifier == "Tam111")
@@ -40,6 +37,7 @@ class VarietyTable: UITableViewController {
             }
             
         }
+        
         if (segue.identifier == "1863")
         {
             let img1 =  UIImage(named:"1863-1")
@@ -101,17 +99,17 @@ class VarietyTable: UITableViewController {
         }
         if (segue.identifier == "Doublestop")
         {
-        let img1 =  UIImage(named:"Doublestop-1")
-        let img2 = UIImage(named:"Doublestop-2")
-        let title = "Doublestop"
-        let Dis = "Pedigree: Mason SRW (CL donor), Jagger, 2174, TAM 110, and Intrada.\nAdaptation: Central and west central Kansas.\nStrengths: Two-gene Clear eld, good acid soil tolerance, good grazing potential, good test weight.\nWeaknesses: Intermediate reaction to stripe rust.\nComments: A good yield record in south central Kansas; however, its medium-late maturity increases the risk that it will be exposed to heat stress during the grain- lling stages in some years. A good Clear eld option where adapted. Often has an uneven canopy."
-        if let destinationVC = segue.destination as? VarietyDiscription {
-            destinationVC.img1 = img1
-            destinationVC.img2 = img2
-            destinationVC.Dis = Dis
-            destinationVC.varitytitle = title
+            let img1 =  UIImage(named:"Doublestop-1")
+            let img2 = UIImage(named:"Doublestop-2")
+            let title = "Doublestop"
+            let Dis = "Pedigree: Mason SRW (CL donor), Jagger, 2174, TAM 110, and Intrada.\nAdaptation: Central and west central Kansas.\nStrengths: Two-gene Clear eld, good acid soil tolerance, good grazing potential, good test weight.\nWeaknesses: Intermediate reaction to stripe rust.\nComments: A good yield record in south central Kansas; however, its medium-late maturity increases the risk that it will be exposed to heat stress during the grain- lling stages in some years. A good Clear eld option where adapted. Often has an uneven canopy."
+            if let destinationVC = segue.destination as? VarietyDiscription {
+                destinationVC.img1 = img1
+                destinationVC.img2 = img2
+                destinationVC.Dis = Dis
+                destinationVC.varitytitle = title
+            }
         }
-    }
         
         if (segue.identifier == "Everest")
         {
@@ -433,25 +431,9 @@ class VarietyTable: UITableViewController {
                
                 destinationVC.varitytitle = segue.identifier!
             }
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
     }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         if (indexPath.section == 0)
@@ -479,12 +461,12 @@ class VarietyTable: UITableViewController {
                 }
             }
         //Everest
-        if indexPath.row == 3  {
-            if( (applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC" && applicationVars.district != "NE" ) || applicationVars.grazed == 1  || applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
-            {
+            if indexPath.row == 3  {
+                if( (applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC" && applicationVars.district != "NE" ) || applicationVars.grazed == 1  || applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
+                {
                 return 0.0
+                }
             }
-        }
             // T-153
             if indexPath.row == 4  {
                 if((applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "SW" && applicationVars.district != "NE"  ) || applicationVars.ph == 1 || applicationVars.fungicide == 2 || applicationVars.maturity == 3 || applicationVars.maturity == 2 || applicationVars.clearfield == 1)
@@ -544,8 +526,6 @@ class VarietyTable: UITableViewController {
                     return 0.0
                 }
             }
-            
-            
             //Brawl CL
             if indexPath.row == 12 {
                 if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" && applicationVars.district == "NC" && applicationVars.district == "SC") || applicationVars.ph == 1 || applicationVars.grazed == 1 || applicationVars.fungicide   == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3  )
@@ -554,7 +534,6 @@ class VarietyTable: UITableViewController {
                 }
                 
             }
-            
             //LCS Pistol
             if indexPath.row == 13  {
                 if( (applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC"  && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "NC") || applicationVars.fungicide == 2 || applicationVars.lodging == 1 ||  applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
@@ -569,7 +548,6 @@ class VarietyTable: UITableViewController {
                     return 0.0
                 }
             }
-            
             //SY Flint
             if indexPath.row == 15  {
                 if( (applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "EC") || applicationVars.fungicide == 2 || applicationVars.lodging == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
@@ -577,7 +555,6 @@ class VarietyTable: UITableViewController {
                     return 0.0
                 }
             }
-            
             //T158
             if indexPath.row == 16  {
                 if( (applicationVars.district != "SW" && applicationVars.district != "NW" && applicationVars.district != "WC"  && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "NC" ) || applicationVars.ph == 1 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1)
@@ -585,16 +562,13 @@ class VarietyTable: UITableViewController {
                     return 0.0
                 }
             }
-            
-
-
-        // WB 4458
-        if indexPath.row == 17  {
-            if((applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "SW" && applicationVars.district != "EC" && applicationVars.district != "NE" ) || applicationVars.grazed == 1 || applicationVars.maturity == 3 || applicationVars.maturity == 2 || applicationVars.clearfield == 1)
-            {
-                return 0.0
+            // WB 4458
+            if indexPath.row == 17  {
+                if((applicationVars.district != "NC" && applicationVars.district != "C" && applicationVars.district != "SC" && applicationVars.district != "SE" && applicationVars.district != "SW" && applicationVars.district != "EC" && applicationVars.district != "NE" ) || applicationVars.grazed == 1 || applicationVars.maturity == 3 || applicationVars.maturity == 2 || applicationVars.clearfield == 1)
+                {
+                    return 0.0
+                }
             }
-        }
             //SY Llano
             if indexPath.row == 18 {
                 if ((applicationVars.district != "SC" && applicationVars.district != "SE"  ) || applicationVars.fungicide == 2 || applicationVars.maturity == 2 || applicationVars.maturity == 3 || applicationVars.clearfield == 1 )
@@ -611,27 +585,23 @@ class VarietyTable: UITableViewController {
                 }
                 
             }
-
+            //PostRock
+            if indexPath.row == 20 {
+                if(applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" )
+                {
+                    return 0.0
+                }
+            }
+            //Roubidoux
+            if indexPath.row == 21 {
+                if(applicationVars.district != "NW" && applicationVars.district != "NC" )
+                {
+                    return 0.0
+                }
+            
+            }
+        }
         
-        //PostRock
-        if indexPath.row == 20 {
-            if(applicationVars.district != "NW" && applicationVars.district != "SW" && applicationVars.district != "WC" )
-            {
-                return 0.0
-            }
-            
-        }
-        //Roubidoux
-        if indexPath.row == 21 {
-            if(applicationVars.district != "NW" && applicationVars.district != "NC" )
-            {
-                return 0.0
-            }
-            
-        }
-            
-            
-               }
         if(indexPath.section == 1)
         {
             //1863
@@ -640,7 +610,6 @@ class VarietyTable: UITableViewController {
                 {
                     return 0.0
                 }
-                
             }
             //Antero
             if indexPath.row == 1 {

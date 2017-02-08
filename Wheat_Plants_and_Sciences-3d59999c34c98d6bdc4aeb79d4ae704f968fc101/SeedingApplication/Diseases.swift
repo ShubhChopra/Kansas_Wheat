@@ -15,11 +15,7 @@ class Diseases: UIViewController {
         super.viewDidLoad()
         self.title = "Diseases"
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)
-        
-       // tabBarItem = UITabBarItem(title: "Diseases", image: UIImage(named: "tab-d1"), tag: 4)
-
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

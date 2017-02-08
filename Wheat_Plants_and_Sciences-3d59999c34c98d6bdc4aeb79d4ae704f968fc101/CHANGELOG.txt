@@ -14,6 +14,7 @@ Seeding Application Change Log:
 
 Worklist:
 - [x] Update all files to include modified by Austin Fuller
+- [ ] Commenting of all code
 - [ ] Correct Twitter on main screen
 - [ ] Correct calculations for seeding rate
 - [ ] Downloads pdf files once when they are external

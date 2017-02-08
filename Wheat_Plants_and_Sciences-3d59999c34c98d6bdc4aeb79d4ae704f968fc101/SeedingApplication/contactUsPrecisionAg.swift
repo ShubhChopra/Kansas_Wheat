@@ -9,7 +9,6 @@
 
 import Foundation
 import UIKit
-
 import UIKit
 import MessageUI
 class contactus_precision: UIViewController , MFMailComposeViewControllerDelegate {
@@ -33,7 +32,6 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
         
     }
     
-    //buttonthat opens Facebook page
     @IBAction func facebookbutton(_ sender: AnyObject) {
         let facebookURL = URL(string: "fb://profile/1821513791430475")
         if UIApplication.shared.canOpenURL(facebookURL!) {
@@ -44,7 +42,6 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
         }
     }
     
-    //function that opens and creates an email
     @IBAction func emailbutton(_ sender: AnyObject) {
         
         if !MFMailComposeViewController.canSendMail() {
@@ -64,13 +61,11 @@ class contactus_precision: UIViewController , MFMailComposeViewControllerDelegat
         
         func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
             
-            // Dismiss the mail compose view controller.
-            controller.dismiss(animated: true, completion: nil)
+        controller.dismiss(animated: true, completion: nil)
         }
         
     }
     
-    //button that opens twitter 
     @IBAction func twitterbutton(_ sender: AnyObject) {
         let url = URL(string: "https://twitter.com/ksuprecisionag")
         UIApplication.shared.open(url!, options: [:], completionHandler: nil)

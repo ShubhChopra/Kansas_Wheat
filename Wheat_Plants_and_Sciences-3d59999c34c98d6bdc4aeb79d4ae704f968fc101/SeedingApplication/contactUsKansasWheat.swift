@@ -14,8 +14,6 @@ import UIKit
 import UIKit
 import MessageUI
 
-//this class contains all the code for the ContactUs paid for the Kansas Wheat.
-
 class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
     @IBOutlet weak var email: UIButton!
     @IBOutlet weak var call: UIButton!
@@ -37,8 +35,6 @@ class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
         present(Alert, animated: true, completion: nil)
     }
     
-    
-    //button setup for the facebook button
     @IBAction func facebookbutton(_ sender: AnyObject) {
         let facebookURL = URL(string: "fb://profile/213201098709632")
         if UIApplication.shared.canOpenURL(facebookURL!) {
@@ -68,9 +64,7 @@ class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
         }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        
-        // Dismiss the mail compose view controller.
-        controller.dismiss(animated: true, completion: nil)
+         controller.dismiss(animated: true, completion: nil)
     }
 
     @IBAction func twitterbutton(_ sender: AnyObject) {

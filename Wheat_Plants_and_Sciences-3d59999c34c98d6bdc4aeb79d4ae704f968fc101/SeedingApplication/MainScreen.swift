@@ -42,10 +42,7 @@ class MainScreen: UIViewController {
             self.title = "Management"
         }
         textview.backgroundColor = UIColor.clear;
-       // textview.textColor = UIColor.whiteColor();
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)
-
-        
 }
 
     @IBOutlet weak var textview: UITextView!
@@ -64,28 +61,4 @@ class MainScreen: UIViewController {
     @IBAction func Seeding(_ sender: AnyObject) {
         option = "S";
     }
-    
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-            let tabVC = segue.destination as! UITabBarController
-            
-            if(option == "V")
-                
-            {tabVC.selectedIndex = 3}
-            if(option == "N")
-                
-            {tabVC.selectedIndex = 1}
-            
-            
-            if(option == "S")
-                
-            {tabVC.selectedIndex = 2}
-            
-            if(option == "D")
-                
-            {tabVC.selectedIndex = 0}
-            
-        }*/
-
-    
 }
