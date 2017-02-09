@@ -3,10 +3,12 @@
 //  SeedingApplication
 //
 //  Created by Shubh Chopra on 8/2/16.
+//  Modified by Austin Fuller
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
 
 import UIKit
+import Foundation
 
 
 class Acknowledgement: UIViewController {
@@ -14,25 +16,22 @@ class Acknowledgement: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "mainScreenBackground"))
     }
     
-    @IBAction func Variety(sender: AnyObject) {
-        if let url = NSURL(string: "https://www.bookstore.ksre.ksu.edu/pubs/MF991.pdf") {
-            UIApplication.sharedApplication().openURL(url)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier?.range(of:" ; ") != nil {
+        let multiPartIdentifer = segue.identifier!.components(separatedBy: " ; ")
+        print(multiPartIdentifer)
+        let PdfVC = segue.destination as! PdfViewController
+        PdfVC.url = URL(string: multiPartIdentifer[0])
+        PdfVC.viewTitle = multiPartIdentifer[1]
         }
-    }
-    
-    @IBAction func Dis(sender: AnyObject) {
-        if let url = NSURL(string: "http://www.bookstore.ksre.ksu.edu/pubs/mf2994.pdf") {
-            UIApplication.sharedApplication().openURL(url)
-        }
-
+        
     }
    
-    override func didReceiveMemoryWarning() {
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-}
-
+    }
 }

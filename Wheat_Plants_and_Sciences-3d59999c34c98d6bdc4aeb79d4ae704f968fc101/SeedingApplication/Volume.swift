@@ -3,6 +3,7 @@
 //  SeedingApplication
 //
 //  Created by Shubh Chopra on 6/18/16.
+//  Modified by Austin Fuller
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
 
@@ -15,18 +16,20 @@ class Volume: UIViewController {
         
         super.viewDidLoad()
         
-        if (MyVariables.seedingRate != 0)
+        
+        //view adaptations based on known variables
+        if (applicationVars.seedingRate != 0)
         {
-            rate.text = String(MyVariables.seedingRate)
+            rate.text = String(applicationVars.seedingRate)
             
         }
-        if (MyVariables.rate=="western") {
+        if (applicationVars.rate=="western") {
             rate.placeholder = "750,000 - 900,000 seeds/acre"
         }
-        if (MyVariables.rate=="central") {
+        if (applicationVars.rate=="central") {
             rate.placeholder = "900,000 - 1,125,000 seeds/acre"
         }
-        if (MyVariables.rate=="eastern") {
+        if (applicationVars.rate=="eastern") {
             rate.placeholder = "1,125,000 - 1,350,000 seeds/acre"
         }
 
@@ -35,36 +38,42 @@ class Volume: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    //outlet setups
     @IBOutlet weak var irrigated: UISegmentedControl!
     @IBOutlet weak var size: UITextField!
-    
     @IBOutlet weak var rate: UITextField!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        //when leaving screen, save seedingRate
         if (rate.text != "")
         
         {
-            MyVariables.seedingRate = Int(rate.text!)!
+            applicationVars.seedingRate = Int(rate.text!)!
         }
     }
     
-    @IBAction func irrigation(sender: AnyObject) {
+    
+    //if it is being irrigated, then these seeding rates
+    @IBAction func irrigation(_ sender: AnyObject) {
         switch irrigated.selectedSegmentIndex
         {
         case 0 :
             rate.placeholder = "1,125,000 - 1,350,000 seeds/acre"
         case 1 :
-            if (MyVariables.rate=="western") {
+            if (applicationVars.rate=="western") {
                 rate.placeholder = "750,000 - 900,000 seeds/acre"
             }
-            if (MyVariables.rate=="central") {
+            if (applicationVars.rate=="central") {
                 rate.placeholder = "900,000 - 1,125,000 seeds/acre"
             }
-            if (MyVariables.rate=="eastern") {
+            if (applicationVars.rate=="eastern") {
                 rate.placeholder = "1,125,000 - 1,350,000 seeds/acre"
             }
 
@@ -74,36 +83,37 @@ class Volume: UIViewController {
 
     }
 
-    @IBAction func result(sender: AnyObject) {
+    //function to find optimal planting date
+    @IBAction func result(_ sender: AnyObject) {
         var dat = "";
         if(size.text != "" && rate.text != "")
         {
-        if(MyVariables.date=="zone1")
+        if(applicationVars.date=="zone1")
         {
             dat = "September 10th-30th"
         }
-        if(MyVariables.date=="zone2")
+        if(applicationVars.date=="zone2")
         {
             dat = "September 15th- October 20th"
         }
-        if(MyVariables.date=="zone3")
+        if(applicationVars.date=="zone3")
         {
             dat = "September 25th- October 20th"
         }
-        if(MyVariables.date=="zone4")
+        if(applicationVars.date=="zone4")
         {
             dat = "October 5th-25th"
         }
-        let alert = UIAlertController(title: "Seed Volume", message:" For the seed size and population specified, please plant" + String(Int(rate.text!)! / Int(size.text!)!) + " lbs/acre \n The optimum planting window for your region is " + dat , preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Seed Volume", message:" For the seed size and population specified, please plant" + String(Int(rate.text!)! / Int(size.text!)!) + " lbs/acre \n The optimum planting window for your region is " + dat , preferredStyle: .alert)
         
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
            
         }))
         
         // 4. Present the alert.
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
 
     }

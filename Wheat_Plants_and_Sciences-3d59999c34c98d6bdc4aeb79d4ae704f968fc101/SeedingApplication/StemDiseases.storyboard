@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EBb-ao-MvV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="ZoW-s5-elm">
+            <objects>
+                <collectionViewController id="PFk-ua-vqH" customClass="CollectionViewController" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="yI7-TS-PrL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KhU-BB-Hnz">
+                            <size key="itemSize" width="70" height="70"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="eMm-QY-hqB" userLabel="PhotoCell" customClass="PhotoCell" customModule="Kansas_Wheat" customModuleProvider="target">
+                                <rect key="frame" x="88" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Zl-2n-bhQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1Zl-2n-bhQ" secondAttribute="trailing" id="NLz-qi-kZ5"/>
+                                    <constraint firstItem="1Zl-2n-bhQ" firstAttribute="leading" secondItem="eMm-QY-hqB" secondAttribute="leading" id="RdK-Xj-PHW"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Zl-2n-bhQ" secondAttribute="bottom" id="WTQ-rM-8xf"/>
+                                    <constraint firstItem="1Zl-2n-bhQ" firstAttribute="top" secondItem="eMm-QY-hqB" secondAttribute="top" id="j4y-a1-NOS"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <outlet property="imageView" destination="1Zl-2n-bhQ" id="gTe-q8-lcz"/>
+                                    <segue destination="Hun-ac-KaX" kind="show" id="2zq-rv-DMq"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="PFk-ua-vqH" id="Pps-tm-ghZ"/>
+                            <outlet property="delegate" destination="PFk-ua-vqH" id="6Lx-c1-03c"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vo6-MG-7nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4458" y="8104"/>
+        </scene>
+        <!--Stem Diseases-->
+        <scene sceneID="10H-PL-tVG">
+            <objects>
+                <tableViewController title="Stem Diseases" id="EBb-ao-MvV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="o2Q-1m-5um">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="cyg-NG-ZEr">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mhm-HV-QQO">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mhm-HV-QQO" id="Vpp-Z6-EzM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cephalosporium stripe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INr-S6-MeG">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="INr-S6-MeG" firstAttribute="trailing" secondItem="Vpp-Z6-EzM" secondAttribute="trailingMargin" id="2XP-vQ-A2B"/>
+                                                <constraint firstItem="INr-S6-MeG" firstAttribute="leading" secondItem="Vpp-Z6-EzM" secondAttribute="leadingMargin" id="OXk-Mk-dPB"/>
+                                                <constraint firstItem="INr-S6-MeG" firstAttribute="centerY" secondItem="Vpp-Z6-EzM" secondAttribute="centerY" id="UHY-BY-6gA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Xoa-AW-IXl" kind="show" id="1O3-6c-moO">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KHA-7W-1HF">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KHA-7W-1HF" id="UxT-Tt-Jyo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Common root rot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH3-TI-DCk">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gH3-TI-DCk" firstAttribute="leading" secondItem="UxT-Tt-Jyo" secondAttribute="leadingMargin" id="P0s-5f-c1H"/>
+                                                <constraint firstItem="gH3-TI-DCk" firstAttribute="centerY" secondItem="UxT-Tt-Jyo" secondAttribute="centerY" id="hdd-Cr-gpc"/>
+                                                <constraint firstItem="gH3-TI-DCk" firstAttribute="trailing" secondItem="UxT-Tt-Jyo" secondAttribute="trailingMargin" id="shp-3o-aPc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kpS-5X-j6k" kind="show" id="5MO-z1-GkE">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YCw-sw-21a">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YCw-sw-21a" id="ASJ-kK-ZRc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Eyespot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJH-qB-k4C">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UJH-qB-k4C" firstAttribute="trailing" secondItem="ASJ-kK-ZRc" secondAttribute="trailingMargin" id="P0g-Mi-eBx"/>
+                                                <constraint firstItem="UJH-qB-k4C" firstAttribute="leading" secondItem="ASJ-kK-ZRc" secondAttribute="leadingMargin" id="pF2-Bv-HDg"/>
+                                                <constraint firstItem="UJH-qB-k4C" firstAttribute="centerY" secondItem="ASJ-kK-ZRc" secondAttribute="centerY" id="wik-Jw-0ye"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="3Gp-Ew-3U5" kind="show" id="hAo-iW-5c0">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="u5b-am-Kca">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u5b-am-Kca" id="BZK-Ch-hF6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fusarium root, crown and foot rots" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4of-aF-ng9">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4of-aF-ng9" firstAttribute="trailing" secondItem="BZK-Ch-hF6" secondAttribute="trailingMargin" id="Df0-XH-Jyt"/>
+                                                <constraint firstItem="4of-aF-ng9" firstAttribute="centerY" secondItem="BZK-Ch-hF6" secondAttribute="centerY" id="JfV-zj-ogQ"/>
+                                                <constraint firstItem="4of-aF-ng9" firstAttribute="leading" secondItem="BZK-Ch-hF6" secondAttribute="leadingMargin" id="XYX-XN-3ak"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cEP-1F-8dA" kind="show" id="WXL-mN-3gY">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SlK-vE-nPn">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SlK-vE-nPn" id="Lzh-od-sE5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rhizoctonia root rot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-UA-Gy4">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Frf-UA-Gy4" firstAttribute="trailing" secondItem="Lzh-od-sE5" secondAttribute="trailingMargin" id="1D7-xe-Dr8"/>
+                                                <constraint firstItem="Frf-UA-Gy4" firstAttribute="leading" secondItem="Lzh-od-sE5" secondAttribute="leadingMargin" id="6nu-wm-oO7"/>
+                                                <constraint firstItem="Frf-UA-Gy4" firstAttribute="centerY" secondItem="Lzh-od-sE5" secondAttribute="centerY" id="GjP-Dx-J9X"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="LX7-3b-YgW" kind="show" id="fEn-ZV-aM5">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="j15-6y-zbT">
+                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j15-6y-zbT" id="7NC-ah-fw6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Take-all" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5a-zB-b6a">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="c5a-zB-b6a" firstAttribute="leading" secondItem="7NC-ah-fw6" secondAttribute="leadingMargin" id="Mix-Uy-cmh"/>
+                                                <constraint firstItem="c5a-zB-b6a" firstAttribute="trailing" secondItem="7NC-ah-fw6" secondAttribute="trailingMargin" id="YDR-ig-Aug"/>
+                                                <constraint firstItem="c5a-zB-b6a" firstAttribute="centerY" secondItem="7NC-ah-fw6" secondAttribute="centerY" id="g5n-bD-E8j"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1nk-aL-tcU" kind="show" id="NWg-od-h4G">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="EBb-ao-MvV" id="W3U-rM-P1k"/>
+                            <outlet property="delegate" destination="EBb-ao-MvV" id="5y0-MS-qj3"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHd-OD-BC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2735" y="8104"/>
+        </scene>
+        <!--Cephalosporium-->
+        <scene sceneID="dX6-sk-yZb">
+            <objects>
+                <viewController title="Cephalosporium" id="Xoa-AW-IXl" customClass="Cephalosporium" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LCY-ol-qQr"/>
+                        <viewControllerLayoutGuide type="bottom" id="0FP-Fc-a6z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6yV-cb-Cre">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TYR-pi-lV2">
+                                <rect key="frame" x="16" y="101" width="288" height="404"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="ent-6V-iGQ"/>
+                                </constraints>
+                                <string key="text">Plants infected with Cephalosporium stripe have pronounced yellow stripes running the full length of the leaf blade. The center of the yellow stripe may have a long, brown streak that extends onto the leaf sheath. Splitting the stem of infected plants often reveals small, brown streaks within the node tissue. Cephalosporium stripe also can cause areas of stunted, irregular growth within a field. Often, infected plants die prematurely, causing patches of white heads within a field.
+
+Management: Genetic resistance, crop rotation, control grassy weeds.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Information about Cephalosporium stripe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmd-4p-tGF">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNc-Ka-Tqa">
+                                <rect key="frame" x="16" y="513" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HEq-Po-x7E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Example Pictures">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PFk-ua-vqH" kind="show" identifier="Cephalosporium" id="j9W-hH-Chd">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rmd-4p-tGF" firstAttribute="trailing" secondItem="6yV-cb-Cre" secondAttribute="trailingMargin" id="7PK-Bi-L4h"/>
+                            <constraint firstItem="PNc-Ka-Tqa" firstAttribute="trailing" secondItem="TYR-pi-lV2" secondAttribute="trailing" id="BJE-Md-ZQD"/>
+                            <constraint firstItem="PNc-Ka-Tqa" firstAttribute="top" secondItem="TYR-pi-lV2" secondAttribute="bottom" constant="8" symbolic="YES" id="EiN-ST-BAp"/>
+                            <constraint firstItem="Rmd-4p-tGF" firstAttribute="trailing" secondItem="TYR-pi-lV2" secondAttribute="trailing" id="GHG-XP-eei"/>
+                            <constraint firstItem="Rmd-4p-tGF" firstAttribute="top" secondItem="LCY-ol-qQr" secondAttribute="bottom" constant="8" symbolic="YES" id="KOL-lh-GOD"/>
+                            <constraint firstItem="TYR-pi-lV2" firstAttribute="top" secondItem="Rmd-4p-tGF" secondAttribute="bottom" constant="8" symbolic="YES" id="TjX-LU-Jqr"/>
+                            <constraint firstItem="Rmd-4p-tGF" firstAttribute="leading" secondItem="TYR-pi-lV2" secondAttribute="leading" id="eYK-cs-l2z"/>
+                            <constraint firstItem="PNc-Ka-Tqa" firstAttribute="leading" secondItem="TYR-pi-lV2" secondAttribute="leading" id="hhk-5p-Qjk"/>
+                            <constraint firstItem="Rmd-4p-tGF" firstAttribute="leading" secondItem="6yV-cb-Cre" secondAttribute="leadingMargin" id="mDo-98-deF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3a-GO-zK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3649" y="6064"/>
+        </scene>
+        <!--Common Root rot-->
+        <scene sceneID="yph-mm-HUt">
+            <objects>
+                <viewController title="Common Root rot" id="kpS-5X-j6k" customClass="CommonRoot" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ph3-mq-bxF"/>
+                        <viewControllerLayoutGuide type="bottom" id="5uT-5n-VGe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RfS-1b-b1e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CQi-63-Odh">
+                                <rect key="frame" x="16" y="101" width="288" height="404"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="RlG-Qb-FjC"/>
+                                </constraints>
+                                <string key="text">Common root rot causes premature death of wheat, resulting in patches of white heads scattered throughout a field. Infected plants are often dark at the base and have poor root development. A key diagnostic feature of common root rot, however, is dark-brown lesions on the thin stem extending from the base of the plant to the remnant of the seed. This thin stem is known as the “subcrown internode.” Healthy subcrown internodes should be cream colored and firm. 
+
+Management: Crop rotation, control grassy weeds.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Information about Common root rot " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKY-bm-00F">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txj-fU-XJ8">
+                                <rect key="frame" x="16" y="513" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VMt-A2-5P0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Example Pictures">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PFk-ua-vqH" kind="show" identifier="CommonRoot" id="ELO-Hr-7g1">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jKY-bm-00F" firstAttribute="leading" secondItem="CQi-63-Odh" secondAttribute="leading" id="4mH-Qs-UaP"/>
+                            <constraint firstItem="jKY-bm-00F" firstAttribute="top" secondItem="ph3-mq-bxF" secondAttribute="bottom" constant="8" symbolic="YES" id="6do-r6-ibx"/>
+                            <constraint firstItem="txj-fU-XJ8" firstAttribute="trailing" secondItem="CQi-63-Odh" secondAttribute="trailing" id="LyV-xM-Rej"/>
+                            <constraint firstItem="jKY-bm-00F" firstAttribute="leading" secondItem="RfS-1b-b1e" secondAttribute="leadingMargin" id="bMQ-8o-grH"/>
+                            <constraint firstItem="CQi-63-Odh" firstAttribute="top" secondItem="jKY-bm-00F" secondAttribute="bottom" constant="8" symbolic="YES" id="d7B-aP-FAI"/>
+                            <constraint firstItem="txj-fU-XJ8" firstAttribute="leading" secondItem="CQi-63-Odh" secondAttribute="leading" id="eCR-j5-L1w"/>
+                            <constraint firstItem="jKY-bm-00F" firstAttribute="trailing" secondItem="RfS-1b-b1e" secondAttribute="trailingMargin" id="l5H-QA-JHB"/>
+                            <constraint firstItem="txj-fU-XJ8" firstAttribute="top" secondItem="CQi-63-Odh" secondAttribute="bottom" constant="8" symbolic="YES" id="oLB-Fj-vRO"/>
+                            <constraint firstItem="jKY-bm-00F" firstAttribute="trailing" secondItem="CQi-63-Odh" secondAttribute="trailing" id="zSv-3P-0dD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1T-zu-vmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3649" y="6834"/>
+        </scene>
+        <!--Eyespot-->
+        <scene sceneID="CMt-sL-48I">
+            <objects>
+                <viewController title="Eyespot" id="3Gp-Ew-3U5" customClass="Eyespot" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V6z-wC-6qt"/>
+                        <viewControllerLayoutGuide type="bottom" id="lry-g1-GsR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rNZ-rK-OBC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8IN-S6-xy0">
+                                <rect key="frame" x="16" y="101" width="288" height="404"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="YyG-m8-vmk"/>
+                                </constraints>
+                                <string key="text">Symptoms of eyespot, also called strawbreaker foot rot, include small lesions on the lower stem. Well-developed lesions have yellow-brown margins and a black fungal growth near the center. Most lesions occur on the lower 2 inches of the stem. Lesions may merge, causing the lower stem to collapse. Stems damaged by eyespot often die prematurely, resulting in white heads. Areas of the field with many infected stems are more likely to lodge.
+
+Management: Genetic resistance, foliar fungicides, avoid planting into wheat residues.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Information about Eyespot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmO-Dd-r61">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdN-75-LW9">
+                                <rect key="frame" x="16" y="513" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9bn-Cg-Jc4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Example Pictures">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PFk-ua-vqH" kind="show" identifier="Eyespot" id="txU-XV-cBw">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OdN-75-LW9" firstAttribute="trailing" secondItem="8IN-S6-xy0" secondAttribute="trailing" id="2jq-FN-ne2"/>
+                            <constraint firstItem="gmO-Dd-r61" firstAttribute="trailing" secondItem="8IN-S6-xy0" secondAttribute="trailing" id="3pd-7E-GUZ"/>
+                            <constraint firstItem="gmO-Dd-r61" firstAttribute="top" secondItem="V6z-wC-6qt" secondAttribute="bottom" constant="8" symbolic="YES" id="ClR-Ou-mR0"/>
+                            <constraint firstItem="gmO-Dd-r61" firstAttribute="leading" secondItem="8IN-S6-xy0" secondAttribute="leading" id="IRB-Ic-cdB"/>
+                            <constraint firstItem="gmO-Dd-r61" firstAttribute="trailing" secondItem="rNZ-rK-OBC" secondAttribute="trailingMargin" id="KIX-ZK-a5u"/>
+                            <constraint firstItem="8IN-S6-xy0" firstAttribute="top" secondItem="gmO-Dd-r61" secondAttribute="bottom" constant="8" symbolic="YES" id="PsT-kF-TYq"/>
+                            <constraint firstItem="OdN-75-LW9" firstAttribute="leading" secondItem="8IN-S6-xy0" secondAttribute="leading" id="W5Q-pt-nPT"/>
+                            <constraint firstItem="OdN-75-LW9" firstAttribute="top" secondItem="8IN-S6-xy0" secondAttribute="bottom" constant="8" symbolic="YES" id="bfm-ie-oAq"/>
+                            <constraint firstItem="gmO-Dd-r61" firstAttribute="leading" secondItem="rNZ-rK-OBC" secondAttribute="leadingMargin" id="gZj-CL-4AB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aau-DN-0bh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3649" y="7643"/>
+        </scene>
+        <!--Fusarium root-->
+        <scene sceneID="iEa-0z-kvm">
+            <objects>
+                <viewController title="Fusarium root" id="cEP-1F-8dA" customClass="FusariumRoot" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Weu-92-aay"/>
+                        <viewControllerLayoutGuide type="bottom" id="lXg-ud-kJK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LKg-dB-jCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UiH-Qc-pxj">
+                                <rect key="frame" x="16" y="101" width="288" height="404"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="Olc-vO-MX7"/>
+                                </constraints>
+                                <string key="text">Fusarium root, crown, and foot rots cause patches of wheat to die prematurely, resulting in areas of white heads within a field. Infected plants are typically brown at the base and have poor root development. During advanced stages of the disease, the Fusarium fungus often produces a pink, cottony growth inside the lower portions of the stem. Often, the disease is most severe after prolonged periods of dry weather.
+
+Management: Crop rotation, control grassy weeds.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Information about Fusarium root, crown, and foot rots " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcd-YR-DUH">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUi-Fb-jJu">
+                                <rect key="frame" x="16" y="513" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ahL-4I-Ayl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Example Pictures">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PFk-ua-vqH" kind="show" identifier="FusariumRoot" id="43n-sk-QPR">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YUi-Fb-jJu" firstAttribute="trailing" secondItem="UiH-Qc-pxj" secondAttribute="trailing" id="4sf-jZ-jrr"/>
+                            <constraint firstItem="Jcd-YR-DUH" firstAttribute="top" secondItem="Weu-92-aay" secondAttribute="bottom" constant="8" symbolic="YES" id="BgO-46-83J"/>
+                            <constraint firstItem="YUi-Fb-jJu" firstAttribute="leading" secondItem="UiH-Qc-pxj" secondAttribute="leading" id="R2U-Co-gKr"/>
+                            <constraint firstItem="UiH-Qc-pxj" firstAttribute="top" secondItem="Jcd-YR-DUH" secondAttribute="bottom" constant="8" symbolic="YES" id="RXi-Bx-c8W"/>
+                            <constraint firstItem="Jcd-YR-DUH" firstAttribute="trailing" secondItem="UiH-Qc-pxj" secondAttribute="trailing" id="Yaq-vr-irh"/>
+                            <constraint firstItem="YUi-Fb-jJu" firstAttribute="top" secondItem="UiH-Qc-pxj" secondAttribute="bottom" constant="8" symbolic="YES" id="aya-ma-D7Z"/>
+                            <constraint firstItem="Jcd-YR-DUH" firstAttribute="leading" secondItem="UiH-Qc-pxj" secondAttribute="leading" id="p72-Zo-wMX"/>
+                            <constraint firstItem="Jcd-YR-DUH" firstAttribute="leading" secondItem="LKg-dB-jCZ" secondAttribute="leadingMargin" id="tRM-GO-vci"/>
+                            <constraint firstItem="Jcd-YR-DUH" firstAttribute="trailing" secondItem="LKg-dB-jCZ" secondAttribute="trailingMargin" id="xQQ-i8-sDm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DGu-yT-pf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3649" y="8426"/>
+        </scene>
+        <!--Rhizoctonia Root rot-->
+        <scene sceneID="2Sg-4a-iFo">
+            <objects>
+                <viewController title="Rhizoctonia Root rot" id="LX7-3b-YgW" customClass="Rhizoctonia" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pmg-Dp-gJI"/>
+                        <viewControllerLayoutGuide type="bottom" id="R5O-0X-gm4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JEI-KY-Kjf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xoY-is-Zs1">
+                                <rect key="frame" x="16" y="101" width="288" height="404"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="qlt-0w-pUs"/>
+                                </constraints>
+                                <string key="text">Seedlings infected with Rhizoctonia root rot are often killed before emergence. Plants that are not killed by the disease may be stunted to different degrees, resulting an uneven crop canopy. Individual roots infected by Rhizoctonia have small, reddish-brown lesions. The diseased roots break off easily when plants are removed from the soil, leaving their tapered, reddish-brown ends exposed.
+
+Management: Crop rotation, control grassy weeds two weeks before planting.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Information about Rhizoctonia root rot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRK-BT-Lxu">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubX-er-IqP">
+                                <rect key="frame" x="16" y="513" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TOa-4f-08P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Example Pictures">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PFk-ua-vqH" kind="show" identifier="Rhizoctonia" id="2ct-Cx-OE0">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mRK-BT-Lxu" firstAttribute="leading" secondItem="xoY-is-Zs1" secondAttribute="leading" id="1xq-dn-k0r"/>
+                            <constraint firstItem="mRK-BT-Lxu" firstAttribute="leading" secondItem="JEI-KY-Kjf" secondAttribute="leadingMargin" id="N79-tt-Ke6"/>
+                            <constraint firstItem="mRK-BT-Lxu" firstAttribute="trailing" secondItem="xoY-is-Zs1" secondAttribute="trailing" id="Ot6-yF-1fE"/>
+                            <constraint firstItem="ubX-er-IqP" firstAttribute="leading" secondItem="xoY-is-Zs1" secondAttribute="leading" id="R38-Jy-0Z8"/>
+                            <constraint firstItem="mRK-BT-Lxu" firstAttribute="trailing" secondItem="JEI-KY-Kjf" secondAttribute="trailingMargin" id="Yr8-VV-J4c"/>
+                            <constraint firstItem="xoY-is-Zs1" firstAttribute="top" secondItem="mRK-BT-Lxu" secondAttribute="bottom" constant="8" symbolic="YES" id="ZPQ-SH-e6Z"/>
+                            <constraint firstItem="mRK-BT-Lxu" firstAttribute="top" secondItem="pmg-Dp-gJI" secondAttribute="bottom" constant="8" symbolic="YES" id="eKj-k4-oYE"/>
+                            <constraint firstItem="ubX-er-IqP" firstAttribute="trailing" secondItem="xoY-is-Zs1" secondAttribute="trailing" id="mAT-6w-myH"/>
+                            <constraint firstItem="ubX-er-IqP" firstAttribute="top" secondItem="xoY-is-Zs1" secondAttribute="bottom" constant="8" symbolic="YES" id="ssY-d5-gS2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3OP-Om-b8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3649" y="9172"/>
+        </scene>
+        <!--Take-all-->
+        <scene sceneID="AWz-p4-oz6">
+            <objects>
+                <viewController title="Take-all" id="1nk-aL-tcU" customClass="TakeAll" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S3T-kH-Xvv"/>
+                        <viewControllerLayoutGuide type="bottom" id="axQ-zy-HiB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tP6-df-PSa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2zd-ed-Z2m">
+                                <rect key="frame" x="16" y="101" width="288" height="404"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="gRK-c5-G5c"/>
+                                </constraints>
+                                <string key="text">This fungal disease causes wheat to die prematurely, resulting in patches of white heads in otherwise green fields of wheat. Plants infected by take-all normally have a shiny, black discoloration of the lower stem and roots. Frequently, the disease is most severe in wet areas of a field and near field edges where the fungus survives in association with grassy weeds.
+
+Management: Crop rotation, control grassy weeds.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Information about Take-all " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6x-8V-hUf">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-r4-1SZ">
+                                <rect key="frame" x="16" y="513" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lK8-em-98P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Example Pictures">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PFk-ua-vqH" kind="show" identifier="Take-all" id="e2K-Bl-KiL">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M6x-8V-hUf" firstAttribute="leading" secondItem="tP6-df-PSa" secondAttribute="leadingMargin" id="7ds-qj-JqV"/>
+                            <constraint firstItem="M6x-8V-hUf" firstAttribute="trailing" secondItem="tP6-df-PSa" secondAttribute="trailingMargin" id="7t5-5S-EtL"/>
+                            <constraint firstItem="2zd-ed-Z2m" firstAttribute="top" secondItem="M6x-8V-hUf" secondAttribute="bottom" constant="8" symbolic="YES" id="90P-LR-omY"/>
+                            <constraint firstItem="M6x-8V-hUf" firstAttribute="top" secondItem="S3T-kH-Xvv" secondAttribute="bottom" constant="8" symbolic="YES" id="ZDp-tq-uYQ"/>
+                            <constraint firstItem="M6x-8V-hUf" firstAttribute="trailing" secondItem="2zd-ed-Z2m" secondAttribute="trailing" id="dvq-FB-eR1"/>
+                            <constraint firstItem="Pty-r4-1SZ" firstAttribute="leading" secondItem="2zd-ed-Z2m" secondAttribute="leading" id="i6C-cx-2F7"/>
+                            <constraint firstItem="Pty-r4-1SZ" firstAttribute="top" secondItem="2zd-ed-Z2m" secondAttribute="bottom" constant="8" symbolic="YES" id="kFs-ey-t8T"/>
+                            <constraint firstItem="Pty-r4-1SZ" firstAttribute="trailing" secondItem="2zd-ed-Z2m" secondAttribute="trailing" id="nml-6a-mBq"/>
+                            <constraint firstItem="M6x-8V-hUf" firstAttribute="leading" secondItem="2zd-ed-Z2m" secondAttribute="leading" id="xse-4A-CHu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idO-VZ-R9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3649" y="9903"/>
+        </scene>
+        <!--Images-->
+        <scene sceneID="f5C-x7-uQ0">
+            <objects>
+                <viewController title="Images" id="Hun-ac-KaX" customClass="ZoomedPhotoViewController" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mRo-B7-zLu"/>
+                        <viewControllerLayoutGuide type="bottom" id="hBN-iO-csm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gmU-Qs-oih">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAr-1p-Mvp">
+                                <rect key="frame" x="0.0" y="64" width="600" height="623"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="eKG-jW-OVJ">
+                                        <rect key="frame" x="-104" y="-60" width="454" height="605"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eKG-jW-OVJ" secondAttribute="bottom" id="6ku-5f-j8B"/>
+                                    <constraint firstAttribute="trailing" secondItem="eKG-jW-OVJ" secondAttribute="trailing" id="KrQ-wR-WAZ"/>
+                                    <constraint firstItem="eKG-jW-OVJ" firstAttribute="leading" secondItem="JAr-1p-Mvp" secondAttribute="leading" id="gZV-kf-LSJ"/>
+                                    <constraint firstItem="eKG-jW-OVJ" firstAttribute="top" secondItem="JAr-1p-Mvp" secondAttribute="top" id="l3X-w5-dr5"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Hun-ac-KaX" id="3Fv-wf-zdL"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JAr-1p-Mvp" firstAttribute="leading" secondItem="gmU-Qs-oih" secondAttribute="leading" id="5Ag-E9-YWk"/>
+                            <constraint firstItem="JAr-1p-Mvp" firstAttribute="top" secondItem="mRo-B7-zLu" secondAttribute="bottom" id="7R1-07-Bdo"/>
+                            <constraint firstAttribute="trailing" secondItem="JAr-1p-Mvp" secondAttribute="trailing" id="K5s-QA-B5S"/>
+                            <constraint firstItem="hBN-iO-csm" firstAttribute="top" secondItem="JAr-1p-Mvp" secondAttribute="bottom" id="zeb-Tr-m3x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="eKG-jW-OVJ" id="WNQ-Te-9km"/>
+                        <outlet property="imageViewBottomConstraint" destination="6ku-5f-j8B" id="NnW-ZH-JYr"/>
+                        <outlet property="imageViewLeadingConstraint" destination="gZV-kf-LSJ" id="NI8-un-Bqj"/>
+                        <outlet property="imageViewTopConstraint" destination="KrQ-wR-WAZ" id="oCY-qe-diU"/>
+                        <outlet property="imageViewTrailingConstraint" destination="KrQ-wR-WAZ" id="W9M-XT-s6E"/>
+                        <outlet property="scrollView" destination="JAr-1p-Mvp" id="aA2-oX-26l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHF-dX-sXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5367" y="8104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1127" height="2200"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="j9W-hH-Chd"/>
+    </inferredMetricsTieBreakers>
+</document>

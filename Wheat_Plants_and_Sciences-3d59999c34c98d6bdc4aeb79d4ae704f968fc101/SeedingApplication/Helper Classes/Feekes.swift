@@ -3,17 +3,16 @@
 //  
 //
 //  Created by Shubh Chopra.
+//  Modified by Austin Fuller
 //
 //
 
 import Foundation
 import UIKit
 
-
-// Represents a generic product. Need an image named "default"
-
 class Feekes
-{
+    {
+    
     var title: String
     var description: String
     var image: UIImage
@@ -25,6 +24,7 @@ class Feekes
         self.val = value
         self.title = titled
         self.description = description
+        
         if let img = UIImage(named: imageName) {
             image = img
         }
@@ -33,7 +33,8 @@ class Feekes
         }
     self.imagename = imageName
     }
-    func configureimage(feekes:Feekes) -> String
+    
+    func configureimage(_ feekes:Feekes) -> String
     {
         
         return feekes.imagename

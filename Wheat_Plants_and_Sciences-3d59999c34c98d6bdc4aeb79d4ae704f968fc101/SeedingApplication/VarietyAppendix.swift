@@ -3,8 +3,11 @@
 //  SeedingApplication
 //
 //  Created by Shubh Chopra on 7/28/16.
+//  Modified by Austin Fuller
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
+
+// Class is a pdf view of all the information that isn't in a convient format.
 
 import UIKit
 
@@ -15,36 +18,22 @@ class VarietyAppendix: UIViewController {
      var varitytitle = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = varitytitle
-        let Alert = UIAlertController(title: "Alert!" , message: "Info for this variety is currently not available, you will find information for other vatieties on this page." , preferredStyle: UIAlertControllerStyle.Alert)
         
-        Alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
+        let Alert = UIAlertController(title: "Alert!" , message: "Info for this variety is currently not available, you will find information for other vatieties on this page." , preferredStyle: UIAlertControllerStyle.alert)
+        
+        Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
             print(" Ok ")
                     }))
-            presentViewController(Alert, animated: true, completion: nil)
-        path = NSBundle.mainBundle().pathForResource("Appendix",ofType: "pdf")!
+            present(Alert, animated: true, completion: nil)
+        path = Bundle.main.path(forResource: "Appendix",ofType: "pdf")!
         
-        let url = NSURL.fileURLWithPath(path)
-        self.pdfview.loadRequest(NSURLRequest (URL: url))
-
-        // Do any additional setup after loading the view.
+        let url = URL(fileURLWithPath: path)
+        self.pdfview.loadRequest(URLRequest (url: url))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

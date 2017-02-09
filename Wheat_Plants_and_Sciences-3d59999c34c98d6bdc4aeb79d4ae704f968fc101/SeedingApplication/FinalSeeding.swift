@@ -3,6 +3,7 @@
 //  SeedingApplication
 //
 //  Created by Shubh Chopra on 6/18/16.
+//  Modified by Austin Fuller
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
 
@@ -13,13 +14,14 @@ class FinalSeeding: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if(MyVariables.seedingRate != 0)
+        //sets variables once view loads if they aren't zero
+        if(applicationVars.seedingRate != 0)
         {
-            rateAcre.text = String(MyVariables.seedingRate)
+            rateAcre.text = String(applicationVars.seedingRate)
         }
-        if(MyVariables.germinationRate != 0)
+        if(applicationVars.germinationRate != 0)
         {
-            RatePer.text = String(MyVariables.germinationRate)
+            RatePer.text = String(applicationVars.germinationRate)
         }
 
         // Do any additional setup after loading the view.
@@ -30,24 +32,16 @@ class FinalSeeding: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //set up for outlets on the Final Seeding Scene
     @IBOutlet weak var rateAcre: UITextField!
     @IBOutlet weak var RatePer: UITextField!
     @IBOutlet weak var FinalSqft: UILabel!
 
     @IBOutlet weak var FinalAcre: UILabel!
     @IBOutlet weak var rateSqft: UITextField!
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
-    
-    @IBAction func calculate(sender: AnyObject) {
+    //function to calculate final seeding rate
+    @IBAction func calculate(_ sender: AnyObject) {
         
         rateSqft.resignFirstResponder()
         RatePer.resignFirstResponder()
@@ -60,32 +54,35 @@ class FinalSeeding: UIViewController {
         if(rateSqft.text != "" && RatePer.text != "")
         {
             FinalSqft.text = "Final Seeding Rate(seeds/Sq. ft.) = " + String((Int(rateSqft.text!)! * 100) / Int(RatePer.text!)! );
-            MyVariables.finalRate = (Int(rateSqft.text!)! * 100) / Int(RatePer.text!)!
+            applicationVars.finalRate = (Int(rateSqft.text!)! * 100) / Int(RatePer.text!)!
             
         }
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    //when view is leaving, change applicationVars to these values
+    override func viewWillDisappear(_ animated: Bool) {
         if(rateAcre.text != "")
         {
         
-        MyVariables.seedingRate = Int (rateAcre.text!)!
+        applicationVars.seedingRate = Int (rateAcre.text!)!
         }
         if(RatePer.text != "")
         {
-            MyVariables.germinationRate = Int (RatePer.text!)!
+            applicationVars.germinationRate = Int (RatePer.text!)!
         }
         
     }
 
-    @IBAction func sqft(sender: AnyObject) {
+    //if any value is entered, save it
+    @IBAction func sqft(_ sender: AnyObject) {
         
         if(rateSqft.text != "")
         {
             rateAcre.text = String(Int(rateSqft.text!)! * 43560)
         }
     }
-    @IBAction func acre(sender: AnyObject) {
+    //if any value is entered, save it
+    @IBAction func acre(_ sender: AnyObject) {
         if(rateAcre.text != "")
         {
             rateSqft.text = String(Int(rateAcre.text!)! / 43560)

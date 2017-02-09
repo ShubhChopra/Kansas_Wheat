@@ -3,6 +3,7 @@
 //  TableViewDemo
 //
 //  Created by Shubh Chopra on 06/11/16.
+//  Modified by Austin Fuller
 //  Copyright (c) 2016 Shubh Chopra. All rights reserved.
 //
 //  Here we have several Stages of Feekes Growth:
@@ -16,9 +17,9 @@ import Foundation
 
 class FeekesData
 {
-    // Variables
     var name: String
     var feekes: [Feekes]
+    
     init(named: String, includeFeekes: [Feekes])
     {
         name = named
@@ -30,9 +31,7 @@ class FeekesData
         return [self.LeafTiller(), self.StemElongation(), self.HeadEmergence(), self.GrainFilling(), self.Ripening()]
     }
     
-    // Private methods
-    
-    private class func LeafTiller() -> FeekesData {
+    fileprivate class func LeafTiller() -> FeekesData {
                 var feekes = [Feekes]()
         
         feekes.append(Feekes(titled: "Germination", description: "Seeds absorb water and oxygen. The radicle, seminal roots, and the coleoptile (leaflike structure enclosing the first true leaf ) emerge from the seed. Temperatures between 54 and 77 degrees Fahrenheit are optimal for germination.", imageName: "germinationx.jpg", value: "0" ))
@@ -52,7 +51,7 @@ class FeekesData
         return FeekesData(named: "LeafTiller", includeFeekes: feekes)
     }
     
-    private class func StemElongation() -> FeekesData
+    fileprivate class func StemElongation() -> FeekesData
     {
         var feekes = [Feekes]()
         
@@ -70,7 +69,7 @@ class FeekesData
         return FeekesData(named: "StemElongation", includeFeekes: feekes)
     }
     
-    private class func HeadEmergence() -> FeekesData
+    fileprivate class func HeadEmergence() -> FeekesData
     {
         var feekes = [Feekes]()
         feekes.append(Feekes(titled: "Heading (Feekes 10.1-10.5)", description: "The first spikes escape through a split in the sheath at Feekes 10.1. All heads are out of the sheath at Feekes 10.5. It usually takes 3 to 5 days for the head to fully extend above the flag leaf. Temperatures below 30 degrees Fahrenheit may damage the developing head. Crop water demand can exceed 0.3 inch per day during heading through grain development.", imageName: "f101x.jpg" , value: "10"))
@@ -81,7 +80,7 @@ class FeekesData
     }
     
    
-    private class func GrainFilling() -> FeekesData
+    fileprivate class func GrainFilling() -> FeekesData
     {
         var feekes = [Feekes]()
 
@@ -97,7 +96,7 @@ class FeekesData
         return FeekesData(named: "GrainFilling", includeFeekes: feekes)
     }
     
-    private class func Ripening() -> FeekesData
+    fileprivate class func Ripening() -> FeekesData
     {
         var feekes = [Feekes]()
         feekes.append(Feekes(titled: "Kernel ripe (Feekes 11.4)", description: "Kernel moisture decreases from 30 to 15% during ripening, and green plant tissue becomes straw.", imageName: "harvestx.jpg" , value: "11"))

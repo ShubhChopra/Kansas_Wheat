@@ -20,14 +20,16 @@
 * THE SOFTWARE.
 */
 
+//class that displayes pictures
+
 import UIKit
 
 extension UIImage {
-  func thumbnailOfSize(size: CGFloat) -> UIImage {
+  func thumbnailOfSize(_ size: CGFloat) -> UIImage {
     UIGraphicsBeginImageContext(CGSize(width: size, height: size))
-    let rect = CGRectMake(0.0, 0.0, size, size)
+    let rect = CGRect(x: 0.0, y: 0.0, width: size, height: size)
     UIGraphicsBeginImageContext(rect.size)
-    drawInRect(rect)
+    draw(in: rect)
     let thumbnail = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext()
     return thumbnail!

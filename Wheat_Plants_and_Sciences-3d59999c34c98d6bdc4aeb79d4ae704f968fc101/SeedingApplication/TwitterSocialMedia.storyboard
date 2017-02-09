@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9GH-92-Xjs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--facebook-precision-->
+        <scene sceneID="DfL-fp-8cf">
+            <objects>
+                <viewController title="facebook-precision" id="ooM-MG-AOZ" customClass="twitter_precisionAg" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bMz-pR-1sI"/>
+                        <viewControllerLayoutGuide type="bottom" id="C2m-uH-Lvs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K8v-Pl-tX8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-eV-OYh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r0r-eV-OYh" firstAttribute="centerY" secondItem="K8v-Pl-tX8" secondAttribute="centerY" id="6qX-WE-PHo"/>
+                            <constraint firstItem="r0r-eV-OYh" firstAttribute="centerX" secondItem="K8v-Pl-tX8" secondAttribute="centerX" id="a7d-IF-eYa"/>
+                            <constraint firstItem="r0r-eV-OYh" firstAttribute="height" secondItem="K8v-Pl-tX8" secondAttribute="height" id="a9r-7n-F9f"/>
+                            <constraint firstItem="r0r-eV-OYh" firstAttribute="width" secondItem="K8v-Pl-tX8" secondAttribute="width" id="lk4-bA-IwQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Precision Ag" image="tab-v1" id="6aA-DK-oBb"/>
+                    <connections>
+                        <outlet property="webview" destination="r0r-eV-OYh" id="t49-xz-BuR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uyc-9a-GcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3087" y="-1855"/>
+        </scene>
+        <!--Facebook-Wheat-->
+        <scene sceneID="G8B-Bg-PBE">
+            <objects>
+                <viewController title="Facebook-Wheat" id="haA-HM-RvH" customClass="twitter_wheat" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RuF-B9-lOF"/>
+                        <viewControllerLayoutGuide type="bottom" id="wnY-Gb-hmL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="viq-zw-cZO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qnV-3K-jwI" customClass="face">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qnV-3K-jwI" firstAttribute="width" secondItem="viq-zw-cZO" secondAttribute="width" id="0Rc-aS-gQY"/>
+                            <constraint firstItem="qnV-3K-jwI" firstAttribute="centerX" secondItem="viq-zw-cZO" secondAttribute="centerX" id="JAo-40-5yG"/>
+                            <constraint firstItem="qnV-3K-jwI" firstAttribute="centerY" secondItem="viq-zw-cZO" secondAttribute="centerY" id="JzN-HL-pPd"/>
+                            <constraint firstItem="qnV-3K-jwI" firstAttribute="height" secondItem="viq-zw-cZO" secondAttribute="height" id="ma3-mX-jIi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kansas Wheat" image="manage" id="CNE-Tc-unQ"/>
+                    <connections>
+                        <outlet property="webview" destination="qnV-3K-jwI" id="WeP-Fc-asf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8k-ex-161" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3087" y="-2537"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PT5-3p-sIm">
+            <objects>
+                <tabBarController id="9GH-92-Xjs" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Cgd-yd-AbH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="haA-HM-RvH" kind="relationship" relationship="viewControllers" id="8xM-mm-C6Z"/>
+                        <segue destination="ooM-MG-AOZ" kind="relationship" relationship="viewControllers" id="SK3-JO-2It"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPo-jr-aSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3890" y="-2373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="manage" width="25" height="25"/>
+        <image name="tab-v1" width="25" height="25"/>
+    </resources>
+</document>

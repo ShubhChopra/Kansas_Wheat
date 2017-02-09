@@ -3,13 +3,17 @@
 //  SeedingApplication
 //
 //  Created by Shubh Chopra on 5/17/16.
+//  Modified by Austin Fuller
 //  Copyright © 2016 Shubh Chopra. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-struct MyVariables {
+
+/// Collection of varibles that are used through the application.
+struct applicationVars {
+    static var applicationBackground = "mainScreenBackground"
     static var district = ""
     static var ph = 0
     static var grazed = 0
@@ -24,58 +28,40 @@ struct MyVariables {
     static var germinationRate = 0
     static var lat = ""
     static var lon = ""
+    static var county = ""
 }
+
 class MainScreen: UIViewController {
 
     var option = "";
     
+    /// Function that runs when the view first loads
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Kansas Wheat"
-        textview.backgroundColor = UIColor.clearColor();
-       // textview.textColor = UIColor.whiteColor();
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background2")!)
-
-        
+        if(applicationVars.county != "") {
+            self.title = applicationVars.county + " County"
+        }
+        else {
+            self.title = "Management"
+        }
+        textview.backgroundColor = UIColor.clear;
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)
 }
 
     @IBOutlet weak var textview: UITextView!
-    @IBAction func Nutrient(sender: AnyObject) {
+    @IBAction func Nutrient(_ sender: AnyObject) {
         option = "V";
     }
 
-    @IBAction func Variety(sender: AnyObject) {
+    @IBAction func Variety(_ sender: AnyObject) {
         option = "N";
     }
     
-    @IBAction func Diseases(sender: AnyObject) {
+    @IBAction func Diseases(_ sender: AnyObject) {
         option = "D";
     }
     
-    @IBAction func Seeding(sender: AnyObject) {
+    @IBAction func Seeding(_ sender: AnyObject) {
         option = "S";
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-            let tabVC = segue.destinationViewController as! UITabBarController
-            
-            if(option == "V")
-                
-            {tabVC.selectedIndex = 3}
-            if(option == "N")
-                
-            {tabVC.selectedIndex = 1}
-            
-            
-            if(option == "S")
-                
-            {tabVC.selectedIndex = 2}
-            
-            if(option == "D")
-                
-            {tabVC.selectedIndex = 0}
-            
-        }
-
-    
 }
