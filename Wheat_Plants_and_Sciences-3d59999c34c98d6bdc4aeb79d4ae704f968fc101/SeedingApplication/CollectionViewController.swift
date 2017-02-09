@@ -24,7 +24,6 @@ class CollectionViewController: UICollectionViewController {
     }
 }
 
-// MARK: UICollectionViewDataSource
 extension CollectionViewController {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -42,7 +41,6 @@ extension CollectionViewController {
     }
 }
 
-// MARK:UICollectionViewDelegateFlowLayout
 extension CollectionViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

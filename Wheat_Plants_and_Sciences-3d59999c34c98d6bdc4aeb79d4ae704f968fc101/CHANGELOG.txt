@@ -14,25 +14,23 @@ Seeding Application Change Log:
 
 Worklist:
 - [x] Update all files to include modified by Austin Fuller
-- [ ] Commenting of all code
+- [x] Commenting of all code
 - [ ] Correct Twitter on main screen
-- [ ] Correct calculations for seeding rate
-- [ ] Downloads pdf files once when they are external
-- [ ] Update icon set to be high def
-- [ ] Go back to main screen if coming in from Facebook. <- Make Facebook URL from Contact US goes to Facebook App
-- [ ] County selector -> add "select" button
-- [ ] Alert formatting in “Seed Volume” title -> county.
-- [ ] Twitter URL Links -> on the main screen -> looks goofy
-- [-] Only ask for GPS location once when App launches. Then find it in MyVaribles until app is closed. -> Also needed, but need the figure out the specifics.
-- [-] Add County in top four main screen section that currently says “Kansas Wheat” -> Need have correct title when coming in from the selector.
-- [-] Rework Diseases section to be more interesting.
-- [ ] When Variety filter does not have any diseases that apply, display new page that says that no diseases apply.
 
 Larger Goals:
-- [ ] Complete rework of Welcome Screen
+- [ ] Complete rework of Welcome Screen -> Need custom icons for navigation bar. Need one for info icon
 - [ ] Complete rework of Contact Us Section
 - [ ] Plus size Optimizations
 - [ ] SE size Optimizations
+- [ ] Downloads pdf files once when they are external
+- [ ] Correct calculations for seeding rate
+- [ ] Update icon set to be high def
+- [ ] Go back to main screen if coming in from Facebook. <- Make Facebook URL from Contact US goes to Facebook App -> move if statement into button action.
+- [ ] County selector -> add "select" button
+- [ ] Alert formatting in “Seed Volume” title -> county.
+- [-] Only ask for GPS location once when App launches. Then find it in MyVaribles until app is closed. -> Also needed, but need the figure out the specifics.
+- [-] Add County in top four main screen section that currently says “Kansas Wheat” -> Need have correct title when coming in from the selector.
+
 
 /////
 PUSH DATE: 2/4/2017

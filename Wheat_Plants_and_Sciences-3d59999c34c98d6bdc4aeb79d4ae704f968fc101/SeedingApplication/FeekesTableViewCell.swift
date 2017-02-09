@@ -21,6 +21,11 @@ class FeekesTableViewCell: UITableViewCell {
         let tap = UIGestureRecognizer(target: self, action: #selector(FeekesTableViewCell.imagetap(_:)))
         ImageView.addGestureRecognizer(tap)
     }
+    
+    func imagetap(_ sender: UIGestureRecognizer)
+    {
+        print("Hello");
+    }
 
     func configureCellWith(_ feekes:Feekes)
     {

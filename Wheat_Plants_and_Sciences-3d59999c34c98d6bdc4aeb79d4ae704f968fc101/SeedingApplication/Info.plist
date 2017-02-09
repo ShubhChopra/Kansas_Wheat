@@ -59,6 +59,7 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
+		<string>twitter</string>
 		<string>fb</string>
 		<string>facebook</string>
 		<string>fb-messenger-api</string>

@@ -10,6 +10,8 @@
 import Foundation
 import UIKit
 
+
+/// Collection of varibles that are used through the application.
 struct applicationVars {
     static var applicationBackground = "mainScreenBackground"
     static var district = ""
@@ -33,6 +35,7 @@ class MainScreen: UIViewController {
 
     var option = "";
     
+    /// Function that runs when the view first loads
     override func viewDidLoad() {
         super.viewDidLoad()
         if(applicationVars.county != "") {

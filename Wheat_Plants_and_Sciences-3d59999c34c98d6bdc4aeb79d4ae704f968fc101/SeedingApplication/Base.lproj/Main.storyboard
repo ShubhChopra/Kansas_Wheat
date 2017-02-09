@@ -1216,7 +1216,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Wheat Disease Information"/>
                                 <connections>
-                                    <segue destination="bgd-0Y-vYF" kind="show" identifier="http://www.bookstore.ksre.ksu.edu/pubs/mf2994.pdf ; Wheat Disease" id="Ca6-jt-fQh"/>
+                                    <segue destination="bgd-0Y-vYF" kind="show" identifier="https://www.bookstore.ksre.ksu.edu/pubs/mf2994.pdf ; Wheat Disease" id="Ca6-jt-fQh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Icon made by Freepik from www.flaticon.com " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znW-8q-RpI">

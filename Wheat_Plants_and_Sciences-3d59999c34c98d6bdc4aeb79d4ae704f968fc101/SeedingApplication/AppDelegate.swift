@@ -21,9 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Everything below until the end paraenesis is added by Shubh
-        // Override point for customization after application launch.
-        
-        //Changes apperance of application
+        // View adjustments for first time run.
         UINavigationBar.appearance().barTintColor = UIColor(hue: 0.1444, saturation: 1, brightness: 0.97, alpha: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         UIBarButtonItem.appearance().tintColor = UIColor.black

@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import Foundation
 
 
 class Acknowledgement: UIViewController {
@@ -19,12 +20,13 @@ class Acknowledgement: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier?.range(of:" ; ") != nil {
         let multiPartIdentifer = segue.identifier!.components(separatedBy: " ; ")
         print(multiPartIdentifer)
         let PdfVC = segue.destination as! PdfViewController
         PdfVC.url = URL(string: multiPartIdentifer[0])
         PdfVC.viewTitle = multiPartIdentifer[1]
-        
+        }
         
     }
    
