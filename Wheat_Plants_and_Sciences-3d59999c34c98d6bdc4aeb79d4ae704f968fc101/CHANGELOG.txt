@@ -15,7 +15,8 @@ Seeding Application Change Log:
 Worklist:
 - [x] Update all files to include modified by Austin Fuller
 - [x] Commenting of all code
-- [ ] Correct Twitter on main screen
+- [x] Correct Twitter on main screen
+- [ ] Reduce as many build errors as possible
 
 Larger Goals:
 - [ ] Complete rework of Welcome Screen -> Need custom icons for navigation bar. Need one for info icon

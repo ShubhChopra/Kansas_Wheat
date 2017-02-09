@@ -9,22 +9,20 @@
 //twitter integration
 
 import Foundation
-
 import UIKit
-import TwitterKit
-class twitter_precision: TWTRTimelineViewController {
+class twitter_precisionAg: UIViewController {
     @IBOutlet weak var webview: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "@KSUWheat";
         
-        let twitterURL = URL(string: "twitter://@KSUWheat")
+        let twitterURL = URL(string: "twitter://user?id=2424632192")
         if UIApplication.shared.canOpenURL(twitterURL!) {
             UIApplication.shared.open(twitterURL!, options: [:], completionHandler: nil)
         }
         else {
-            webview.loadRequest(URLRequest(url : URL(string: "https://twitter.com/KSUWheat")!))
+            webview.loadRequest(URLRequest(url : URL(string: "https://twitter.com/KSUPrecisionAg")!))
         }
     }
 }
