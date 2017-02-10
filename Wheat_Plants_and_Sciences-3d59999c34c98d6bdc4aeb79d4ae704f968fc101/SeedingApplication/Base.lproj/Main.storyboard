@@ -60,16 +60,6 @@
                                     <segue destination="saz-If-aOP" kind="show" id="Ngd-sZ-bUs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ext-HF-tth">
-                                <rect key="frame" x="224" y="238" width="97" height="87"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <state key="normal" title="Acknowladgement" backgroundImage="help">
-                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="FVz-wi-rRJ" kind="show" id="cLj-2f-mxh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="top" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0B-og-rg3">
                                 <rect key="frame" x="177" y="115" width="75" height="75"/>
                                 <constraints>
@@ -115,6 +105,16 @@
                                     <segue destination="Xdr-3I-RGZ" kind="show" id="iGd-5z-UsU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ext-HF-tth">
+                                <rect key="frame" x="225" y="234" width="97" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Acknowladgement" backgroundImage="help">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FVz-wi-rRJ" kind="show" id="cLj-2f-mxh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -122,17 +122,17 @@
                             <constraint firstItem="C39-qc-vAF" firstAttribute="leading" secondItem="QDx-YB-bSA" secondAttribute="leadingMargin" constant="36" id="IjZ-Hm-c4W"/>
                             <constraint firstItem="a0B-og-rg3" firstAttribute="leading" secondItem="C39-qc-vAF" secondAttribute="trailing" constant="46" id="KI7-et-0Zw"/>
                             <constraint firstItem="C39-qc-vAF" firstAttribute="bottom" secondItem="a0B-og-rg3" secondAttribute="bottom" id="PgX-Jx-OgT"/>
-                            <constraint firstItem="aTA-33-J4c" firstAttribute="top" secondItem="ext-HF-tth" secondAttribute="bottom" constant="66" id="QNo-qS-44f"/>
+                            <constraint firstItem="aTA-33-J4c" firstAttribute="top" secondItem="ext-HF-tth" secondAttribute="bottom" constant="70" id="QNo-qS-44f"/>
                             <constraint firstItem="a0B-og-rg3" firstAttribute="top" secondItem="hNT-8X-snx" secondAttribute="top" id="QS2-qI-mSw"/>
                             <constraint firstItem="8Bd-1r-pFQ" firstAttribute="top" secondItem="aTA-33-J4c" secondAttribute="bottom" constant="236" id="X0E-us-KEy"/>
                             <constraint firstItem="C39-qc-vAF" firstAttribute="top" secondItem="cfZ-FO-0fX" secondAttribute="bottom" constant="51" id="XLi-Qb-L75"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ext-HF-tth" secondAttribute="trailing" constant="73" id="Z46-75-CUu"/>
-                            <constraint firstItem="ext-HF-tth" firstAttribute="leading" secondItem="eWN-nb-L4q" secondAttribute="trailing" constant="37" id="aS0-FY-v0P"/>
-                            <constraint firstItem="ext-HF-tth" firstAttribute="top" secondItem="a0B-og-rg3" secondAttribute="bottom" constant="48" id="aYj-bg-aAa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ext-HF-tth" secondAttribute="trailing" constant="72" id="Z46-75-CUu"/>
+                            <constraint firstItem="ext-HF-tth" firstAttribute="leading" secondItem="eWN-nb-L4q" secondAttribute="trailing" constant="38" id="aS0-FY-v0P"/>
+                            <constraint firstItem="ext-HF-tth" firstAttribute="top" secondItem="a0B-og-rg3" secondAttribute="bottom" constant="44" id="aYj-bg-aAa"/>
                             <constraint firstItem="hNT-8X-snx" firstAttribute="leading" secondItem="a0B-og-rg3" secondAttribute="trailing" constant="32" id="b25-Yo-kRn"/>
                             <constraint firstItem="C39-qc-vAF" firstAttribute="top" secondItem="a0B-og-rg3" secondAttribute="top" id="bEx-ez-SJz"/>
                             <constraint firstItem="eWN-nb-L4q" firstAttribute="top" secondItem="a0B-og-rg3" secondAttribute="bottom" constant="52" id="cmY-p5-Gka"/>
-                            <constraint firstItem="eWN-nb-L4q" firstAttribute="centerY" secondItem="ext-HF-tth" secondAttribute="centerY" id="hfy-NN-M65"/>
+                            <constraint firstItem="eWN-nb-L4q" firstAttribute="centerY" secondItem="ext-HF-tth" secondAttribute="centerY" constant="4" id="hfy-NN-M65"/>
                             <constraint firstItem="aTA-33-J4c" firstAttribute="leading" secondItem="QDx-YB-bSA" secondAttribute="leading" constant="164" id="lPC-NV-nIx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hNT-8X-snx" secondAttribute="trailing" constant="35" id="m7e-Mz-gjF"/>
                             <constraint firstItem="a0B-og-rg3" firstAttribute="bottom" secondItem="hNT-8X-snx" secondAttribute="bottom" id="tRk-hX-hVV"/>
@@ -537,7 +537,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="220"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eDJ-oa-Cgc" id="9UP-T9-IcB">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="219.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="219"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XdE-YE-Wgw">
@@ -547,7 +547,7 @@
                                                 <constraint firstAttribute="height" constant="90" id="VY1-cD-vdm"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kTt-Lv-3AL">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTt-Lv-3AL">
                                             <rect key="frame" x="106" y="8" width="300" height="20"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

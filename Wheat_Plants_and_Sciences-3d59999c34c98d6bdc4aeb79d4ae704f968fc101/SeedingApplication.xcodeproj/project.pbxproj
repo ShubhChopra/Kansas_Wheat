@@ -86,7 +86,7 @@
 		CAF5BED41D510A2800D644DA /* Acknowledgement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5BED31D510A2800D644DA /* Acknowledgement.swift */; };
 		D93162491E4C2D9B00E4570E /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93162481E4C2D9B00E4570E /* Twitter.framework */; };
 		D931624A1E4C2DFE00E4570E /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E738C1D971541001925B2 /* TwitterKit.framework */; };
-		D931624B1E4C2E0500E4570E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E738E1D971541001925B2 /* TwitterCore.framework */; };
+		D931624B1E4C2E0500E4570E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E738E1D971541001925B2 /* TwitterCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D93C55771E27EE990093EABB /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93C55761E27EE990093EABB /* AboutUs.storyboard */; };
 		D93FFBD81E403B480021608A /* FacebookSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */; };
 		D93FFBDA1E403DBE0021608A /* TwitterSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */; };
