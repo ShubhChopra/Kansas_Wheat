@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,27 +22,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutme2" translatesAutoresizingMaskIntoConstraints="NO" id="Srh-74-Z2k">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutme2" translatesAutoresizingMaskIntoConstraints="NO" id="Srh-74-Z2k">
                                 <rect key="frame" x="-20" y="20" width="402" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="W3Z-JP-GMD"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kansas Precision Ag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNJ-LV-dBG">
-                                <rect key="frame" x="20" y="207" width="335" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kansas Precision Ag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNJ-LV-dBG">
+                                <rect key="frame" x="20" y="207" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Hak-de-P2I">
-                                <rect key="frame" x="16" y="236" width="343" height="244"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hak-de-P2I">
+                                <rect key="frame" x="16" y="254" width="339" height="356"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <string key="text">The Precision Agriculture Laboratory is a part of the Department of Agronomy at Kansas State University.  The Precision Agriculture Laboratory focuses on developing agronomic algorithms to advance the artificial intelligence of ground and aerial robotic platforms for providing farmers site-specific recommendations for maximizing profit per acre and reducing environmental impact.  The Precision Agriculture Laboratory is comprised of a multidisciplinary team with specializations in agronomy, remote sensing, aerial/ground robotics, mobile development, artificial intelligence, and data analytics.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Srh-74-Z2k" firstAttribute="leading" secondItem="JIK-Z3-lQh" secondAttribute="leadingMargin" constant="-36" id="1hE-1g-6Ix"/>
+                            <constraint firstItem="Hak-de-P2I" firstAttribute="width" secondItem="JIK-Z3-lQh" secondAttribute="width" constant="-36" id="3uV-bK-GFE"/>
+                            <constraint firstItem="tNJ-LV-dBG" firstAttribute="top" secondItem="Srh-74-Z2k" secondAttribute="bottom" constant="28" id="6Ov-0s-0ns"/>
+                            <constraint firstItem="Hak-de-P2I" firstAttribute="leading" secondItem="JIK-Z3-lQh" secondAttribute="leadingMargin" id="Jvl-0R-Flc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Srh-74-Z2k" secondAttribute="trailing" constant="-23" id="Kgy-7h-XJf"/>
+                            <constraint firstItem="xcn-w3-JqU" firstAttribute="top" secondItem="Hak-de-P2I" secondAttribute="bottom" constant="8" symbolic="YES" id="Kl9-7s-thX"/>
+                            <constraint firstItem="tNJ-LV-dBG" firstAttribute="top" secondItem="Srh-74-Z2k" secondAttribute="bottom" constant="28" id="N3N-gq-Avm"/>
+                            <constraint firstItem="Srh-74-Z2k" firstAttribute="top" secondItem="PWL-Fp-Lok" secondAttribute="bottom" id="Zr5-Kp-vH8"/>
+                            <constraint firstItem="tNJ-LV-dBG" firstAttribute="leading" secondItem="JIK-Z3-lQh" secondAttribute="leadingMargin" constant="4" id="a7F-jD-Arh"/>
+                            <constraint firstItem="tNJ-LV-dBG" firstAttribute="centerX" secondItem="Hak-de-P2I" secondAttribute="centerX" constant="2" id="l4m-pk-CN7"/>
+                            <constraint firstItem="Hak-de-P2I" firstAttribute="top" secondItem="tNJ-LV-dBG" secondAttribute="bottom" constant="23" id="zlW-Yf-S6z"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Precision Ag" image="tab-v1" id="QyN-sX-Hhh"/>
                 </viewController>
@@ -61,30 +78,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kansas Wheat and Forages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-Rc-wrc">
-                                <rect key="frame" x="47" y="206" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kansas Wheat and Forages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-Rc-wrc">
+                                <rect key="frame" x="47" y="206" width="280" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fFE-sP-U2U">
-                                <rect key="frame" x="16" y="235" width="343" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutme1" translatesAutoresizingMaskIntoConstraints="NO" id="0H2-8b-7U7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Emy-4p-8yG"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFE-sP-U2U">
+                                <rect key="frame" x="16" y="253" width="343" height="357"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
                                 </accessibility>
                                 <string key="text">The Kansas Wheat and Forages team at Kansas State University is led by Dr. Romulo Lollato and his graduate research assistants, visiting scholars, and undergraduate hourly employees. Dr. Lollato’s research and extension efforts are focused on management practices to improve wheat and forages enterprise productivity and profitability, minimizing the gap between current and potential yields. He conducts research on the effects of diverse inputs on wheat yields under standard and intensive management as well as projects quantifying the genotype x management x environment interaction in wheat yields. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutme1" translatesAutoresizingMaskIntoConstraints="NO" id="0H2-8b-7U7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0H2-8b-7U7" firstAttribute="centerX" secondItem="kZl-Rc-wrc" secondAttribute="centerX" id="1fY-hl-Y77"/>
+                            <constraint firstItem="fFE-sP-U2U" firstAttribute="top" secondItem="kZl-Rc-wrc" secondAttribute="bottom" constant="23" id="Hxc-Ie-OSg"/>
+                            <constraint firstItem="kZl-Rc-wrc" firstAttribute="top" secondItem="0H2-8b-7U7" secondAttribute="bottom" constant="26" id="IUU-AY-TKt"/>
+                            <constraint firstItem="kZl-Rc-wrc" firstAttribute="top" secondItem="0H2-8b-7U7" secondAttribute="bottom" constant="26" id="J1w-Ly-H0Z"/>
+                            <constraint firstItem="kZl-Rc-wrc" firstAttribute="centerX" secondItem="fFE-sP-U2U" secondAttribute="centerX" id="NkY-po-lsn"/>
+                            <constraint firstItem="0H2-8b-7U7" firstAttribute="leading" secondItem="TWC-2M-eRs" secondAttribute="leading" id="UJr-fP-5pE"/>
+                            <constraint firstItem="0H2-8b-7U7" firstAttribute="width" secondItem="TWC-2M-eRs" secondAttribute="width" id="X83-n5-OXj"/>
+                            <constraint firstItem="kZl-Rc-wrc" firstAttribute="leading" secondItem="TWC-2M-eRs" secondAttribute="leadingMargin" constant="31" id="XcV-Zf-ZWY"/>
+                            <constraint firstItem="fFE-sP-U2U" firstAttribute="leading" secondItem="TWC-2M-eRs" secondAttribute="leadingMargin" id="g7V-dy-k1U"/>
+                            <constraint firstItem="bfv-KP-bRV" firstAttribute="top" secondItem="fFE-sP-U2U" secondAttribute="bottom" constant="8" id="iZR-ae-gre"/>
+                            <constraint firstItem="0H2-8b-7U7" firstAttribute="top" secondItem="oD1-Jw-vyi" secondAttribute="bottom" id="lkm-wm-wwJ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Kansas Wheat" image="manage" id="6hj-It-4K6"/>
                 </viewController>
