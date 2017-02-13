@@ -90,6 +90,7 @@
 		D93C55771E27EE990093EABB /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93C55761E27EE990093EABB /* AboutUs.storyboard */; };
 		D93FFBD81E403B480021608A /* FacebookSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */; };
 		D93FFBDA1E403DBE0021608A /* TwitterSocialMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */; };
+		D984861C1E5137F7005749D3 /* info.txt in Resources */ = {isa = PBXBuildFile; fileRef = D984861B1E5137F7005749D3 /* info.txt */; };
 		D98AFB631E29570B004DB1B0 /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */; };
 		D9C5C3B21E4580BE00ECA900 /* PdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C5C3B11E4580BE00ECA900 /* PdfViewController.swift */; };
 		D9E007331E45119800405442 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = D9E007321E45119800405442 /* CHANGELOG.txt */; };
@@ -206,6 +207,7 @@
 		D93C55761E27EE990093EABB /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
 		D93FFBD71E403B480021608A /* FacebookSocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FacebookSocialMedia.storyboard; sourceTree = "<group>"; };
 		D93FFBD91E403DBE0021608A /* TwitterSocialMedia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwitterSocialMedia.storyboard; sourceTree = "<group>"; };
+		D984861B1E5137F7005749D3 /* info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = info.txt; path = "../../../../../../../Desktop/The I've Had A Good Year Collection/info.txt"; sourceTree = "<group>"; };
 		D98AFB621E29570B004DB1B0 /* ContactUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactUs.storyboard; sourceTree = "<group>"; };
 		D9C5C3B11E4580BE00ECA900 /* PdfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PdfViewController.swift; path = ../PdfViewController.swift; sourceTree = "<group>"; };
 		D9E007321E45119800405442 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
@@ -423,6 +425,7 @@
 				CA25913E1D16583B0010E037 /* FinalSeeding.swift */,
 				CA2591421D1686640010E037 /* KnownView.swift */,
 				CA25913C1D15DA890010E037 /* Seeding.swift */,
+				D984861B1E5137F7005749D3 /* info.txt */,
 				CA2591401D166DCD0010E037 /* UnknownSeed.swift */,
 			);
 			name = "Seeding Rates";
@@ -610,6 +613,7 @@
 				CA53E2551CEB6C5700EC4438 /* LaunchScreen.storyboard in Resources */,
 				D9FF64431E43D166009A8F17 /* VarietyFilter.storyboard in Resources */,
 				CA53E2521CEB6C5600EC4438 /* Assets.xcassets in Resources */,
+				D984861C1E5137F7005749D3 /* info.txt in Resources */,
 				CA5D20231D0CD838000F5762 /* Default Images in Resources */,
 				CA5D202E1D0CF55E000F5762 /* default@1x.pdf in Resources */,
 				D9F32AC31E40F7B600BF23B3 /* FoliarDiseases.storyboard in Resources */,
@@ -886,7 +890,7 @@
 				PRODUCT_NAME = "Kansas Wheat";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -909,7 +913,7 @@
 				PRODUCT_NAME = "Kansas Wheat";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

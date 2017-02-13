@@ -48,13 +48,26 @@ class FinalSeeding: UIViewController {
         rateSqft.resignFirstResponder()
         if(rateAcre.text != "" && RatePer.text != "")
         {
+            if( (Int(rateAcre.text!)!) >= 479160) {
             FinalAcre.text = "Final Seeding Rate(seeds/ac) = " + String(Int(rateAcre.text!)! / Int(RatePer.text!)! * 100);
-            
+            }
+            else {
+                let alert = UIAlertController(title: "The Optimum Seeding Rate must be greater than 500,000 seeds per acre!", message: "", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
         }
         if(rateSqft.text != "" && RatePer.text != "")
         {
+            if( (Int(rateSqft.text!)!) >= 11) {
             FinalSqft.text = "Final Seeding Rate(seeds/Sq. ft.) = " + String((Int(rateSqft.text!)! * 100) / Int(RatePer.text!)! );
             applicationVars.finalRate = (Int(rateSqft.text!)! * 100) / Int(RatePer.text!)!
+            }
+            else {
+                let alert = UIAlertController(title: "The Optimum Seeding Rate must be greater than 11 seeds per square feet!", message: "", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
             
         }
     }

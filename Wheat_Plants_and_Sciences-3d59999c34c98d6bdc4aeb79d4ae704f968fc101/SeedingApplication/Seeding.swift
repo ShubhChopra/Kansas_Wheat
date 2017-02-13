@@ -13,6 +13,7 @@ class Seeding: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)
         self.title = "Seeding"
       //  tabBarItem = UITabBarItem(title: "Seeding", image: UIImage(named: "tab-s1"), tag: 3)
       //  self.navigationItem.rightBarButtonItem = UIBarButtonItem();
