@@ -554,7 +554,7 @@
 				TargetAttributes = {
 					CA53E2441CEB6C5600EC4438 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = Q64AW5FEM6;
+						DevelopmentTeam = 5C2CJK47U2;
 						LastSwiftMigration = 0820;
 					};
 					CA53E25A1CEB6C5700EC4438 = {
@@ -857,7 +857,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Q64AW5FEM6;
+				DEVELOPMENT_TEAM = 5C2CJK47U2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -866,7 +866,7 @@
 				INFOPLIST_FILE = SeedingApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Kansas-Wheat.Austin";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kansas-Wheat";
 				PRODUCT_NAME = "Kansas Wheat";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -880,7 +880,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Q64AW5FEM6;
+				DEVELOPMENT_TEAM = 5C2CJK47U2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -889,7 +889,7 @@
 				INFOPLIST_FILE = SeedingApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Kansas-Wheat.Austin";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kansas-Wheat";
 				PRODUCT_NAME = "Kansas Wheat";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
