@@ -14,7 +14,6 @@
 		CA2591431D1686640010E037 /* KnownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2591421D1686640010E037 /* KnownView.swift */; };
 		CA44F6371CFFE1A300ED79DB /* Variety-Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA44F6361CFFE1A300ED79DB /* Variety-Filter.swift */; };
 		CA4D70C71CF40C2C00CE8B3F /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = CA4D70C61CF40C2C00CE8B3F /* info.png */; };
-		CA4D70C91CF40DA200CE8B3F /* Nitrogen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70C81CF40DA200CE8B3F /* Nitrogen.swift */; };
 		CA4D70CB1CF51F2E00CE8B3F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70CA1CF51F2E00CE8B3F /* CollectionViewController.swift */; };
 		CA4D70CD1CF51FD700CE8B3F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70CC1CF51FD700CE8B3F /* PhotoCell.swift */; };
 		CA4D70CF1CF5203900CE8B3F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D70CE1CF5203900CE8B3F /* UIImage.swift */; };
@@ -71,14 +70,11 @@
 		CA8E738F1D971541001925B2 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E738B1D971541001925B2 /* Fabric.framework */; };
 		CA8E73911D971542001925B2 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA8E738D1D971541001925B2 /* TwitterKitResources.bundle */; };
 		CA8E73941D971822001925B2 /* twitter_wheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73931D971822001925B2 /* twitter_wheat.swift */; };
-		CA8E73961D972143001925B2 /* twitter_precision.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73951D972143001925B2 /* twitter_precision.swift */; };
 		CA8E739A1D97335D001925B2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E73971D97335D001925B2 /* FBSDKCoreKit.framework */; };
 		CA8E739B1D97335D001925B2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E73981D97335D001925B2 /* FBSDKLoginKit.framework */; };
 		CA8E739C1D97335D001925B2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8E73991D97335D001925B2 /* FBSDKShareKit.framework */; };
 		CA8E739E1D985766001925B2 /* facebookKansasWheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E739D1D985766001925B2 /* facebookKansasWheat.swift */; };
-		CA8E73A01D985BBF001925B2 /* facebook_precision.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E739F1D985BBF001925B2 /* facebook_precision.swift */; };
 		CA8E73A21D986CDB001925B2 /* contactUsKansasWheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73A11D986CDB001925B2 /* contactUsKansasWheat.swift */; };
-		CA8E73A41D98C6E1001925B2 /* contactUsPrecisionAg.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E73A31D98C6E1001925B2 /* contactUsPrecisionAg.swift */; };
 		CAD8A5021CED9E13003F73E3 /* VarietyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD8A5011CED9E13003F73E3 /* VarietyTable.swift */; };
 		CADE088B1D3FD22E00764D03 /* VarietyDiscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE088A1D3FD22E00764D03 /* VarietyDiscription.swift */; };
 		CADE088F1D4A4AFC00764D03 /* VarietyAppendix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */; };
@@ -124,7 +120,6 @@
 		CA2591421D1686640010E037 /* KnownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnownView.swift; sourceTree = "<group>"; };
 		CA44F6361CFFE1A300ED79DB /* Variety-Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Variety-Filter.swift"; sourceTree = "<group>"; };
 		CA4D70C61CF40C2C00CE8B3F /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
-		CA4D70C81CF40DA200CE8B3F /* Nitrogen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nitrogen.swift; sourceTree = "<group>"; };
 		CA4D70CA1CF51F2E00CE8B3F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CA4D70CC1CF51FD700CE8B3F /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		CA4D70CE1CF5203900CE8B3F /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -189,14 +184,11 @@
 		CA8E738D1D971541001925B2 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		CA8E738E1D971541001925B2 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		CA8E73931D971822001925B2 /* twitter_wheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twitter_wheat.swift; sourceTree = "<group>"; };
-		CA8E73951D972143001925B2 /* twitter_precision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twitter_precision.swift; sourceTree = "<group>"; };
 		CA8E73971D97335D001925B2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CA8E73981D97335D001925B2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CA8E73991D97335D001925B2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		CA8E739D1D985766001925B2 /* facebookKansasWheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookKansasWheat.swift; sourceTree = "<group>"; };
-		CA8E739F1D985BBF001925B2 /* facebook_precision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebook_precision.swift; sourceTree = "<group>"; };
 		CA8E73A11D986CDB001925B2 /* contactUsKansasWheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactUsKansasWheat.swift; sourceTree = "<group>"; };
-		CA8E73A31D98C6E1001925B2 /* contactUsPrecisionAg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactUsPrecisionAg.swift; sourceTree = "<group>"; };
 		CAD8A5011CED9E13003F73E3 /* VarietyTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyTable.swift; sourceTree = "<group>"; };
 		CADE088A1D3FD22E00764D03 /* VarietyDiscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyDiscription.swift; sourceTree = "<group>"; };
 		CADE088E1D4A4AFC00764D03 /* VarietyAppendix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarietyAppendix.swift; sourceTree = "<group>"; };
@@ -370,11 +362,8 @@
 			children = (
 				CAF5BED31D510A2800D644DA /* Acknowledgement.swift */,
 				CA8E73A11D986CDB001925B2 /* contactUsKansasWheat.swift */,
-				CA8E73A31D98C6E1001925B2 /* contactUsPrecisionAg.swift */,
 				CA8E739D1D985766001925B2 /* facebookKansasWheat.swift */,
-				CA8E739F1D985BBF001925B2 /* facebook_precision.swift */,
 				CA8E73931D971822001925B2 /* twitter_wheat.swift */,
-				CA8E73951D972143001925B2 /* twitter_precision.swift */,
 			);
 			name = "Social Media";
 			sourceTree = "<group>";
@@ -417,7 +406,6 @@
 		D93C55701E27E1DA0093EABB /* Seeding Rates */ = {
 			isa = PBXGroup;
 			children = (
-				CA4D70C81CF40DA200CE8B3F /* Nitrogen.swift */,
 				CA53E24A1CEB6C5600EC4438 /* Nutrient.swift */,
 				CA25913A1D15CB950010E037 /* Volume.swift */,
 				CA25913E1D16583B0010E037 /* FinalSeeding.swift */,
@@ -693,9 +681,7 @@
 				CA4D710A1CF77B9400CE8B3F /* Fusarium root.swift in Sources */,
 				CA8E73831D8DE07B001925B2 /* startup.swift in Sources */,
 				CA44F6371CFFE1A300ED79DB /* Variety-Filter.swift in Sources */,
-				CA8E73A01D985BBF001925B2 /* facebook_precision.swift in Sources */,
 				CA2591431D1686640010E037 /* KnownView.swift in Sources */,
-				CA8E73A41D98C6E1001925B2 /* contactUsPrecisionAg.swift in Sources */,
 				CA4D70D81CF689AD00CE8B3F /* Common Bunt.swift in Sources */,
 				CA4D71061CF778E200CE8B3F /* Common Root rot.swift in Sources */,
 				CA4D70EB1CF6D45200CE8B3F /* Bacterial Streak.swift in Sources */,
@@ -717,8 +703,6 @@
 				CADE088B1D3FD22E00764D03 /* VarietyDiscription.swift in Sources */,
 				CA4D71011CF6D64600CE8B3F /* Stagonospora Nodorum.swift in Sources */,
 				CA4D70E61CF69E1100CE8B3F /* Sooty head molds.swift in Sources */,
-				CA8E73961D972143001925B2 /* twitter_precision.swift in Sources */,
-				CA4D70C91CF40DA200CE8B3F /* Nitrogen.swift in Sources */,
 				CA4D71041CF778C200CE8B3F /* Cephalosporium.swift in Sources */,
 				CAF5BED41D510A2800D644DA /* Acknowledgement.swift in Sources */,
 				CA25913F1D16583B0010E037 /* FinalSeeding.swift in Sources */,

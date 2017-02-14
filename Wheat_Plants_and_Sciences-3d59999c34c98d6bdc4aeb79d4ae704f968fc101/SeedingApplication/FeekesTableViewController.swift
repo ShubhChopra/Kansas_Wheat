@@ -92,16 +92,5 @@ class FeekesTableViewController: UITableViewController  {
 
             
         }
-        if segue.identifier == "ValueofFeekes" {
-        let GrowthStage = segue.destination as? Nitrogen
-            let indexPat = sender!
-            let feek = feekes[(indexPat as AnyObject).section]
-            let feeke = feek.feekes[(indexPat as AnyObject).row]
-            
-            
-            GrowthStage!.growthvalue = "Feekes 4 (click and hold for more info)"//feeke.val
-            
-
-        }
     }
 }

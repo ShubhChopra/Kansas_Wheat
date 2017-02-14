@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8zu-yy-des">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tUG-kS-UEv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,46 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Precision Ag-->
-        <scene sceneID="Be6-ea-tZy">
-            <objects>
-                <viewController id="3fe-qJ-lbV" userLabel="Precision Ag" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PWL-Fp-Lok"/>
-                        <viewControllerLayoutGuide type="bottom" id="xcn-w3-JqU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JIK-Z3-lQh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutme2" translatesAutoresizingMaskIntoConstraints="NO" id="Srh-74-Z2k">
-                                <rect key="frame" x="-20" y="20" width="402" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kansas Precision Ag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNJ-LV-dBG">
-                                <rect key="frame" x="20" y="207" width="335" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Hak-de-P2I">
-                                <rect key="frame" x="16" y="236" width="343" height="244"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">The Precision Agriculture Laboratory is a part of the Department of Agronomy at Kansas State University.  The Precision Agriculture Laboratory focuses on developing agronomic algorithms to advance the artificial intelligence of ground and aerial robotic platforms for providing farmers site-specific recommendations for maximizing profit per acre and reducing environmental impact.  The Precision Agriculture Laboratory is comprised of a multidisciplinary team with specializations in agronomy, remote sensing, aerial/ground robotics, mobile development, artificial intelligence, and data analytics.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Precision Ag" image="tab-v1" id="QyN-sX-Hhh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0qb-ZB-UGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="728.79999999999995" y="-304.4977511244378"/>
-        </scene>
         <!--KSU Wheat-->
         <scene sceneID="zL2-mA-pMF">
             <objects>
@@ -92,29 +52,9 @@
             </objects>
             <point key="canvasLocation" x="101.59999999999999" y="-304.4977511244378"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="6fT-xi-e6u">
-            <objects>
-                <tabBarController id="8zu-yy-des" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="FxF-iy-atv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="tUG-kS-UEv" kind="relationship" relationship="viewControllers" id="x6C-eW-E10"/>
-                        <segue destination="3fe-qJ-lbV" kind="relationship" relationship="viewControllers" id="flF-os-8Yp"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="plS-i7-Orn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="414" y="-1062"/>
-        </scene>
     </scenes>
     <resources>
         <image name="aboutme1" width="788" height="400"/>
-        <image name="aboutme2" width="784" height="345"/>
         <image name="manage" width="25" height="25"/>
-        <image name="tab-v1" width="25" height="25"/>
     </resources>
 </document>
