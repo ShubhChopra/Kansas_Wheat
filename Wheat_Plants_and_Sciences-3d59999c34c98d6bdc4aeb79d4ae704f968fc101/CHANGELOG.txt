@@ -2,7 +2,7 @@
 //  SeedingApplication
 //
 //  Created by Austin Fuller on 2/3/17.
-//  Copyright © 2016 Austin Fuller. All rights reserved.
+//  Copyright © 2017 Austin Fuller. All rights reserved.
 //
 
 This is a change log for the application. It contains general notes for me to used.
