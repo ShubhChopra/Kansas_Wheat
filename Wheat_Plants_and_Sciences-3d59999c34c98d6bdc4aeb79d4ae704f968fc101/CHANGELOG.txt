@@ -8,8 +8,11 @@
 This is a change log for the application. It contains general notes for me to used.
 
 /////
-PUSH DATE:
-COMMIT CODE:
+Support for application has be discontinued by the PrecisionAg Team. Development will continue by the Kansas Wheat Development Team.
+
+/////
+PUSH DATE: 2/15/16
+COMMIT CODE: N/A
 Seeding Application Change Log:
 
 Worklist:
