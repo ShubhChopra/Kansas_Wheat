@@ -23,15 +23,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is soil pH &lt; 5.2?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO5-4q-46q">
-                                <rect key="frame" x="-4" y="72" width="320" height="21"/>
+                                <rect key="frame" x="27" y="81" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="HSL-Lq-2Ku"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="lnh-64-cZ0">
-                                <rect key="frame" x="105" y="101" width="110" height="29"/>
+                                <rect key="frame" x="135" y="110" width="110" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="CVk-pr-BSk"/>
+                                    <constraint firstAttribute="width" constant="110" id="SZe-eu-p8s"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Yes"/>
@@ -43,15 +46,18 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is the wheat grazed?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91R-xu-VfZ">
-                                <rect key="frame" x="-4" y="137" width="320" height="21"/>
+                                <rect key="frame" x="27" y="146" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="aJd-q2-4NX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Om7-xc-F4g">
-                                <rect key="frame" x="105" y="166" width="110" height="29"/>
+                                <rect key="frame" x="135" y="175" width="110" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="JSF-SI-CiC"/>
+                                    <constraint firstAttribute="width" constant="110" id="REN-uj-NIr"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Yes"/>
@@ -63,15 +69,18 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spray a fungicide if needed?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHB-IB-VwV">
-                                <rect key="frame" x="-4" y="202" width="320" height="21"/>
+                                <rect key="frame" x="27" y="211" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="dLa-Oh-wd7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ET3-pk-8fx">
-                                <rect key="frame" x="105" y="231" width="110" height="29"/>
+                                <rect key="frame" x="135" y="240" width="110" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="Qqb-9X-9wq"/>
+                                    <constraint firstAttribute="width" constant="110" id="nsi-SI-2IH"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Yes"/>
@@ -83,15 +92,18 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is lodging a common issue?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-eG-ROA">
-                                <rect key="frame" x="-4" y="267" width="320" height="21"/>
+                                <rect key="frame" x="27" y="276" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="07Y-wr-Qh0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Lz-1D-sXm">
-                                <rect key="frame" x="105" y="296" width="110" height="29"/>
+                                <rect key="frame" x="135" y="305" width="110" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="dpe-5y-guB"/>
+                                    <constraint firstAttribute="width" constant="110" id="eNB-zy-pnt"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Yes"/>
@@ -103,9 +115,9 @@
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CUg-JU-Il5">
-                                <rect key="frame" x="105" y="361" width="110" height="29"/>
+                                <rect key="frame" x="135" y="370" width="110" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="Sz5-KI-BWz"/>
+                                    <constraint firstAttribute="width" constant="110" id="UsE-lI-L5S"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Yes"/>
@@ -117,7 +129,10 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZG-bb-Rfa">
-                                <rect key="frame" x="134" y="423" width="52" height="36"/>
+                                <rect key="frame" x="164" y="432" width="52" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="Ewi-Bz-pzj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Save"/>
@@ -127,7 +142,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need for Clearfield Wheat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8N-zv-9rh">
-                                <rect key="frame" x="-4" y="332" width="320" height="21"/>
+                                <rect key="frame" x="27" y="341" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="YYh-mg-NqZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -135,39 +153,28 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pHB-IB-VwV" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="1qO-Dc-BIN"/>
-                            <constraint firstItem="91R-xu-VfZ" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="6Sf-pg-6UG"/>
-                            <constraint firstItem="0AS-eG-ROA" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="85E-a3-pdw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HZG-bb-Rfa" secondAttribute="trailing" constant="173" id="8DT-Ul-WUm"/>
-                            <constraint firstItem="CUg-JU-Il5" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="8p4-Tv-PXG"/>
-                            <constraint firstItem="ET3-pk-8fx" firstAttribute="top" secondItem="pHB-IB-VwV" secondAttribute="bottom" constant="8" id="9tD-1V-cRf"/>
-                            <constraint firstItem="HZG-bb-Rfa" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="BhL-Is-DqJ"/>
-                            <constraint firstItem="lnh-64-cZ0" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="CR2-lk-aDD"/>
-                            <constraint firstItem="QO5-4q-46q" firstAttribute="top" secondItem="fvM-Ay-nvT" secondAttribute="bottom" constant="52" id="DDX-OP-90c"/>
-                            <constraint firstItem="CUg-JU-Il5" firstAttribute="top" secondItem="Y8N-zv-9rh" secondAttribute="bottom" constant="8" id="FPC-2U-sNe"/>
-                            <constraint firstItem="QO5-4q-46q" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="L75-SV-XN5"/>
-                            <constraint firstItem="pHB-IB-VwV" firstAttribute="top" secondItem="Om7-xc-F4g" secondAttribute="bottom" constant="8" id="OFU-2Z-Gh8"/>
-                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="top" secondItem="0AS-eG-ROA" secondAttribute="bottom" constant="44" id="Rdk-96-gun"/>
-                            <constraint firstItem="QO5-4q-46q" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="SHR-rp-Bql"/>
-                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="Tn0-Zy-COV"/>
-                            <constraint firstItem="QO5-4q-46q" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="Ve2-mb-xzU"/>
-                            <constraint firstItem="0AS-eG-ROA" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="WM0-O5-wqn"/>
-                            <constraint firstItem="pHB-IB-VwV" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="X8R-9c-mPd"/>
-                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="aJJ-3H-hvf"/>
-                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="aUw-X6-VLg"/>
-                            <constraint firstItem="Om7-xc-F4g" firstAttribute="top" secondItem="91R-xu-VfZ" secondAttribute="bottom" constant="8" id="ao3-2G-D0K"/>
-                            <constraint firstItem="7Lz-1D-sXm" firstAttribute="top" secondItem="0AS-eG-ROA" secondAttribute="bottom" constant="8" id="deR-Uq-FOX"/>
-                            <constraint firstItem="91R-xu-VfZ" firstAttribute="top" secondItem="QO5-4q-46q" secondAttribute="bottom" constant="44" id="gdu-i5-NEm"/>
-                            <constraint firstItem="Om7-xc-F4g" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="hYe-K5-CC8"/>
-                            <constraint firstItem="ET3-pk-8fx" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="hgR-C0-HmU"/>
-                            <constraint firstItem="0AS-eG-ROA" firstAttribute="top" secondItem="pHB-IB-VwV" secondAttribute="bottom" constant="44" id="j2Q-m0-mhF"/>
-                            <constraint firstItem="pHB-IB-VwV" firstAttribute="leading" secondItem="hLQ-DL-dm8" secondAttribute="leadingMargin" constant="-20" id="lEb-7q-zdP"/>
-                            <constraint firstItem="0AS-eG-ROA" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="mYN-c2-AnN"/>
-                            <constraint firstItem="HZG-bb-Rfa" firstAttribute="top" secondItem="CUg-JU-Il5" secondAttribute="bottom" constant="34" id="oyt-TB-JKe"/>
-                            <constraint firstItem="91R-xu-VfZ" firstAttribute="width" secondItem="hLQ-DL-dm8" secondAttribute="width" constant="-55" id="q4r-cJ-dDi"/>
-                            <constraint firstItem="lnh-64-cZ0" firstAttribute="top" secondItem="QO5-4q-46q" secondAttribute="bottom" constant="8" id="t53-gK-wNR"/>
-                            <constraint firstItem="91R-xu-VfZ" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-31.5" id="tgb-xg-jQt"/>
-                            <constraint firstItem="7Lz-1D-sXm" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="-27.5" id="uAh-0H-OVU"/>
+                            <constraint firstItem="0AS-eG-ROA" firstAttribute="top" secondItem="ET3-pk-8fx" secondAttribute="bottom" constant="8" id="1cd-jf-H4t"/>
+                            <constraint firstItem="pHB-IB-VwV" firstAttribute="top" secondItem="Om7-xc-F4g" secondAttribute="bottom" constant="8" id="2NA-mw-pTD"/>
+                            <constraint firstItem="lnh-64-cZ0" firstAttribute="top" secondItem="QO5-4q-46q" secondAttribute="bottom" constant="8" id="2oO-rU-a25"/>
+                            <constraint firstItem="7Lz-1D-sXm" firstAttribute="top" secondItem="0AS-eG-ROA" secondAttribute="bottom" constant="8" id="2pH-QK-X3r"/>
+                            <constraint firstItem="HZG-bb-Rfa" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="2.5" id="3i8-sv-g0E"/>
+                            <constraint firstItem="Om7-xc-F4g" firstAttribute="top" secondItem="91R-xu-VfZ" secondAttribute="bottom" constant="8" id="HtD-It-7gB"/>
+                            <constraint firstItem="ET3-pk-8fx" firstAttribute="top" secondItem="pHB-IB-VwV" secondAttribute="bottom" constant="8" id="N8f-tk-lI2"/>
+                            <constraint firstItem="QO5-4q-46q" firstAttribute="top" secondItem="fvM-Ay-nvT" secondAttribute="bottom" constant="61" id="OVL-gd-JBG"/>
+                            <constraint firstItem="CUg-JU-Il5" firstAttribute="top" secondItem="Y8N-zv-9rh" secondAttribute="bottom" constant="8" id="PWe-P6-wlP"/>
+                            <constraint firstItem="ET3-pk-8fx" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="2.5" id="Wbw-lR-kZS"/>
+                            <constraint firstItem="7Lz-1D-sXm" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="2.5" id="cAC-tv-sdD"/>
+                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="cPe-4T-S2M"/>
+                            <constraint firstItem="0AS-eG-ROA" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="cYi-1F-mgt"/>
+                            <constraint firstItem="CUg-JU-Il5" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="2.5" id="eVk-nL-I9e"/>
+                            <constraint firstItem="pHB-IB-VwV" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="f5c-8O-UsQ"/>
+                            <constraint firstItem="Om7-xc-F4g" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="2.5" id="fEW-1P-ppp"/>
+                            <constraint firstItem="QO5-4q-46q" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="kkX-5Q-XlN"/>
+                            <constraint firstItem="HZG-bb-Rfa" firstAttribute="top" secondItem="CUg-JU-Il5" secondAttribute="bottom" constant="34" id="otg-QK-wWH"/>
+                            <constraint firstItem="lnh-64-cZ0" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" constant="2.5" id="oz0-5H-q55"/>
+                            <constraint firstItem="91R-xu-VfZ" firstAttribute="centerX" secondItem="hLQ-DL-dm8" secondAttribute="centerX" id="pTH-P2-ybE"/>
+                            <constraint firstItem="91R-xu-VfZ" firstAttribute="top" secondItem="lnh-64-cZ0" secondAttribute="bottom" constant="8" id="qm4-hn-HeS"/>
+                            <constraint firstItem="Y8N-zv-9rh" firstAttribute="top" secondItem="7Lz-1D-sXm" secondAttribute="bottom" constant="8" id="wHy-vD-VaG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Variety" image="tab-v1" id="DTn-DX-iSU"/>

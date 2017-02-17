@@ -73,11 +73,11 @@ class FeekesTableViewController: UITableViewController  {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         self.performSegue(withIdentifier: "ValueofFeekes", sender: indexPath)
         
-    }
+    }*/
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "zoomfeekes" {
             

@@ -16,6 +16,15 @@ COMMIT CODE: N/A
 Seeding Application Change Log:
 
 Worklist:
+- [ ] Images in Feekes "Zoom Picture"
+- [ ] Check views in HipChat
+
+/////
+PUSH DATE: 2/15/16
+COMMIT CODE: N/A
+Seeding Application Change Log:
+
+Worklist:
 - [x] Update all files to include modified by Austin Fuller
 - [x] Commenting of all code
 - [x] Correct Twitter on main screen
