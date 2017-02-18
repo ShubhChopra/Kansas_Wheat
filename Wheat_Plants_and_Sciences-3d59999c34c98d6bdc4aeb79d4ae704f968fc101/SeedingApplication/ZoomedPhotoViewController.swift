@@ -17,13 +17,14 @@ class ZoomedPhotoViewController: UIViewController {
     var photoName: String!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var imageViewBottomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageViewLeadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageViewTrailingConstraint: NSLayoutConstraint!
+    //@IBOutlet weak var imageViewBottomConstraint: NSLayoutConstraint!
+    //@IBOutlet weak var imageViewLeadingConstraint: NSLayoutConstraint!
+    //@IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
+    //@IBOutlet weak var imageViewTrailingConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         imageView.image = UIImage(named: photoName)
+        self.scrollView.maximumZoomScale = 6.0
     }
     
     fileprivate func updateMinZoomScaleForSize(_ size: CGSize) {
@@ -39,7 +40,7 @@ class ZoomedPhotoViewController: UIViewController {
         updateMinZoomScaleForSize(view.bounds.size)
     }
     
-    fileprivate func updateConstraintsForSize(_ size: CGSize) {
+    /*fileprivate func updateConstraintsForSize(_ size: CGSize) {
         let yOffset = max(0, (size.height - imageView.frame.height) / 2)
         imageViewTopConstraint.constant = yOffset
         imageViewBottomConstraint.constant = yOffset
@@ -47,7 +48,7 @@ class ZoomedPhotoViewController: UIViewController {
         imageViewLeadingConstraint.constant = xOffset
         imageViewTrailingConstraint.constant = xOffset
         view.layoutIfNeeded()
-    }
+    }*/
  
 }
 
@@ -56,8 +57,9 @@ extension ZoomedPhotoViewController: UIScrollViewDelegate {
         return imageView
     }
     
-    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+    /*func scrollViewDidZoom(_ scrollView: UIScrollView) {
         updateConstraintsForSize(view.bounds.size)  // 4
-    }
+    }*/
+    
     
 }

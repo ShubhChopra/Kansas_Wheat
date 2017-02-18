@@ -662,7 +662,7 @@ Management: Genetic resistance, foliar fungicides, crop rotation.
         <!--Stagonospora-->
         <scene sceneID="jxP-zS-IPR">
             <objects>
-                <viewController title="Stagonospora" id="vb1-m3-DJc" customClass="Stago" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Stagonospora" id="vb1-m3-DJc" customClass="Stagonospora" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="acy-nb-T4m"/>
                         <viewControllerLayoutGuide type="bottom" id="8h0-2U-oHj"/>
@@ -699,7 +699,7 @@ Management: Genetic resistance, foliar fungicides, crop rotation, fungicide seed
                                     <color key="titleColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qE7-IW-jL8" kind="show" id="R4n-RI-2zE"/>
+                                    <segue destination="qE7-IW-jL8" kind="show" identifier="Stagonospora" id="R4n-RI-2zE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -885,7 +885,7 @@ Management: Avoid planting into wheat residue, tillage where appropriate, geneti
                                     <color key="titleColor" red="0.92156862750000001" green="0.70980392160000005" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qE7-IW-jL8" kind="show" id="xWh-39-ZS0"/>
+                                    <segue destination="qE7-IW-jL8" kind="show" identifier="Tan" id="xWh-39-ZS0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1202,6 +1202,6 @@ Management: Control volunteer wheat, delayed planting date, genetic resistance, 
         <image name="1" width="1127" height="2200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UZe-uI-3n8"/>
+        <segue reference="R4n-RI-2zE"/>
     </inferredMetricsTieBreakers>
 </document>
