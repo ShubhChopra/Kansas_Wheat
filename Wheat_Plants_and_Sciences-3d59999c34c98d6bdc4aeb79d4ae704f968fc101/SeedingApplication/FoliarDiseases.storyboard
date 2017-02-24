@@ -1129,9 +1129,7 @@ Management: Control volunteer wheat, delayed planting date, genetic resistance, 
                                 <size key="customSize" width="200" height="200"/>
                                 <connections>
                                     <outlet property="imageView" destination="IIr-0b-dY0" id="Jr5-QC-Yug"/>
-                                    <segue destination="UAc-HH-gY3" kind="show" id="eBH-bk-adn">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="wnc-zp-6LR" kind="show" id="4a1-LH-VeH"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -1146,61 +1144,61 @@ Management: Control volunteer wheat, delayed planting date, genetic resistance, 
             <point key="canvasLocation" x="3576" y="10748"/>
         </scene>
         <!--Images-->
-        <scene sceneID="Huz-L9-EiL">
+        <scene sceneID="5Ya-jb-Won">
             <objects>
-                <viewController title="Images" id="UAc-HH-gY3" customClass="ZoomedPhotoViewController" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Images" id="wnc-zp-6LR" customClass="ZoomedPhotoViewController" customModule="Kansas_Wheat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9Ho-26-Lo5"/>
-                        <viewControllerLayoutGuide type="bottom" id="o3d-mu-Q9U"/>
+                        <viewControllerLayoutGuide type="top" id="Gxh-y5-MCO"/>
+                        <viewControllerLayoutGuide type="bottom" id="RzY-3R-DVr"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4M2-xV-1kI">
+                    <view key="view" contentMode="scaleToFill" id="dOp-L0-HrL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6vZ-sJ-2fx">
-                                <rect key="frame" x="0.0" y="64" width="600" height="623"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YV8-RE-u7g">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gsl-N4-64f">
-                                        <rect key="frame" x="-104" y="-60" width="454" height="605"/>
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jNI-Im-Jxo">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                         <gestureRecognizers/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Gsl-N4-64f" firstAttribute="top" secondItem="6vZ-sJ-2fx" secondAttribute="top" id="J2E-36-kfD"/>
-                                    <constraint firstAttribute="trailing" secondItem="Gsl-N4-64f" secondAttribute="trailing" id="RNa-kC-3dX"/>
-                                    <constraint firstItem="Gsl-N4-64f" firstAttribute="leading" secondItem="6vZ-sJ-2fx" secondAttribute="leading" id="RyD-4e-lzi"/>
-                                    <constraint firstAttribute="bottom" secondItem="Gsl-N4-64f" secondAttribute="bottom" id="pG6-TU-SPf"/>
+                                    <constraint firstAttribute="bottom" secondItem="jNI-Im-Jxo" secondAttribute="bottom" id="3A6-0Z-6RZ"/>
+                                    <constraint firstItem="jNI-Im-Jxo" firstAttribute="centerX" secondItem="YV8-RE-u7g" secondAttribute="centerX" id="Fhh-6D-B7Z"/>
+                                    <constraint firstItem="jNI-Im-Jxo" firstAttribute="leading" secondItem="YV8-RE-u7g" secondAttribute="leading" id="TRS-Gy-bal"/>
+                                    <constraint firstItem="jNI-Im-Jxo" firstAttribute="top" secondItem="YV8-RE-u7g" secondAttribute="top" id="bZ6-dR-cPI"/>
+                                    <constraint firstAttribute="trailing" secondItem="jNI-Im-Jxo" secondAttribute="trailing" id="dPc-mx-lpC"/>
+                                    <constraint firstItem="jNI-Im-Jxo" firstAttribute="centerY" secondItem="YV8-RE-u7g" secondAttribute="centerY" id="h0H-ib-swq"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="delegate" destination="UAc-HH-gY3" id="xhR-vd-M9b"/>
+                                    <outlet property="delegate" destination="wnc-zp-6LR" id="Jbv-i1-WDE"/>
                                 </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="o3d-mu-Q9U" firstAttribute="top" secondItem="6vZ-sJ-2fx" secondAttribute="bottom" id="39r-WW-SuG"/>
-                            <constraint firstItem="6vZ-sJ-2fx" firstAttribute="top" secondItem="9Ho-26-Lo5" secondAttribute="bottom" id="Tvt-um-DEJ"/>
-                            <constraint firstAttribute="trailing" secondItem="6vZ-sJ-2fx" secondAttribute="trailing" id="uKo-ph-mw7"/>
-                            <constraint firstItem="6vZ-sJ-2fx" firstAttribute="leading" secondItem="4M2-xV-1kI" secondAttribute="leading" id="ubD-f9-U6X"/>
+                            <constraint firstItem="YV8-RE-u7g" firstAttribute="width" secondItem="dOp-L0-HrL" secondAttribute="width" id="0WB-BB-Ksc"/>
+                            <constraint firstItem="YV8-RE-u7g" firstAttribute="leading" secondItem="dOp-L0-HrL" secondAttribute="leading" id="3lZ-Rr-Yb7"/>
+                            <constraint firstItem="YV8-RE-u7g" firstAttribute="top" secondItem="Gxh-y5-MCO" secondAttribute="bottom" constant="44" id="3nq-Bb-6xX"/>
+                            <constraint firstAttribute="trailing" secondItem="YV8-RE-u7g" secondAttribute="trailing" id="MYc-fv-vAL"/>
+                            <constraint firstItem="RzY-3R-DVr" firstAttribute="top" secondItem="YV8-RE-u7g" secondAttribute="bottom" id="ghr-2G-57j"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Gsl-N4-64f" id="x6k-gT-SMH"/>
-                        <outlet property="imageViewBottomConstraint" destination="pG6-TU-SPf" id="Xfu-Dn-Sat"/>
-                        <outlet property="imageViewLeadingConstraint" destination="RyD-4e-lzi" id="r2M-H9-LID"/>
-                        <outlet property="imageViewTopConstraint" destination="RNa-kC-3dX" id="6H9-by-ohY"/>
-                        <outlet property="imageViewTrailingConstraint" destination="RNa-kC-3dX" id="Cd4-tY-oOj"/>
-                        <outlet property="scrollView" destination="6vZ-sJ-2fx" id="LCz-mz-cE3"/>
+                        <outlet property="imageView" destination="jNI-Im-Jxo" id="I8W-Hb-5Hh"/>
+                        <outlet property="imageViewBottomConstraint" destination="3A6-0Z-6RZ" id="yBc-Pk-zVv"/>
+                        <outlet property="imageViewLeadingConstraint" destination="TRS-Gy-bal" id="uSF-q1-FL4"/>
+                        <outlet property="imageViewTopConstraint" destination="dPc-mx-lpC" id="q6l-wD-fN4"/>
+                        <outlet property="imageViewTrailingConstraint" destination="dPc-mx-lpC" id="ljk-OE-4cm"/>
+                        <outlet property="scrollView" destination="YV8-RE-u7g" id="T23-eq-zxT"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bK9-yc-hwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O66-xP-qp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4917" y="10748"/>
+            <point key="canvasLocation" x="4834" y="10748"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="1" width="1127" height="2200"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R4n-RI-2zE"/>
     </inferredMetricsTieBreakers>

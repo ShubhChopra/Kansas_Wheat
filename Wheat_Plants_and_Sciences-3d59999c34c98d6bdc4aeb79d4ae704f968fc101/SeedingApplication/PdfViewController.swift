@@ -22,6 +22,7 @@ class PdfViewController: UIViewController {
         webView.loadRequest(req as URLRequest)
         self.view.addSubview(webView)
         self.title = viewTitle
+        webView.scalesPageToFit = true
         }
     
     override func didReceiveMemoryWarning() {
