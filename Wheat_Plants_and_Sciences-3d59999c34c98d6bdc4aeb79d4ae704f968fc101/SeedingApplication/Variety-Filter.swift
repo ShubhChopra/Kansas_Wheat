@@ -20,7 +20,7 @@ class VarietyFilter: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Variety Selection"
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "mainScreenBackground")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)
         ph.selectedSegmentIndex = -1
         grazed.selectedSegmentIndex = -1
         fungicide.selectedSegmentIndex = -1

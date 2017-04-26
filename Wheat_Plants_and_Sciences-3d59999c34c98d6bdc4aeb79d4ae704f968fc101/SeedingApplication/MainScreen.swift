@@ -13,7 +13,7 @@ import UIKit
 
 /// Collection of varibles that are used through the application.
 struct applicationVars {
-    static var applicationBackground = "mainScreenBackground"
+    static var applicationBackground = ""
     static var district = ""
     static var ph = 0
     static var grazed = 0

@@ -8,41 +8,25 @@
 //
 
 import Foundation
-
-import UIKit
-
 import UIKit
 import MessageUI
 
-class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
+class ContactUs: UIViewController , MFMailComposeViewControllerDelegate {
     @IBOutlet weak var email: UIButton!
     @IBOutlet weak var call: UIButton!
-    @IBOutlet weak var twitter: UIButton!
-    @IBOutlet weak var Facebook: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: applicationVars.applicationBackground)!)
      }
     
     @IBAction func callbutton(_ sender: AnyObject) {
         let phone = URL(string: "tel://785-532-0397")
-        let Alert = UIAlertController(title: "Would you like to call the Kansas Wheat office?", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        let Alert = UIAlertController(title: "Would you like to call the PrecisionAg Lab office?", message: "", preferredStyle: UIAlertControllerStyle.alert)
         Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction) in
             UIApplication.shared.open(phone!, options: [:], completionHandler: nil)
         }))
         Alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in return}))
         present(Alert, animated: true, completion: nil)
-    }
-    
-    @IBAction func facebookbutton(_ sender: AnyObject) {
-        let facebookURL = URL(string: "fb://profile/213201098709632")
-        if UIApplication.shared.canOpenURL(facebookURL!) {
-            UIApplication.shared.open(facebookURL!, options: [:], completionHandler: nil)
-        }
-        else {
-            UIApplication.shared.open(URL(string:"https://www.facebook.com/kstate.wheat/")!, options: [:], completionHandler: nil)
-        }
     }
     
     
@@ -53,7 +37,7 @@ class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
             return
         }
         
-        let toRecipents = ["Dr. Romulo Lollato <lollato@ksu.edu>"]
+        let toRecipents = ["Dr. Antonio \"Ray\" Asebedo <ara4747@ksu.edu>"]
         let mailVC: MFMailComposeViewController = MFMailComposeViewController()
       
         mailVC.mailComposeDelegate = self
@@ -67,9 +51,5 @@ class Contactus: UIViewController , MFMailComposeViewControllerDelegate {
          controller.dismiss(animated: true, completion: nil)
     }
 
-    @IBAction func twitterbutton(_ sender: AnyObject) {
-        let url = URL(string: "https://twitter.com/KansasWheat?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor")
-        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-    }
 }
 
